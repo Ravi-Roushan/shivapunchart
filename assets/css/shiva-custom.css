@@ -138,3 +138,395 @@
     width:135px !important;
   }
 }
+
+
+/* =========================================================
+   FINAL BUTTON + CARD REFINEMENT
+   ========================================================= */
+
+/* ALL MAIN BUTTONS — compact, rounded and consistent */
+.button-1,
+.button-2,
+.content-overly-full a,
+.shiva-hero a,
+.shiva-hero button,
+.shiva-hero .btn,
+.shiva-hero .button,
+.hero-section a,
+.hero-section button,
+.hero-section .btn,
+.hero-section .button,
+.banner-area a,
+.banner-area button,
+.banner-area .btn,
+.banner-area .button,
+.about-content-navs-tab .nav-tabs .nav-item button {
+  border-radius: 999px !important;
+}
+
+/* Compact standard CTA buttons */
+.button-1 {
+  padding: 10px 22px !important;
+  min-height: 38px;
+  line-height: 1.2 !important;
+}
+
+.button-2 {
+  padding: 10px 22px !important;
+  min-height: 38px;
+  line-height: 1.2 !important;
+}
+
+/* About tabs: softer rounded pills instead of square boxes */
+.about-content-navs-tab .nav-tabs .nav-item {
+  margin: 3px 3px !important;
+}
+.about-content-navs-tab .nav-tabs .nav-item button {
+  padding: 9px 20px !important;
+  border-radius: 999px !important;
+  transition: all .2s ease !important;
+}
+.about-content-navs-tab .nav-tabs .nav-item button:hover {
+  color: #1800AD !important;
+  border-color: #b9c2d2 !important;
+  background: #f5f7fb !important;
+}
+.about-content-navs-tab .nav-tabs .nav-item button.active {
+  color: #fff !important;
+  background: #1800AD !important;
+  border-color: #1800AD !important;
+}
+
+/* =========================================================
+   PRODUCT / SERVICE CARDS
+   Compact proportions + cleaner hover treatment
+   ========================================================= */
+.info-box-2 {
+  padding: 22px 22px !important;
+  border: 1px solid #e3e7ee !important;
+  border-radius: 16px !important;
+  background: #fff !important;
+  box-shadow: 0 7px 22px rgba(25, 35, 61, .07) !important;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease !important;
+}
+
+.info-box-2:hover {
+  border-color: #cfd5df !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 14px 30px rgba(25, 35, 61, .12) !important;
+}
+
+/* Keep card images compact and uniform */
+.info-box-2 .image-box {
+  width: 100% !important;
+  height: 205px !important;
+  overflow: hidden !important;
+  border-radius: 11px !important;
+  margin-bottom: 14px !important;
+}
+
+.info-box-2 .image-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform .35s ease !important;
+}
+
+.info-box-2:hover .image-box img {
+  transform: scale(1.035) !important;
+}
+
+/* Card typography */
+.info-box-2 .content-top .con h2 {
+  font-size: 18px !important;
+  margin: 0 0 7px !important;
+  line-height: 1.25 !important;
+}
+
+.info-box-2 .content-top .con p {
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  margin-bottom: 0 !important;
+  color: #536078 !important;
+}
+
+/* Remove the harsh bright-blue hover border/flash */
+.info-box-2 .content-overly {
+  background: linear-gradient(
+    145deg,
+    rgba(23, 35, 61, .98),
+    rgba(16, 26, 48, .97)
+  ) !important;
+  border-radius: 14px !important;
+  transform: scale(.985) !important;
+  transition: opacity .25s ease, transform .25s ease !important;
+}
+
+.info-box-2:hover .content-overly {
+  transform: scale(1) !important;
+}
+
+/* Overlay content stays compact */
+.content-overly-full {
+  width: 100% !important;
+  padding: 24px 22px !important;
+}
+
+.content-overly-full h2 {
+  font-size: 19px !important;
+  margin-bottom: 9px !important;
+}
+
+.content-overly-full p {
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  margin-bottom: 14px !important;
+  color: #d6ddea !important;
+}
+
+/* Overlay More button — rounded and less neon */
+.content-overly-full a {
+  width: 100% !important;
+  padding: 10px 18px !important;
+  min-height: 38px !important;
+  background: #22c968 !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  transition: transform .2s ease, background .2s ease !important;
+}
+
+.content-overly-full a:hover {
+  background: #19b65a !important;
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Bootstrap column spacing: make the complete card grid tighter */
+.services-section .mb-30 {
+  margin-bottom: 20px !important;
+}
+
+/* =========================================================
+   RESPONSIVE CARD SIZING
+   ========================================================= */
+@media (max-width: 991px) {
+  .info-box-2 {
+    padding: 19px !important;
+  }
+
+  .info-box-2 .image-box {
+    height: 190px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .button-1,
+  .button-2 {
+    padding: 8px 17px !important;
+    min-height: 34px !important;
+    font-size: 12px !important;
+  }
+
+  .about-content-navs-tab .nav-tabs .nav-item button {
+    padding: 8px 15px !important;
+    font-size: 13px !important;
+  }
+
+  .info-box-2 {
+    padding: 16px !important;
+    border-radius: 13px !important;
+  }
+
+  .info-box-2 .image-box {
+    height: 175px !important;
+    border-radius: 9px !important;
+    margin-bottom: 11px !important;
+  }
+
+  .info-box-2 .content-top .con h2 {
+    font-size: 16px !important;
+  }
+
+  .info-box-2 .content-top .con p {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+  }
+
+  .content-overly-full {
+    padding: 20px 17px !important;
+  }
+
+  .content-overly-full h2 {
+    font-size: 17px !important;
+  }
+
+  .content-overly-full p {
+    font-size: 12px !important;
+  }
+
+  .content-overly-full a {
+    padding: 8px 15px !important;
+    min-height: 34px !important;
+    font-size: 12px !important;
+  }
+
+  .services-section .mb-30 {
+    margin-bottom: 15px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .info-box-2 .image-box {
+    height: 160px !important;
+  }
+
+  .info-box-2 {
+    padding: 14px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL MOBILE FOOTER FIX
+   Quick Links LEFT | Address RIGHT | Products BELOW
+   ========================================================= */
+@media (max-width: 575px) {
+
+  /* The footer has 3 cards:
+     1 = Quick Links
+     2 = Our Products
+     3 = Address
+  */
+  .shiva-footer-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    gap: 16px 12px !important;
+    align-items: start !important;
+  }
+
+  .shiva-footer-grid > .shiva-footer-card:nth-child(1) {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+  }
+
+  .shiva-footer-grid > .shiva-footer-card:nth-child(3) {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+  }
+
+  .shiva-footer-grid > .shiva-footer-card:nth-child(2) {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    width: 100% !important;
+  }
+
+  .shiva-footer-card h3 {
+    font-size: 12px !important;
+    margin-bottom: 9px !important;
+  }
+
+  /* Quick Links */
+  .shiva-footer-links {
+    gap: 5px !important;
+  }
+
+  .shiva-footer-links a {
+    font-size: 10.5px !important;
+    line-height: 1.35 !important;
+  }
+
+  /* Address boxes fit the right column */
+  .shiva-address-tabs {
+    display: grid !important;
+    gap: 6px !important;
+  }
+
+  .shiva-address-tabs details {
+    width: 100% !important;
+    border-radius: 8px !important;
+  }
+
+  .shiva-address-tabs summary {
+    padding: 7px 7px !important;
+    font-size: 9px !important;
+    line-height: 1.25 !important;
+  }
+
+  .shiva-address-tabs summary > span {
+    gap: 5px !important;
+  }
+
+  .shiva-address-tabs summary > span i {
+    width: 13px !important;
+    font-size: 9px !important;
+  }
+
+  .shiva-details-content {
+    padding: 7px !important;
+    font-size: 8.5px !important;
+    line-height: 1.4 !important;
+    word-break: normal !important;
+  }
+
+  .shiva-footer-contact {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 5px !important;
+    margin-top: 7px !important;
+  }
+
+  .shiva-footer-contact a {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 8.5px !important;
+    padding: 5px 4px !important;
+    border-radius: 7px !important;
+  }
+
+  /* Products gets the full width underneath */
+  .shiva-product-scroll {
+    width: 100% !important;
+    height: 130px !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4px 10px !important;
+  }
+
+  .shiva-product-scroll a {
+    font-size: 10px !important;
+    padding: 3px 0 !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .shiva-footer-grid {
+    column-gap: 9px !important;
+    row-gap: 14px !important;
+  }
+
+  .shiva-footer-card h3 {
+    font-size: 11px !important;
+  }
+
+  .shiva-footer-links a {
+    font-size: 10px !important;
+  }
+
+  .shiva-address-tabs summary {
+    font-size: 8.5px !important;
+  }
+
+  .shiva-details-content {
+    font-size: 8px !important;
+  }
+
+  .shiva-product-scroll a {
+    font-size: 9.5px !important;
+  }
+}
