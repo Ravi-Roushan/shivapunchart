@@ -40,3 +40,101 @@
 @media(max-width:1199px){.shiva-nav-right .menu nav>ul{gap:10px}.shiva-nav-right .menu nav>ul>li>a{font-size:12px}.shiva-logo img{width:170px}.shiva-footer-grid{gap:20px}}
 @media(max-width:991px){.shiva-footer-grid{grid-template-columns:1fr 1fr}.shiva-nav-right .menu{display:none}.shiva-nav-row{min-height:68px}.shiva-logo img{width:165px}.shiva-follow-btn{font-size:10px}.canvas_open{display:block}}
 @media(max-width:575px){.shiva-topbar-inner{min-height:46px}.shiva-office-top{font-size:9.5px}.shiva-top-actions a{font-size:12px}.shiva-nav-row{min-height:62px}.shiva-logo img{width:150px}.shiva-footer-main{padding:24px 0 18px!important}.shiva-footer-brand{margin-bottom:20px;padding-bottom:18px}.shiva-footer-logo img{width:165px}.shiva-footer-grid{grid-template-columns:1fr;gap:18px}.shiva-product-scroll{height:135px}.shiva-chatbot{right:9px;bottom:9px}.shiva-chatbot-launcher{width:58px;height:58px}.shiva-chatbot-launcher img{width:54px;height:54px}.shiva-chat-panel{right:-2px;bottom:68px;width:calc(100vw - 18px);max-width:320px}.shiva-chat-body{height:120px}.shiva-chat-actions button,.shiva-chat-actions a{font-size:9px;padding:7px 4px}}
+
+
+/* ===== COMPACT HEADER / NAV SPACING =====
+   Keeps the existing design intact; only reduces vertical header space.
+   Responsive for desktop, tablet and mobile.
+*/
+.shiva-topbar-inner{
+  min-height:40px;
+}
+.shiva-topbar{
+  padding:0 !important;
+}
+.shiva-office-top{
+  font-size:11px;
+}
+.shiva-top-icon{
+  width:24px;
+  height:24px;
+  flex-basis:24px;
+}
+.shiva-top-actions{
+  gap:10px;
+  font-size:11px;
+}
+.shiva-top-actions a{
+  font-size:13px;
+}
+
+.shiva-nav-row{
+  min-height:62px !important;
+}
+.shiva-logo img{
+  width:175px !important;
+}
+.shiva-nav-right{
+  gap:9px;
+}
+.shiva-nav-right .menu nav>ul{
+  gap:12px;
+}
+.shiva-nav-right .menu nav>ul>li>a{
+  font-size:13px;
+}
+.shiva-follow-btn{
+  padding:7px 10px;
+  font-size:10px;
+}
+
+/* Tablet */
+@media(max-width:991px){
+  .shiva-topbar-inner{
+    min-height:38px;
+  }
+  .shiva-nav-row{
+    min-height:58px !important;
+  }
+  .shiva-logo img{
+    width:160px !important;
+  }
+}
+
+/* Mobile */
+@media(max-width:575px){
+  .shiva-topbar-inner{
+    min-height:36px !important;
+  }
+  .shiva-office-top{
+    font-size:9px;
+  }
+  .shiva-top-icon{
+    width:22px;
+    height:22px;
+    flex-basis:22px;
+  }
+  .shiva-top-actions{
+    gap:7px;
+  }
+  .shiva-top-actions a{
+    font-size:11px;
+  }
+  .shiva-nav-row{
+    min-height:54px !important;
+    gap:10px;
+  }
+  .shiva-logo img{
+    width:145px !important;
+  }
+}
+
+/* Very small phones */
+@media(max-width:380px){
+  .shiva-nav-row{
+    min-height:52px !important;
+  }
+  .shiva-logo img{
+    width:135px !important;
+  }
+}
