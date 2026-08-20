@@ -158,7 +158,6 @@
                                 <p>
                                     High-accuracy punch dies crafted for consistent performance, sharp detailing, and long tool life. Engineered for demanding printing and packaging applications
                                 </p>
-                                <a href="product-details.php"> More</a>
                             </div>
                         </div>
 
@@ -185,7 +184,6 @@
                                     By ensuring flawless alignment between die and substrate, we guarantee
                                     sharp, high-definition results that elevate the tactile quality of your packaging.
                                 </p>
-                                <a href="product-details.php"> More</a>
                             </div>
                         </div>
                         </div>
@@ -206,7 +204,6 @@
                                 <div class="content-overly-full">
                                     <h2>Stereo Flex</h2>
                                     <p>Our Embossing Make Ready process is engineered for absolute precision. By ensuring flawless alignment between die and substrate, we guarantee sharp, high-definition results that elevate the tactile quality of your packaging.</p>
-                                    <a href="product-details.php"> More</a>
                                 </div>
                             </div>
                         </div>
@@ -247,7 +244,6 @@
                                 <div class="content-overly-full">
                                     <h2>3D Emblem Block</h2>
                                     <p>Our Embossing Make Ready process is engineered for absolute precision. By ensuring flawless alignment between die and substrate, we guarantee sharp, high-definition results that elevate the tactile quality of your packaging.</p>
-                                    <a href="product-details.php"> More</a>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +264,6 @@
                                 <div class="content-overly-full">
                                     <h2>Foil Cum Emboss</h2>
                                     <p>Our Embossing Make Ready process is engineered for absolute precision. By ensuring flawless alignment between die and substrate, we guarantee sharp, high-definition results that elevate the tactile quality of your packaging.</p>
-                                    <a href="product-details.php"> More</a>
                                 </div>
                             </div>
                         </div>
