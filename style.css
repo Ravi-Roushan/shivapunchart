@@ -3038,3 +3038,136 @@ cursor:pointer;
 border-radius:8px;
 }
 
+
+/* Shivapunt Art — compact review card polish */
+.review-area .review-box,
+.review-section .review-box,
+.testimonial-box,
+.testimonial-card,
+.review-card,
+.reviews-box,
+.client-review,
+.single-review {
+  background: rgba(32, 82, 155, 0.86) !important;
+  border-radius: 16px !important;
+  padding: 18px 22px !important;
+  box-shadow: 0 8px 22px rgba(20, 45, 90, 0.12) !important;
+  max-width: 92% !important;
+}
+
+.review-area .review-box p,
+.review-section .review-box p,
+.testimonial-box p,
+.testimonial-card p,
+.review-card p,
+.reviews-box p,
+.client-review p,
+.single-review p {
+  line-height: 1.55 !important;
+}
+
+@media (max-width: 767px) {
+  .review-area .review-box,
+  .review-section .review-box,
+  .testimonial-box,
+  .testimonial-card,
+  .review-card,
+  .reviews-box,
+  .client-review,
+  .single-review {
+    border-radius: 13px !important;
+    padding: 14px 16px !important;
+    max-width: 100% !important;
+  }
+}
+
+
+/* Shivapunt Art — exact testimonial compact polish */
+.testimonial-area {
+  padding-bottom: 55px !important;
+}
+
+.testimonial-area-full {
+  background: #2458a6 !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  margin-top: -70px !important;
+  padding: 0 !important;
+  box-shadow: 0 10px 28px rgba(20, 55, 105, 0.14) !important;
+}
+
+.testimonial-area-full .testimonial-item {
+  padding: 24px 28px !important;
+}
+
+.testimonial-area-full .testimonial-item p {
+  line-height: 1.55 !important;
+}
+
+@media (max-width: 767px) {
+  .testimonial-area-full {
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    margin-top: -45px !important;
+    border-radius: 14px !important;
+  }
+
+  .testimonial-area-full .testimonial-item {
+    padding: 18px 18px !important;
+  }
+}
+
+
+/* Shivapunt Art — smaller testimonial text */
+.testimonial-area-full .testimonial-item {
+  padding: 16px 22px !important;
+}
+
+.testimonial-area-full .testimonial-item h2,
+.testimonial-area-full .testimonial-item h3,
+.testimonial-area-full .testimonial-item h4,
+.testimonial-area-full .testimonial-item h5 {
+  font-size: 18px !important;
+  line-height: 1.3 !important;
+  margin-bottom: 7px !important;
+}
+
+.testimonial-area-full .testimonial-item p {
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+  margin-bottom: 8px !important;
+}
+
+@media (max-width: 767px) {
+  .testimonial-area-full .testimonial-item {
+    padding: 13px 16px !important;
+  }
+
+  .testimonial-area-full .testimonial-item h2,
+  .testimonial-area-full .testimonial-item h3,
+  .testimonial-area-full .testimonial-item h4,
+  .testimonial-area-full .testimonial-item h5 {
+    font-size: 16px !important;
+  }
+
+  .testimonial-area-full .testimonial-item p {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* Shivapunt Art — reduce space below testimonial FINAL */
+.testimonial-area {
+  padding-bottom: 15px !important;
+  margin-bottom: 0 !important;
+}
+
+.testimonial-area-full {
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 767px) {
+  .testimonial-area {
+    padding-bottom: 8px !important;
+  }
+}
