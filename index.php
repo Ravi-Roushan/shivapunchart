@@ -2,14 +2,14 @@
        <?php include "common/header.php" ?>
        
        <!-- Start Hero Banner Area -->
-        <section class="hero-banner-area" style="background-image: url('assets/img/banner.png');">
+        <section class="hero-banner-area shiva-auto-hero shiva-hero-compact" style="background-image: url('assets/img/banner.png');">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 align-self-center">
                         <div class="hero-banner-content">
                             <h4>Engineered for Excellence</h4>
                             <h2>Precision Tools For Modern Packaging</h2>
-                            <a class="button-1" href="about.html">Know More</a>
+                            <a class="button-1 shiva-know-more" href="about.html">Know More</a>
                         </div>
                     </div>
 
@@ -227,7 +227,6 @@
                                 <div class="content-overly-full">
                                     <h2>Stripping Tool</h2>
                                     <p>Our Embossing Make Ready process is engineered for absolute precision. By ensuring flawless alignment between die and substrate, we guarantee sharp, high-definition results that elevate the tactile quality of your packaging.</p>
-                                    <a href="product-details.php"> More</a>
                                 </div>
                             </div>
                         </div>
@@ -741,4 +740,75 @@
         </div> -->
         <!-- End Subscriber Area -->
        <?php include "common/footer.php" ?>
- 
+
+<script>
+(function () {
+  const hero = document.querySelector('.shiva-auto-hero');
+  if (!hero) return;
+
+  // 3-slide loop: existing first image -> second -> uploaded third -> existing first...
+  const slides = [
+    'assets/img/banner.png',
+    'assets/img/hero-slide-2.png',
+    'assets/img/hero-slide-3-user.png'
+  ];
+
+  slides.forEach(function (src) {
+    const img = new Image();
+    img.src = src;
+  });
+
+  let current = 0;
+  let timer = null;
+  let startX = 0;
+  let startY = 0;
+
+  function showSlide(index, direction) {
+    current = (index + slides.length) % slides.length;
+    hero.style.backgroundImage = 'url("' + slides[current] + '")';
+    hero.classList.remove(
+      'shiva-slide-next', 'shiva-slide-prev',
+      'shiva-slide-0', 'shiva-slide-1', 'shiva-slide-2'
+    );
+    void hero.offsetWidth;
+    hero.classList.add(
+      current === 0 ? 'shiva-slide-0' : (current === 1 ? 'shiva-slide-1' : 'shiva-slide-2'),
+      direction === 'prev' ? 'shiva-slide-prev' : 'shiva-slide-next'
+    );
+  }
+
+  function startAutoSlide() {
+    window.clearInterval(timer);
+    timer = window.setInterval(function () {
+      showSlide(current + 1, 'next');
+    }, 3500);
+  }
+
+  function swipeTo(direction) {
+    showSlide(current + direction, direction > 0 ? 'next' : 'prev');
+    startAutoSlide();
+  }
+
+  // Mark the initial slide so mobile crop rules apply immediately.
+  hero.classList.add('shiva-slide-0');
+
+  // Desktop + mobile swipe support.
+  hero.addEventListener('pointerdown', function (e) {
+    startX = e.clientX;
+    startY = e.clientY;
+  }, {passive:true});
+
+  hero.addEventListener('pointerup', function (e) {
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) {
+      swipeTo(dx < 0 ? 1 : -1);
+    }
+  }, {passive:true});
+
+  // Prevent accidental drag/selection on touch while swiping.
+  hero.style.touchAction = 'pan-y';
+
+  startAutoSlide();
+})();
+</script>

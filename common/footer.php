@@ -9,7 +9,7 @@
       <section class="shiva-footer-card"><h3>Quick Links</h3><ul class="shiva-footer-links"><li><a href="about.html">About Us</a></li><li><a href="our-product.html">Our Products</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact Us</a></li></ul></section>
       <section class="shiva-footer-card"><h3>Our Products <span>19 services</span></h3><div class="shiva-product-scroll"><a href="our-product.html"><span>01</span>3D Emboss</a><a href="our-product.html"><span>02</span>Laser Dies</a><a href="our-product.html"><span>03</span>Pre Rubber Dies</a><a href="our-product.html"><span>04</span>Punch + Emboss Online</a><a href="our-product.html"><span>05</span>Label Dies</a><a href="our-product.html"><span>06</span>Sandwich Dies</a><a href="our-product.html"><span>07</span>Stripping Die Male Female</a><a href="our-product.html"><span>08</span>Blanking Die Male Female</a><a href="our-product.html"><span>09</span>Creasing Pertinex</a><a href="our-product.html"><span>10</span>Creasing Counter Plate</a><a href="our-product.html"><span>11</span>Elecro Etg Foil Block</a><a href="our-product.html"><span>12</span>Mag Etg Foil Block</a><a href="our-product.html"><span>13</span>Texter Foil Block</a><a href="our-product.html"><span>14</span>CNC Foil Block</a><a href="our-product.html"><span>15</span>Foil + Emboss One Shot</a><a href="our-product.html"><span>16</span>Emboss Dies</a><a href="our-product.html"><span>17</span>Micro Effect Dies</a><a href="our-product.html"><span>18</span>Step Emboss</a><a href="our-product.html"><span>19</span>Braille Emboss</a></div></section>
       <section class="shiva-footer-card"><h3>Address</h3><div class="shiva-address-tabs">
-        <details open><summary><span><i class="fas fa-location-dot"></i> Office Address</span><i class="fas fa-chevron-down"></i></summary><div class="shiva-details-content">S NO 223 CTS-2675 HISSA-687, Kharodi Marve Road, Malwani, Malad West, Nr Chheda Complex, Mumbai 400095</div></details>
+        <details open><summary><span><i class="fas fa-location-dot"></i> Office Address</span><i class="fas fa-chevron-down"></i></summary><div class="shiva-details-content"><a href="https://www.google.com/maps/search/?api=1&query=S+NO+223+CTS-2675+HISSA-687%2C+Kharodi+Marve+Road%2C+Malwani%2C+Malad+West%2C+Nr+Chheda+Complex%2C+Mumbai+400095" target="_blank" rel="noopener">S NO 223 CTS-2675 HISSA-687, Kharodi Marve Road, Malwani, Malad West, Nr Chheda Complex, Mumbai 400095</a></div></details>
         <details><summary><span><i class="fas fa-industry"></i> Factory Address</span><i class="fas fa-chevron-down"></i></summary><div class="shiva-details-content">Gala No: C-2, Shree Ganesh Ind Estate, Behind Sagar Hotel, Chinchoti, Devdal, Kaman, Vasai (East) – 401208.</div></details>
       </div><div class="shiva-footer-contact"><a href="tel:+918433538141">+91 84335 38141</a><a href="tel:+917208930779">+91 72089 30779</a></div></section>
     </div>
@@ -28,4 +28,16 @@
   </div>
 </div>
 <script src="assets/js/modernizr.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script><script src="assets/js/popper.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/owl.carousel.min.js"></script><script src="assets/js/jquery.waypoints.min.js"></script><script src="assets/js/jquery.counterup.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/mixitup.min.js"></script><script src="assets/js/wow.min.js"></script><script src="assets/js/script.js"></script><script src="assets/js/mobile-menu.js"></script><script src="assets/js/shiva-chatbot.js"></script>
+<script>
+(function(){
+  var btn = document.querySelector('.canvas_open');
+  if(!btn) return;
+  function openBtn(){ btn.classList.add('is-open'); }
+  function closeBtn(){ btn.classList.remove('is-open'); }
+  btn.addEventListener('click', openBtn);
+  document.querySelectorAll('.canvas_close, .off_canvars_overlay').forEach(function(el){
+    el.addEventListener('click', closeBtn);
+  });
+})();
+</script>
 </body></html>
