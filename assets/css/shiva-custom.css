@@ -530,3 +530,1188 @@
     font-size: 9.5px !important;
   }
 }
+
+/* =========================================================
+   HERO — EXISTING DESIGN, COMPACT + RESPONSIVE AUTO SLIDE
+   ========================================================= */
+.shiva-hero-compact{
+  position:relative!important;
+  overflow:hidden!important;
+  height:clamp(470px,39vw,590px)!important;
+  min-height:0!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  transition:background-image .45s ease-in-out!important;
+}
+@media(max-width:991px){
+  .shiva-hero-compact{height:430px!important}
+}
+@media(max-width:767px){
+  .shiva-hero-compact{
+    height:350px!important;
+    background-position:center center!important;
+  }
+  .shiva-hero-compact .hero-banner-content h4{
+    font-size:13px!important;
+    margin-bottom:6px!important;
+  }
+  .shiva-hero-compact .hero-banner-content h2{
+    font-size:26px!important;
+    line-height:1.12!important;
+    margin-bottom:12px!important;
+  }
+  .shiva-hero-compact .hero-banner-content .button-1{
+    padding:8px 16px!important;
+    min-height:34px!important;
+    border-radius:999px!important;
+    font-size:11px!important;
+  }
+}
+@media(max-width:480px){
+  .shiva-hero-compact{
+    height:315px!important;
+  }
+  .shiva-hero-compact .hero-banner-content h4{font-size:11px!important}
+  .shiva-hero-compact .hero-banner-content h2{font-size:22px!important}
+}
+
+/* =========================================================
+   HERO — SAME FRAME / COMPACT / PREMIUM RESPONSIVE
+   ========================================================= */
+.shiva-hero-compact{
+  position:relative!important;
+  overflow:hidden!important;
+  width:100%!important;
+  height:clamp(470px,38vw,575px)!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  transition:background-image .55s ease-in-out!important;
+}
+
+/* Consistent readable text block */
+.shiva-hero-compact .hero-banner-content{
+  max-width:500px!important;
+  padding:0!important;
+}
+.shiva-hero-compact .hero-banner-content h4{
+  font-size:clamp(13px,1.25vw,17px)!important;
+  line-height:1.25!important;
+  margin:0 0 9px!important;
+  font-weight:700!important;
+}
+.shiva-hero-compact .hero-banner-content h2{
+  font-size:clamp(32px,3.15vw,50px)!important;
+  line-height:1.08!important;
+  margin:0 0 18px!important;
+  max-width:480px!important;
+  font-weight:800!important;
+}
+.shiva-hero-compact .hero-banner-content p{
+  font-size:clamp(12px,1vw,15px)!important;
+  line-height:1.55!important;
+  max-width:450px!important;
+  margin:0 0 20px!important;
+}
+.shiva-hero-compact .hero-banner-content .button-1,
+.shiva-hero-compact .hero-banner-content .button-2{
+  border-radius:999px!important;
+  padding:9px 20px!important;
+  min-height:38px!important;
+  font-size:12px!important;
+}
+
+/* Tablet */
+@media(max-width:991px){
+  .shiva-hero-compact{
+    height:420px!important;
+  }
+  .shiva-hero-compact .hero-banner-content{
+    max-width:440px!important;
+  }
+  .shiva-hero-compact .hero-banner-content h2{
+    font-size:34px!important;
+    max-width:410px!important;
+  }
+}
+
+/* Mobile: fixed frame, same height for every image */
+@media(max-width:767px){
+  .shiva-hero-compact{
+    height:340px!important;
+    background-size:cover!important;
+    background-position:center center!important;
+  }
+  .shiva-hero-compact .hero-banner-content{
+    max-width:calc(100% - 36px)!important;
+  }
+  .shiva-hero-compact .hero-banner-content h4{
+    font-size:11px!important;
+    margin-bottom:5px!important;
+  }
+  .shiva-hero-compact .hero-banner-content h2{
+    font-size:24px!important;
+    line-height:1.12!important;
+    max-width:330px!important;
+    margin-bottom:11px!important;
+  }
+  .shiva-hero-compact .hero-banner-content p{
+    font-size:11px!important;
+    line-height:1.45!important;
+    max-width:330px!important;
+    margin-bottom:12px!important;
+  }
+  .shiva-hero-compact .hero-banner-content .button-1,
+  .shiva-hero-compact .hero-banner-content .button-2{
+    padding:7px 16px!important;
+    min-height:33px!important;
+    font-size:11px!important;
+  }
+}
+
+@media(max-width:480px){
+  .shiva-hero-compact{
+    height:310px!important;
+  }
+  .shiva-hero-compact .hero-banner-content h2{
+    font-size:21px!important;
+    max-width:290px!important;
+  }
+}
+
+/* =========================================================
+   SHIVA HERO — CENTERED / COMPACT / RESPONSIVE
+   Existing hero image + 3-image auto-slide preserved.
+   ========================================================= */
+.shiva-hero-compact{
+  position:relative!important;
+  overflow:hidden!important;
+  width:100%!important;
+  height:clamp(455px,37vw,560px)!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  transition:background-image .6s ease-in-out!important;
+}
+
+/* subtle readability layer; does not alter the hero layout */
+.shiva-hero-compact::before{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+  pointer-events:none!important;
+  background:linear-gradient(
+    90deg,
+    rgba(8,12,24,.42) 0%,
+    rgba(8,12,24,.16) 50%,
+    rgba(8,12,24,.28) 100%
+  )!important;
+}
+
+/* Center the existing content instead of left-aligning it */
+.shiva-hero-compact .container{
+  position:relative!important;
+  z-index:2!important;
+  height:100%!important;
+}
+.shiva-hero-compact .row{
+  height:100%!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  margin:0!important;
+}
+.shiva-hero-compact .row > [class*="col-"]{
+  flex:0 0 100%!important;
+  max-width:100%!important;
+  width:100%!important;
+  display:flex!important;
+  justify-content:center!important;
+  align-items:center!important;
+  padding-left:15px!important;
+  padding-right:15px!important;
+}
+.shiva-hero-compact .hero-banner-content{
+  width:min(720px,90%)!important;
+  max-width:720px!important;
+  padding:0!important;
+  margin:0 auto!important;
+  text-align:center!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+
+/* Small eyebrow */
+.shiva-hero-compact .hero-banner-content h4{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:max-content!important;
+  max-width:100%!important;
+  margin:0 0 13px!important;
+  padding:6px 14px!important;
+  border:1px solid rgba(255,255,255,.30)!important;
+  border-radius:999px!important;
+  background:rgba(8,12,24,.36)!important;
+  backdrop-filter:blur(7px)!important;
+  color:#fff!important;
+  font-size:clamp(12px,1.05vw,15px)!important;
+  line-height:1.2!important;
+  letter-spacing:.7px!important;
+  text-transform:uppercase!important;
+  font-weight:800!important;
+  text-shadow:0 2px 8px rgba(0,0,0,.35)!important;
+}
+
+/* Main headline */
+.shiva-hero-compact .hero-banner-content h2{
+  width:100%!important;
+  max-width:720px!important;
+  margin:0 0 22px!important;
+  padding:0!important;
+  color:#fff!important;
+  font-size:clamp(34px,4vw,56px)!important;
+  line-height:1.08!important;
+  letter-spacing:-.8px!important;
+  font-weight:800!important;
+  text-align:center!important;
+  text-wrap:balance!important;
+  text-shadow:0 4px 18px rgba(0,0,0,.48)!important;
+}
+
+/* Compact premium CTA */
+.shiva-hero-compact .hero-banner-content .button-1{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:auto!important;
+  min-width:132px!important;
+  min-height:42px!important;
+  margin:0!important;
+  padding:10px 23px!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+  border-radius:999px!important;
+  background:#2112c7!important;
+  color:#fff!important;
+  font-size:13px!important;
+  line-height:1!important;
+  font-weight:800!important;
+  box-shadow:0 9px 24px rgba(22,12,130,.30)!important;
+  transition:transform .2s ease,box-shadow .2s ease,background .2s ease!important;
+}
+.shiva-hero-compact .hero-banner-content .button-1:hover{
+  background:#2e20e5!important;
+  color:#fff!important;
+  transform:translateY(-2px)!important;
+  box-shadow:0 12px 28px rgba(22,12,130,.40)!important;
+}
+
+/* Tablet */
+@media(max-width:991px){
+  .shiva-hero-compact{height:410px!important}
+  .shiva-hero-compact .hero-banner-content{width:min(650px,90%)!important}
+  .shiva-hero-compact .hero-banner-content h2{
+    font-size:38px!important;
+    max-width:620px!important;
+  }
+}
+
+/* Mobile */
+@media(max-width:767px){
+  .shiva-hero-compact{
+    height:335px!important;
+    background-position:center center!important;
+  }
+  .shiva-hero-compact .row > [class*="col-"]{
+    padding-left:12px!important;
+    padding-right:12px!important;
+  }
+  .shiva-hero-compact .hero-banner-content{
+    width:calc(100% - 16px)!important;
+    max-width:520px!important;
+  }
+  .shiva-hero-compact .hero-banner-content h4{
+    margin-bottom:9px!important;
+    padding:5px 10px!important;
+    font-size:10px!important;
+    letter-spacing:.45px!important;
+  }
+  .shiva-hero-compact .hero-banner-content h2{
+    max-width:500px!important;
+    margin-bottom:15px!important;
+    font-size:25px!important;
+    line-height:1.1!important;
+    letter-spacing:-.3px!important;
+  }
+  .shiva-hero-compact .hero-banner-content .button-1{
+    min-width:112px!important;
+    min-height:36px!important;
+    padding:8px 18px!important;
+    font-size:11px!important;
+  }
+}
+
+/* Small phones */
+@media(max-width:420px){
+  .shiva-hero-compact{height:305px!important}
+  .shiva-hero-compact .hero-banner-content h4{
+    font-size:9px!important;
+    margin-bottom:7px!important;
+  }
+  .shiva-hero-compact .hero-banner-content h2{
+    font-size:21px!important;
+    margin-bottom:12px!important;
+  }
+  .shiva-hero-compact .hero-banner-content .button-1{
+    min-width:104px!important;
+    min-height:34px!important;
+    padding:7px 16px!important;
+    font-size:10px!important;
+  }
+}
+
+/* Hero heading: keep the complete title together */
+.shiva-hero-compact .hero-banner-content h2,
+.shiva-hero-center .hero-banner-content h2{
+  white-space:nowrap!important;
+  word-break:normal!important;
+  overflow:visible!important;
+  width:max-content!important;
+  max-width:none!important;
+  text-align:center!important;
+  font-size:clamp(30px,3vw,48px)!important;
+  line-height:1.08!important;
+}
+@media(max-width:767px){
+  .shiva-hero-compact .hero-banner-content h2,
+  .shiva-hero-center .hero-banner-content h2{
+    font-size:clamp(18px,5.6vw,27px)!important;
+    white-space:nowrap!important;
+    width:auto!important;
+    max-width:100%!important;
+  }
+}
+@media(max-width:390px){
+  .shiva-hero-compact .hero-banner-content h2,
+  .shiva-hero-center .hero-banner-content h2{
+    font-size:18px!important;
+    letter-spacing:-.3px!important;
+  }
+}
+
+/* Hero CTA — prevent white/blank hover state */
+.shiva-hero-compact .hero-banner-content a.button-1,
+.shiva-hero-compact .hero-banner-content a.button-2,
+.shiva-hero-center .hero-banner-content a.button-1,
+.shiva-hero-center .hero-banner-content a.button-2{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  background:#2112c8!important;
+  color:#fff!important;
+  border:1px solid #2112c8!important;
+  border-radius:999px!important;
+  text-decoration:none!important;
+  opacity:1!important;
+  visibility:visible!important;
+  transition:transform .2s ease,background-color .2s ease,color .2s ease,box-shadow .2s ease!important;
+  position:relative!important;
+  z-index:20!important;
+}
+.shiva-hero-compact .hero-banner-content a.button-1:hover,
+.shiva-hero-compact .hero-banner-content a.button-1:focus,
+.shiva-hero-compact .hero-banner-content a.button-1:active,
+.shiva-hero-compact .hero-banner-content a.button-2:hover,
+.shiva-hero-compact .hero-banner-content a.button-2:focus,
+.shiva-hero-compact .hero-banner-content a.button-2:active,
+.shiva-hero-center .hero-banner-content a.button-1:hover,
+.shiva-hero-center .hero-banner-content a.button-1:focus,
+.shiva-hero-center .hero-banner-content a.button-1:active,
+.shiva-hero-center .hero-banner-content a.button-2:hover,
+.shiva-hero-center .hero-banner-content a.button-2:focus,
+.shiva-hero-center .hero-banner-content a.button-2:active{
+  background:#2d1ee0!important;
+  color:#fff!important;
+  border-color:#2d1ee0!important;
+  opacity:1!important;
+  visibility:visible!important;
+  box-shadow:0 8px 20px rgba(33,18,200,.28)!important;
+  transform:translateY(-2px)!important;
+}
+.shiva-hero-compact .hero-banner-content a.button-1 *,
+.shiva-hero-compact .hero-banner-content a.button-2 *,
+.shiva-hero-center .hero-banner-content a.button-1 *,
+.shiva-hero-center .hero-banner-content a.button-2 *{
+  color:#fff!important;
+}
+
+/* =========================================================
+   KNOW MORE — FINAL FIX
+   ========================================================= */
+.shiva-hero-compact .hero-banner-content a.shiva-know-more{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:auto!important;
+  min-width:132px!important;
+  height:auto!important;
+  min-height:42px!important;
+  padding:10px 23px!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+  background:#2112c7!important;
+  background-color:#2112c7!important;
+  color:#ffffff!important;
+  border:1px solid #2112c7!important;
+  border-radius:999px!important;
+  opacity:1!important;
+  visibility:visible!important;
+  text-decoration:none!important;
+  text-indent:0!important;
+  font-size:13px!important;
+  font-weight:800!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+  box-shadow:0 9px 24px rgba(22,12,130,.30)!important;
+  overflow:visible!important;
+  position:relative!important;
+  z-index:50!important;
+}
+.shiva-hero-compact .hero-banner-content a.shiva-know-more::before,
+.shiva-hero-compact .hero-banner-content a.shiva-know-more::after{
+  content:none!important;
+  display:none!important;
+}
+.shiva-hero-compact .hero-banner-content a.shiva-know-more:hover,
+.shiva-hero-compact .hero-banner-content a.shiva-know-more:focus,
+.shiva-hero-compact .hero-banner-content a.shiva-know-more:active,
+.shiva-hero-compact .hero-banner-content a.shiva-know-more:visited{
+  background:#2e20e5!important;
+  background-color:#2e20e5!important;
+  color:#ffffff!important;
+  border-color:#2e20e5!important;
+  opacity:1!important;
+  visibility:visible!important;
+  text-decoration:none!important;
+  box-shadow:0 12px 28px rgba(22,12,130,.40)!important;
+  transform:translateY(-2px)!important;
+}
+@media(max-width:767px){
+  .shiva-hero-compact .hero-banner-content a.shiva-know-more{
+    min-width:112px!important;
+    min-height:36px!important;
+    padding:8px 18px!important;
+    font-size:11px!important;
+  }
+}
+@media(max-width:420px){
+  .shiva-hero-compact .hero-banner-content a.shiva-know-more{
+    min-width:104px!important;
+    min-height:34px!important;
+    padding:7px 16px!important;
+    font-size:10px!important;
+  }
+}
+
+/* =========================================================
+   FINAL HERO FRAME — FIXED HEIGHT / MORE COMPACT
+   Every slide uses the exact same container dimensions.
+   ========================================================= */
+section.shiva-hero-compact,
+.shiva-hero-compact{
+  height:500px!important;
+  min-height:500px!important;
+  max-height:500px!important;
+  width:100%!important;
+  overflow:hidden!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  padding:0!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+}
+
+/* Keep content centered and compact */
+.shiva-hero-compact .hero-banner-content{
+  position:absolute!important;
+  left:50%!important;
+  top:50%!important;
+  transform:translate(-50%,-50%)!important;
+  width:min(92%,720px)!important;
+  max-width:720px!important;
+  text-align:center!important;
+  margin:0!important;
+  padding:0!important;
+}
+.shiva-hero-compact .hero-banner-content h4{
+  margin:0 0 8px!important;
+  font-size:15px!important;
+  line-height:1.2!important;
+}
+.shiva-hero-compact .hero-banner-content h2{
+  margin:0 auto 16px!important;
+  font-size:clamp(30px,3vw,44px)!important;
+  line-height:1.08!important;
+  white-space:nowrap!important;
+  width:max-content!important;
+  max-width:100%!important;
+}
+.shiva-hero-compact .hero-banner-content p{
+  margin:0 auto 16px!important;
+  font-size:13px!important;
+  line-height:1.45!important;
+}
+.shiva-hero-compact .hero-banner-content a.shiva-know-more{
+  min-width:128px!important;
+  min-height:40px!important;
+  padding:9px 21px!important;
+  font-size:12px!important;
+}
+
+/* Tablet */
+@media(max-width:991px){
+  section.shiva-hero-compact,
+  .shiva-hero-compact{
+    height:410px!important;
+    min-height:410px!important;
+    max-height:410px!important;
+  }
+}
+
+/* Mobile — fixed height, no vertical jump between slides */
+@media(max-width:767px){
+  section.shiva-hero-compact,
+  .shiva-hero-compact{
+    height:300px!important;
+    min-height:300px!important;
+    max-height:300px!important;
+  }
+  .shiva-hero-compact .hero-banner-content{
+    width:calc(100% - 28px)!important;
+  }
+  .shiva-hero-compact .hero-banner-content h4{
+    font-size:10px!important;
+    margin-bottom:5px!important;
+  }
+  .shiva-hero-compact .hero-banner-content h2{
+    font-size:clamp(18px,5.7vw,25px)!important;
+    line-height:1.08!important;
+    margin-bottom:10px!important;
+  }
+  .shiva-hero-compact .hero-banner-content p{
+    font-size:10px!important;
+    line-height:1.35!important;
+    margin-bottom:10px!important;
+  }
+  .shiva-hero-compact .hero-banner-content a.shiva-know-more{
+    min-width:108px!important;
+    min-height:34px!important;
+    padding:7px 16px!important;
+    font-size:10px!important;
+  }
+}
+
+@media(max-width:420px){
+  section.shiva-hero-compact,
+  .shiva-hero-compact{
+    height:280px!important;
+    min-height:280px!important;
+    max-height:280px!important;
+  }
+}
+
+/* FINAL HERO: fixed compact frame for every auto-slide image */
+.shiva-hero-compact{
+  height:460px!important;
+  min-height:460px!important;
+  max-height:460px!important;
+  overflow:hidden!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+}
+.shiva-hero-compact .hero-banner-content{
+  top:50%!important;
+  left:50%!important;
+  transform:translate(-50%,-50%)!important;
+}
+@media(max-width:991px){
+  .shiva-hero-compact{
+    height:390px!important;
+    min-height:390px!important;
+    max-height:390px!important;
+  }
+}
+@media(max-width:767px){
+  .shiva-hero-compact{
+    height:280px!important;
+    min-height:280px!important;
+    max-height:280px!important;
+  }
+}
+@media(max-width:420px){
+  .shiva-hero-compact{
+    height:260px!important;
+    min-height:260px!important;
+    max-height:260px!important;
+  }
+}
+
+/* =========================================================
+   FINAL SHIVA HERO FIX
+   Fixed frame + compact size + clean Know More CTA
+   ========================================================= */
+
+/* Same exact hero frame for every slide */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+  height:450px!important;
+  min-height:450px!important;
+  max-height:450px!important;
+  overflow:hidden!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+}
+
+/* Center content without changing the hero frame */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content{
+  width:100%!important;
+  max-width:760px!important;
+  margin:0 auto!important;
+  padding:0 20px!important;
+  text-align:center!important;
+  position:absolute!important;
+  left:50%!important;
+  top:50%!important;
+  transform:translate(-50%,-50%)!important;
+}
+
+/* Keep the title together */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h4{
+  display:inline-block!important;
+  margin:0 0 10px!important;
+  font-size:14px!important;
+  line-height:1.2!important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+  margin:0 auto 17px!important;
+  font-size:clamp(30px,3.1vw,45px)!important;
+  line-height:1.08!important;
+  white-space:nowrap!important;
+  width:max-content!important;
+  max-width:100%!important;
+  text-align:center!important;
+}
+
+/* KNOW MORE: completely neutralize original .button-1::after */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  position:relative!important;
+  z-index:100!important;
+  width:auto!important;
+  min-width:128px!important;
+  height:40px!important;
+  min-height:40px!important;
+  padding:0 22px!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+  border:1px solid #2112c7!important;
+  border-radius:999px!important;
+  background:#2112c7!important;
+  background-color:#2112c7!important;
+  color:#fff!important;
+  font-size:12px!important;
+  font-weight:800!important;
+  line-height:40px!important;
+  text-align:center!important;
+  text-decoration:none!important;
+  overflow:hidden!important;
+  opacity:1!important;
+  visibility:visible!important;
+  transform:none!important;
+  box-shadow:0 8px 22px rgba(33,18,199,.28)!important;
+  transition:background-color .2s ease,box-shadow .2s ease,transform .2s ease!important;
+}
+
+/* This is the important fix: the theme's white ::after is disabled. */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more::after,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more::before{
+  content:none!important;
+  display:none!important;
+  width:0!important;
+  height:0!important;
+  background:transparent!important;
+  opacity:0!important;
+  visibility:hidden!important;
+}
+
+/* Hover stays purple and text stays visible */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more:hover,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more:focus,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more:active{
+  background:#3324e6!important;
+  background-color:#3324e6!important;
+  border-color:#3324e6!important;
+  color:#fff!important;
+  box-shadow:0 10px 25px rgba(33,18,199,.38)!important;
+  transform:translateY(-2px)!important;
+  outline:none!important;
+}
+
+/* Mobile */
+@media(max-width:991px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:380px!important;
+    min-height:380px!important;
+    max-height:380px!important;
+  }
+}
+@media(max-width:767px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:270px!important;
+    min-height:270px!important;
+    max-height:270px!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content{
+    width:calc(100% - 20px)!important;
+    padding:0 8px!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h4{
+    font-size:9px!important;
+    margin-bottom:6px!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+    font-size:clamp(18px,5.6vw,25px)!important;
+    margin-bottom:11px!important;
+    white-space:nowrap!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more{
+    min-width:108px!important;
+    height:34px!important;
+    min-height:34px!important;
+    padding:0 17px!important;
+    font-size:10px!important;
+    line-height:34px!important;
+  }
+}
+@media(max-width:390px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:250px!important;
+    min-height:250px!important;
+    max-height:250px!important;
+  }
+}
+
+/* =========================================================
+   FINAL 3-SLIDE HERO / SWIPE / MOBILE TEXT FIX
+   ========================================================= */
+
+/* One fixed frame = no vertical jump when image changes */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+  height:440px!important;
+  min-height:440px!important;
+  max-height:440px!important;
+  overflow:hidden!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  touch-action:pan-y!important;
+  cursor:default!important;
+}
+
+/* Smooth image change */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-next,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-prev{
+  animation:shivaHeroFade .38s ease;
+}
+@keyframes shivaHeroFade{
+  from{opacity:.72}
+  to{opacity:1}
+}
+
+/* Center the content consistently on every slide */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content{
+  position:absolute!important;
+  top:50%!important;
+  left:50%!important;
+  transform:translate(-50%,-50%)!important;
+  width:min(900px,calc(100% - 40px))!important;
+  max-width:900px!important;
+  margin:0!important;
+  padding:0!important;
+  text-align:center!important;
+  z-index:20!important;
+}
+
+/* Desktop: title remains on one clean line */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h4{
+  margin:0 0 10px!important;
+  font-size:14px!important;
+  line-height:1.2!important;
+  white-space:normal!important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+  margin:0 auto 16px!important;
+  font-size:clamp(30px,3.15vw,45px)!important;
+  line-height:1.08!important;
+  white-space:nowrap!important;
+  width:auto!important;
+  max-width:100%!important;
+  text-align:center!important;
+}
+
+/* Know More: compact pill + visible text + clear hover */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-width:128px!important;
+  width:auto!important;
+  height:40px!important;
+  min-height:40px!important;
+  padding:0 22px!important;
+  border:1px solid #2112c7!important;
+  border-radius:999px!important;
+  background:#2112c7!important;
+  color:#fff!important;
+  font-size:12px!important;
+  font-weight:800!important;
+  line-height:1!important;
+  text-decoration:none!important;
+  box-sizing:border-box!important;
+  position:relative!important;
+  z-index:30!important;
+  overflow:hidden!important;
+  opacity:1!important;
+  visibility:visible!important;
+  transition:background-color .2s ease,border-color .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease!important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more::before,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more::after{
+  content:none!important;
+  display:none!important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more:hover{
+  background:#ff2f3f!important;
+  background-color:#ff2f3f!important;
+  border-color:#ff2f3f!important;
+  color:#fff!important;
+  transform:translateY(-2px)!important;
+  box-shadow:0 9px 22px rgba(255,47,63,.30)!important;
+}
+
+/* Tablet */
+@media(max-width:991px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:360px!important;
+    min-height:360px!important;
+    max-height:360px!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content{
+    width:calc(100% - 36px)!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+    font-size:clamp(26px,4.2vw,36px)!important;
+  }
+}
+
+/* Mobile: never cut text */
+@media(max-width:767px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:285px!important;
+    min-height:285px!important;
+    max-height:285px!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content{
+    width:calc(100% - 28px)!important;
+    max-width:none!important;
+    padding:0 6px!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h4{
+    font-size:9px!important;
+    line-height:1.25!important;
+    margin:0 0 6px!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+    /* Allow wrapping on mobile instead of clipping the title */
+    white-space:normal!important;
+    width:100%!important;
+    max-width:330px!important;
+    margin:0 auto 11px!important;
+    font-size:clamp(20px,6.2vw,28px)!important;
+    line-height:1.08!important;
+    text-align:center!important;
+    overflow-wrap:normal!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content p{
+    font-size:10px!important;
+    line-height:1.3!important;
+    margin:0 auto 10px!important;
+    max-width:310px!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more{
+    min-width:106px!important;
+    height:34px!important;
+    min-height:34px!important;
+    padding:0 16px!important;
+    font-size:10px!important;
+  }
+}
+
+/* Small phones */
+@media(max-width:420px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:260px!important;
+    min-height:260px!important;
+    max-height:260px!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content{
+    width:calc(100% - 20px)!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h4{
+    font-size:8px!important;
+    margin-bottom:5px!important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+    max-width:300px!important;
+    font-size:20px!important;
+    line-height:1.05!important;
+    margin-bottom:9px!important;
+  }
+}
+
+
+/* =========================================================
+   SHIVA HERO — FINAL USER REQUESTED FIX
+   3 fixed-size slides + uploaded image as slide 3
+   compact centered text + mobile safe sizing
+   ========================================================= */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+  height:440px !important;
+  min-height:440px !important;
+  max-height:440px !important;
+  overflow:hidden !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+  position:relative !important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content{
+  position:absolute !important;
+  left:50% !important;
+  top:50% !important;
+  transform:translate(-50%,-50%) !important;
+  width:min(900px,calc(100% - 40px)) !important;
+  max-width:900px !important;
+  margin:0 !important;
+  padding:0 !important;
+  text-align:center !important;
+  z-index:20 !important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h4{
+  margin:0 0 9px !important;
+  font-size:14px !important;
+  line-height:1.2 !important;
+  white-space:nowrap !important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+  margin:0 auto 15px !important;
+  font-size:clamp(30px,3.15vw,45px) !important;
+  line-height:1.08 !important;
+  white-space:nowrap !important;
+  width:auto !important;
+  max-width:100% !important;
+  text-align:center !important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-width:128px !important;
+  width:auto !important;
+  height:40px !important;
+  min-height:40px !important;
+  padding:0 22px !important;
+  margin:0 !important;
+  border:1px solid #2112c7 !important;
+  border-radius:999px !important;
+  background:#2112c7 !important;
+  color:#fff !important;
+  font-size:12px !important;
+  font-weight:800 !important;
+  line-height:1 !important;
+  text-decoration:none !important;
+  position:relative !important;
+  z-index:30 !important;
+  overflow:hidden !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  box-sizing:border-box !important;
+  transition:background-color .2s ease,border-color .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease !important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more::before,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more::after{
+  content:none !important;
+  display:none !important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more:hover,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more:focus{
+  background:#3324e6 !important;
+  border-color:#3324e6 !important;
+  color:#fff !important;
+  transform:translateY(-2px) !important;
+  box-shadow:0 9px 22px rgba(33,18,199,.35) !important;
+}
+@media (max-width:991px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:360px !important;
+    min-height:360px !important;
+    max-height:360px !important;
+  }
+}
+@media (max-width:767px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:270px !important;
+    min-height:270px !important;
+    max-height:270px !important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content{
+    width:calc(100% - 24px) !important;
+    max-width:340px !important;
+    padding:0 4px !important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h4{
+    font-size:9px !important;
+    margin:0 0 5px !important;
+    white-space:nowrap !important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+    font-size:clamp(18px,5.7vw,25px) !important;
+    line-height:1.08 !important;
+    white-space:normal !important;
+    width:100% !important;
+    max-width:320px !important;
+    margin:0 auto 10px !important;
+    text-align:center !important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more{
+    min-width:106px !important;
+    height:34px !important;
+    min-height:34px !important;
+    padding:0 16px !important;
+    font-size:10px !important;
+  }
+}
+@media (max-width:390px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:250px !important;
+    min-height:250px !important;
+    max-height:250px !important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content{
+    width:calc(100% - 18px) !important;
+    max-width:310px !important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+    font-size:19px !important;
+    max-width:295px !important;
+    margin-bottom:8px !important;
+  }
+}
+
+
+/* =========================================================
+   SHIVA HERO — 3-SLIDE LOOP + MOBILE IMAGE CROP
+   Existing first -> second -> uploaded third -> existing first
+   ========================================================= */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
+  background-position:center center !important;
+  overflow:hidden !important;
+}
+
+/* Keep each slide in the exact same hero frame. */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-0,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-1,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
+  background-size:cover !important;
+}
+
+/* The second image contains the Shiva Punch Art logo near the top.
+   On phones, show that upper portion instead of vertically centering/cropping it away. */
+@media (max-width:767px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:250px !important;
+    min-height:250px !important;
+    max-height:250px !important;
+    background-position:center center !important;
+  }
+
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-1{
+    background-position:center top !important;
+  }
+
+  /* Keep the other two slides visually balanced on mobile. */
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-0{
+    background-position:63% center !important;
+  }
+
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
+    background-position:center center !important;
+  }
+
+  /* Compact but complete overlay text on mobile. */
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content{
+    width:calc(100% - 28px) !important;
+    max-width:350px !important;
+    padding:0 4px !important;
+  }
+
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h4{
+    font-size:9px !important;
+    line-height:1.2 !important;
+    margin:0 0 5px !important;
+  }
+
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+    font-size:clamp(18px,5.7vw,24px) !important;
+    line-height:1.06 !important;
+    white-space:normal !important;
+    max-width:320px !important;
+    margin:0 auto 9px !important;
+  }
+
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more{
+    min-width:104px !important;
+    height:33px !important;
+    min-height:33px !important;
+    padding:0 15px !important;
+    font-size:10px !important;
+  }
+}
+
+@media (max-width:390px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
+    height:235px !important;
+    min-height:235px !important;
+    max-height:235px !important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content h2{
+    font-size:18px !important;
+    max-width:290px !important;
+  }
+}
