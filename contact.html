@@ -66,88 +66,52 @@
         </div>
         <!-- End Breadcrumb Area -->
         <!-- Start Contact Area -->
-        <section class="contact-area section-padding">
+        <section class="sp-contact-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 align-self-center">
-                        <div class="contact-form">
-                            <h2>Get In Touch</h2>
-                            <form id="contact-form" action="https://preetheme.com/php/codeit/mail.php" method="POST">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="single-input">
-                                            <input type="text" name="name" placeholder="Your Name" />
-                                            <i class="fas fa-user"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="single-input">
-                                            <input type="email" name="email" placeholder="Your Email" />
-                                            <i class="far fa-envelope"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="single-input">
-                                            <input type="text" name="phone" placeholder="Your Phone" />
-                                            <i class="fas fa-mobile-alt"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="single-input">
-                                            <input type="text" name="subject" placeholder="Your Subjects" />
-                                            <i class="fas fa-file-alt"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="single-input">
-                                            <textarea name="message" placeholder="Write Message"></textarea>
-                                            <i class="fas fa-pen"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="button-1">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                            <p class="ajax-response"></p>
-                        </div>
+                <div class="sp-contact-intro">
+                    <div>
+                        <span class="sp-contact-kicker"><i class="fas fa-paper-plane"></i> CONTACT US</span>
+                        <h2>Let’s Talk About Your <em>Next Project.</em></h2>
+                        <p>Tell us what you need and our team will get back to you with the right punch, die or embossing solution.</p>
                     </div>
-                    <div class="col-lg-4 align-self-center">
-                        <div class="contact-form-info" style="background-image: url('assets/img/aboutimg.png');">
-                            <h2>Don't hesitate to contact us</h2>
-                            <div class="contact-info-list">
-                                <div class="item mb-20">
-                                    <div class="icon">
-                                        <i class="fas fa-home"></i>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Head Office</h4>
-                                        <p>111, 1st Floor, Mahavir Ind.
-Estate, Near The Khwaishh Presidency, Kanchpada, Malad West, Mumbai-400064 India</p>
-                                    </div>
-                                </div>
-                                <div class="item mb-20">
-                                    <div class="icon">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Drop A Mail</h4>
-                                        <p>info@shivapunchart.com</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="icon">
-                                        <i class="fas fa-mobile-alt"></i>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Call Us</h4>
-                                        <p>+91 84335 38141</p>
-                                        <p>+91 72089 30779</p>
-                                    </div>
-                                </div>
+                    <div class="sp-contact-badge"><span>QUICK RESPONSE</span><strong>Precision. Support. Delivery.</strong></div>
+                </div>
+
+                <div class="sp-contact-layout">
+                    <div class="sp-contact-form-card">
+                        <div class="sp-contact-form-head">
+                            <div><span>01</span><h3>Send us a message</h3></div>
+                            <p>We usually respond within one business day.</p>
+                        </div>
+                        <form id="contact-form" action="https://preetheme.com/php/codeit/mail.php" method="POST">
+                            <div class="sp-contact-fields">
+                                <label class="sp-field"><span>Your Name</span><div><i class="fas fa-user"></i><input type="text" name="name" placeholder="Enter your name" required /></div></label>
+                                <label class="sp-field"><span>Email Address</span><div><i class="far fa-envelope"></i><input type="email" name="email" placeholder="Enter your email" required /></div></label>
+                                <label class="sp-field"><span>Phone Number</span><div><i class="fas fa-mobile-alt"></i><input type="text" name="phone" placeholder="Enter your phone" /></div></label>
+                                <label class="sp-field"><span>Subject</span><div><i class="fas fa-file-alt"></i><input type="text" name="subject" placeholder="How can we help?" /></div></label>
+                                <label class="sp-field sp-field-full"><span>Your Message</span><div class="sp-textarea-wrap"><i class="fas fa-pen"></i><textarea name="message" placeholder="Tell us about your requirement..." required></textarea></div></label>
                             </div>
-                        </div>
+                            <div class="sp-contact-form-bottom">
+                                <p><i class="fas fa-shield-alt"></i> Your enquiry is handled directly by our team.</p>
+                                <button type="submit" class="sp-contact-submit">Send Message <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                        <p class="ajax-response"></p>
                     </div>
+
+                    <aside class="sp-contact-info-card">
+                        <div class="sp-contact-info-top">
+                            <span class="sp-contact-kicker">DIRECT CONTACT</span>
+                            <h3>We’re here to<br><em>help.</em></h3>
+                            <p>Prefer a direct conversation? Reach our team through any of the options below.</p>
+                        </div>
+                        <div class="sp-contact-info-list">
+                            <a class="sp-contact-info-item" href="tel:+918433538141"><span class="sp-contact-info-icon"><i class="fas fa-phone"></i></span><span><small>CALL US</small><strong>+91 84335 38141</strong><b>+91 72089 30779</b></span><i class="fas fa-arrow-up-right-from-square sp-contact-item-arrow"></i></a>
+                            <a class="sp-contact-info-item" href="mailto:info@shivapunchart.com"><span class="sp-contact-info-icon"><i class="far fa-envelope"></i></span><span><small>EMAIL</small><strong>info@shivapunchart.com</strong></span><i class="fas fa-arrow-up-right-from-square sp-contact-item-arrow"></i></a>
+                            <a class="sp-contact-info-item" href="https://www.google.com/maps/search/?api=1&query=S+NO+223+CTS-2675+HISSA-687%2C+Kharodi+Marve+Road%2C+Malwani%2C+Malad+West%2C+Nr+Chheda+Complex%2C+Mumbai+400095" target="_blank" rel="noopener"><span class="sp-contact-info-icon"><i class="fas fa-location-dot"></i></span><span><small>OFFICE</small><strong>Malad West, Mumbai</strong><b>S NO 223 CTS-2675 HISSA-687, Kharodi Marve Road</b></span><i class="fas fa-arrow-up-right-from-square sp-contact-item-arrow"></i></a>
+                        </div>
+                        <div class="sp-contact-hours"><span><i class="far fa-clock"></i> MON–SAT</span><strong>09:00 AM – 08:00 PM</strong></div>
+                    </aside>
                 </div>
             </div>
         </section>
