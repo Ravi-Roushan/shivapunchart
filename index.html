@@ -67,6 +67,11 @@
 
                 </div>
             </div>
+            <div class="shiva-hero-dots" role="tablist" aria-label="Hero banner slides">
+                <button type="button" class="shiva-hero-dot active" data-slide="0" aria-label="Go to slide 1" aria-selected="true"></button>
+                <button type="button" class="shiva-hero-dot" data-slide="1" aria-label="Go to slide 2" aria-selected="false"></button>
+                <button type="button" class="shiva-hero-dot" data-slide="2" aria-label="Go to slide 3" aria-selected="false"></button>
+            </div>
         </section>
         <!-- End Hero Banner Area -->
         <!-- Start themetechmount Area -->
@@ -889,9 +894,20 @@
   let startX = 0;
   let startY = 0;
 
+  const dots = Array.prototype.slice.call(document.querySelectorAll('.shiva-hero-dot'));
+
+  function updateDots() {
+    dots.forEach(function (dot, i) {
+      const active = i === current;
+      dot.classList.toggle('active', active);
+      dot.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+  }
+
   function showSlide(index, direction) {
     current = (index + slides.length) % slides.length;
     hero.style.backgroundImage = 'url("' + slides[current] + '")';
+    updateDots();
     hero.classList.remove(
       'shiva-slide-next', 'shiva-slide-prev',
       'shiva-slide-0', 'shiva-slide-1', 'shiva-slide-2'
@@ -915,8 +931,18 @@
     startAutoSlide();
   }
 
+  dots.forEach(function (dot) {
+    dot.addEventListener('click', function () {
+      const target = parseInt(dot.getAttribute('data-slide'), 10);
+      if (Number.isNaN(target)) return;
+      showSlide(target, target >= current ? 'next' : 'prev');
+      startAutoSlide();
+    });
+  });
+
   // Mark the initial slide so mobile crop rules apply immediately.
   hero.classList.add('shiva-slide-0');
+  updateDots();
 
   // Desktop + mobile swipe support.
   hero.addEventListener('pointerdown', function (e) {
