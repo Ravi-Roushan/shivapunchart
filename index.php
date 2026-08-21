@@ -169,7 +169,7 @@
                         <div class="info-box-2">
                             <div class="content-top">
                             <div class="icon image-box">
-                                <img src="assets/img/2.png" alt="Embossing Make Ready">
+                                <img src="assets/img/home-original/rubbering.jpg" alt="Embossing Make Ready">
                             </div>
                                 <div class="con">
                                     <h2>Rubbering</h2>
@@ -213,7 +213,7 @@
                         <div class="info-box-2">
                             <div class="content-top">
                             <div class="icon image-box">
-                                <img src="assets/img/4.png" alt="Embossing Make Ready">
+                                <img src="assets/img/home-original/stripping-tool.jpg" alt="Embossing Make Ready">
                             </div>
                                 <div class="con">
                                     <h2>Stripping Tool</h2>
@@ -233,7 +233,7 @@
                         <div class="info-box-2">
                             <div class="content-top">
                             <div class="icon image-box">
-                                <img src="assets/img/5.png" alt="Embossing Make Ready">
+                                <img src="assets/img/home-original/3d-emblem-block.jpg" alt="Embossing Make Ready">
                             </div>
                                 <div class="con">
                                     <h2>3D Emblem Block</h2>
@@ -253,7 +253,7 @@
                         <div class="info-box-2">
                             <div class="content-top">
                             <div class="icon image-box">
-                                <img src="assets/img/6.png" alt="Embossing Make Ready">
+                                <img src="assets/img/home-original/foil-cum-emboss.jpg" alt="Embossing Make Ready">
                             </div>
                                 <div class="con">
                                     <h2>Foil Cum Emboss</h2>
