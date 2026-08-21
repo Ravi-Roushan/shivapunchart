@@ -1,0 +1,9 @@
+FINAL PRODUCT IMAGE UPDATE
+
+- Static Our Product page now uses the richer product image/carousel sets from our-product.php.
+- Removed the duplicate Steel Counter Plate card that repeated the same six images.
+- Corrected Exhibition navigation to exhibitions.html across desktop and mobile menus.
+- Added Exhibition to footer Quick Links.
+- Rebuilt About as a complete static page from about.php.
+- Added exhibitions.html as the working static Exhibition page.
+- Mobile menu JavaScript was rewritten so About, Exhibition and all normal links navigate correctly and the drawer closes after selection.

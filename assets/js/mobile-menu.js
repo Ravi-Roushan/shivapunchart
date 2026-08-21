@@ -1,38 +1,39 @@
-
 (function($){
-    'use script';
-/*---canvas menu activation---*/
-    $('.canvas_open').on('click', function(){
-        $('.offcanvas_menu_wrapper,.off_canvars_overlay').addClass('active')
+  'use strict';
+  $(function(){
+    var $wrapper = $('.offcanvas_menu_wrapper');
+    var $overlay = $('.off_canvars_overlay');
+    var $button = $('.canvas_open');
+
+    function openMenu(){
+      $wrapper.addClass('active');
+      $overlay.addClass('active');
+      $button.addClass('is-open');
+      $('body').addClass('mobile-menu-open');
+    }
+    function closeMenu(){
+      $wrapper.removeClass('active');
+      $overlay.removeClass('active');
+      $button.removeClass('is-open');
+      $('body').removeClass('mobile-menu-open');
+    }
+
+    $button.off('click.shivaMenu').on('click.shivaMenu', function(e){
+      e.preventDefault();
+      openMenu();
     });
-    
-    $('.canvas_close,.off_canvars_overlay').on('click', function(){
-        $('.offcanvas_menu_wrapper,.off_canvars_overlay').removeClass('active')
+    $('.canvas_close, .off_canvars_overlay').off('click.shivaMenu').on('click.shivaMenu', function(e){
+      e.preventDefault();
+      closeMenu();
     });
 
-
-	/*---Off Canvas Menu---*/
-    var $offcanvasNav = $('.offcanvas_main_menu'),
-        $offcanvasNavSubMenu = $offcanvasNav.find('.sub-menu');
-    $offcanvasNavSubMenu.parent().prepend('<span class="menu-expand"><i class="fa fa-angle-down"></i></span>');
-    
-    $offcanvasNavSubMenu.slideUp();
-    
-    $offcanvasNav.on('click', 'li a, li .menu-expand', function(e) {
-        var $this = $(this);
-        if ( ($this.parent().attr('class').match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/)) && ($this.attr('href') === '#' || $this.hasClass('menu-expand')) ) {
-            e.preventDefault();
-            if ($this.siblings('ul:visible').length){
-                $this.siblings('ul').slideUp('slow');
-            }else {
-                $this.closest('li').siblings('li').find('ul:visible').slideUp('slow');
-                $this.siblings('ul').slideDown('slow');
-            }
-        }
-        if( $this.is('a') || $this.is('span') || $this.attr('clas').match(/\b(menu-expand)\b/) ){
-        	$this.parent().toggleClass('menu-open');
-        }else if( $this.is('li') && $this.attr('class').match(/\b('menu-item-has-children')\b/) ){
-        	$this.toggleClass('menu-open');
-        }
+    // These are real page links. Do not prevent their default navigation.
+    $('.offcanvas_main_menu').off('click.shivaMenu', 'a').on('click.shivaMenu', 'a', function(){
+      closeMenu();
     });
-}(jQuery));
+
+    $(document).off('keydown.shivaMenu').on('keydown.shivaMenu', function(e){
+      if(e.key === 'Escape') closeMenu();
+    });
+  });
+})(jQuery);
