@@ -2196,7 +2196,8 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
 
 @media (max-width:767px){
   section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .shiva-hero-dots{
-    bottom:48px!important;
+    top:66%!important;
+    bottom:auto!important;
     gap:7px!important;
   }
   section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .shiva-hero-dot{
@@ -2208,5 +2209,96 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
     width:9px!important;
     height:9px!important;
     min-width:9px!important;
+  }
+}
+
+/* FINAL MOBILE HERO DOT POSITION — keep dots below Know More without overlap */
+@media (max-width:767px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .shiva-hero-dots{
+    position:absolute !important;
+    left:50% !important;
+    top:auto !important;
+    bottom:10px !important;
+    transform:translateX(-50%) !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:7px !important;
+    width:auto !important;
+    height:12px !important;
+    z-index:60 !important;
+    pointer-events:auto !important;
+  }
+
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .shiva-hero-dot{
+    position:relative !important;
+    width:8px !important;
+    height:8px !important;
+    min-width:8px !important;
+    min-height:8px !important;
+    flex:0 0 8px !important;
+  }
+
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .shiva-hero-dot.active{
+    width:9px !important;
+    height:9px !important;
+    min-width:9px !important;
+    min-height:9px !important;
+    flex-basis:9px !important;
+  }
+}
+
+@media (max-width:390px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .shiva-hero-dots{
+    bottom:8px !important;
+  }
+}
+
+/* FINAL: mobile hero dots — visible, below Know More, never clipped/overlapped */
+@media (max-width: 767px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .shiva-hero-dots{
+    position:absolute !important;
+    left:50% !important;
+    top:auto !important;
+    bottom:18px !important;
+    transform:translateX(-50%) !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:7px !important;
+    width:max-content !important;
+    height:12px !important;
+    margin:0 !important;
+    padding:2px 5px !important;
+    z-index:999 !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    pointer-events:auto !important;
+  }
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .shiva-hero-dot,
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .shiva-hero-dot.active{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    position:relative !important;
+    flex:0 0 auto !important;
+    margin:0 !important;
+  }
+}
+@media (max-width:390px){
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .shiva-hero-dots{
+    bottom:16px !important;
+  }
+}
+
+/* FINAL MOBILE FIX: move the three-card background box slightly below the hero dots */
+@media (max-width:767px){
+  .themetechmount-area-full{
+    margin-top:20px !important;
+  }
+}
+@media (max-width:390px){
+  .themetechmount-area-full{
+    margin-top:18px !important;
   }
 }
