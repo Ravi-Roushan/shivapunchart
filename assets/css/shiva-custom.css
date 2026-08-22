@@ -1778,7 +1778,7 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
   box-shadow:0 12px 26px rgba(23,35,61,.11) !important;
 }
 .themetechmount-item .icon{
-  background:var(--sp-navy) !important;
+  background:var(--shiva-brand-blue,#2818d0) !important;
   color:#fff !important;
   width:46px !important;
   height:46px !important;
@@ -2645,4 +2645,148 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
   .shiva-gallery-premium .sp-intro-stat strong{font-size:29px!important;}
   .shiva-gallery-premium .sp-video-frame{height:205px!important;min-height:205px!important;}
   .shiva-gallery-premium .sp-gallery-image{flex-basis:190px!important;width:190px!important;height:145px!important;}
+}
+
+/* =========================================================
+   FINAL REQUESTED UI/UX FIXES — BRAND COLORS + SPACING ONLY
+   Brand colors sampled from the existing Shiva Punch Art logo:
+   Blue #2818d0 / Red #ff2838
+   ========================================================= */
+:root{
+  --shiva-brand-blue:#2818d0;
+  --shiva-brand-red:#ff2838;
+}
+
+/* Home: give the three feature cards a clean mobile gap without changing layout/content. */
+@media (max-width:575px){
+  .themetechmount-area-full .row > [class*="col-"]{
+    margin-bottom:12px !important;
+  }
+  .themetechmount-area-full .row > [class*="col-"]:last-child{
+    margin-bottom:0 !important;
+  }
+}
+
+/* About + Exhibition: reduce only the excessive top/bottom whitespace. */
+.about-area.shiva-about-only.section-padding{
+  padding-top:72px !important;
+  padding-bottom:82px !important;
+}
+.portfolio-area.section-padding{
+  padding-top:72px !important;
+  padding-bottom:82px !important;
+}
+
+/* Contact: remove the unrelated orange/blue grading and use only logo blue + red. */
+.sp-contact-section:before{
+  background:rgba(255,40,56,.07) !important;
+}
+.sp-contact-section:after{
+  background:rgba(40,24,208,.055) !important;
+}
+.sp-contact-kicker,
+.sp-contact-badge span{
+  color:var(--shiva-brand-red) !important;
+}
+.sp-contact-intro h2 em{
+  color:var(--shiva-brand-blue) !important;
+}
+.sp-contact-form-head>div>span{
+  background:var(--shiva-brand-blue) !important;
+}
+.sp-field>div>i,
+.sp-contact-form-bottom p i{
+  color:var(--shiva-brand-blue) !important;
+}
+.sp-field .sp-textarea-wrap>i{
+  color:var(--shiva-brand-red) !important;
+}
+.sp-field input:focus,
+.sp-field textarea:focus{
+  border-color:var(--shiva-brand-blue) !important;
+  box-shadow:0 0 0 3px rgba(40,24,208,.08) !important;
+}
+.sp-contact-submit{
+  background:var(--shiva-brand-red) !important;
+  box-shadow:0 9px 20px rgba(255,40,56,.18) !important;
+}
+.sp-contact-submit:hover{
+  background:#e51f30 !important;
+  box-shadow:0 12px 24px rgba(255,40,56,.22) !important;
+}
+.sp-contact-info-card{
+  background:linear-gradient(145deg,#2118a8 0%,var(--shiva-brand-blue) 58%,#171070 100%) !important;
+  box-shadow:0 18px 45px rgba(40,24,208,.16) !important;
+}
+.sp-contact-info-card:before{
+  background:rgba(255,40,56,.25) !important;
+}
+.sp-contact-info-card .sp-contact-kicker,
+.sp-contact-info-top h3 em,
+.sp-contact-info-icon,
+.sp-contact-hours span i{
+  color:#ff7a86 !important;
+}
+
+/* Keep the contact hero at its existing balanced size; only its colors are corrected above. */
+
+@media(max-width:575px){
+  .about-area.shiva-about-only.section-padding{
+    padding-top:58px !important;
+    padding-bottom:66px !important;
+  }
+  .portfolio-area.section-padding{
+    padding-top:58px !important;
+    padding-bottom:66px !important;
+  }
+}
+
+/* Contact page refinements: keep the site's existing Poppins type and compact team/quick-links layout. */
+.sp-contact-intro h2,
+.sp-contact-intro h2 em,
+.sp-contact-info-top h3,
+.sp-contact-info-top h3 em,
+.sp-team-heading h2,
+.sp-team-card h3,
+.sp-contact-team-section,
+.sp-contact-team-section a,
+.sp-contact-team-section p,
+.sp-contact-team-section strong { font-family:'Poppins',sans-serif; }
+.sp-contact-intro h2{font-family:'Poppins',sans-serif!important;font-weight:800;}
+.sp-contact-team-section{padding:8px 0 70px;background:#fff;}
+.sp-team-heading{margin-bottom:24px;}
+.sp-team-heading h2{margin:9px 0 7px;font-size:32px;line-height:1.15;font-weight:800;color:#172033;letter-spacing:-.02em;}
+.sp-team-heading p{margin:0;color:#697383;font-size:13px;line-height:1.6;max-width:620px;}
+.sp-team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+.sp-team-card{padding:21px 22px 19px;background:#fff;border:1px solid #e3e8ef;border-radius:14px;box-shadow:0 10px 28px rgba(20,35,55,.055);}
+.sp-team-card h3{margin:0 0 13px;color:#172033;font-size:17px;line-height:1.25;font-weight:800;}
+.sp-team-lines{display:grid;gap:7px;}
+.sp-team-lines a{color:#086ad8;text-decoration:none;font-size:12px;line-height:1.45;}
+.sp-team-lines a:hover{text-decoration:underline;}
+.sp-team-lines strong{color:#172033;font-weight:700;}
+.sp-contact-quick-grid{display:grid;grid-template-columns:1fr 1fr 1.35fr;gap:14px;margin-top:18px;}
+.sp-contact-quick-card{padding:15px 17px;border:1px solid #e3e8ef;border-radius:12px;background:#f8fafc;min-width:0;}
+.sp-contact-quick-label{margin-bottom:6px;color:#172033;font-size:11px;font-weight:800;}
+.sp-contact-quick-links{display:flex;flex-wrap:wrap;align-items:center;gap:6px;color:#172033;font-size:12px;font-weight:700;}
+.sp-contact-quick-links a{color:#086ad8;text-decoration:none;}
+.sp-contact-quick-links a:hover{text-decoration:underline;}
+@media(max-width:991px){.sp-team-grid{grid-template-columns:1fr 1fr}.sp-team-card:last-child{grid-column:1/-1}.sp-contact-quick-grid{grid-template-columns:1fr 1fr}.sp-contact-quick-card:last-child{grid-column:1/-1}}
+@media(max-width:575px){.sp-contact-team-section{padding:2px 0 48px}.sp-team-heading{margin-bottom:18px}.sp-team-heading h2{font-size:27px}.sp-team-heading p{font-size:12px}.sp-team-grid{grid-template-columns:1fr;gap:11px}.sp-team-card:last-child{grid-column:auto}.sp-team-card{padding:17px 16px}.sp-team-card h3{font-size:15px;margin-bottom:10px}.sp-team-lines a{font-size:11px}.sp-contact-quick-grid{grid-template-columns:1fr;gap:10px;margin-top:12px}.sp-contact-quick-card:last-child{grid-column:auto}.sp-contact-quick-card{padding:13px 14px}.sp-contact-quick-links{font-size:11px}}
+
+/* Final contact location correction: icon belongs in Direct Contact; no location image in the lower quick-links card. */
+.sp-contact-location-icon i,.sp-quick-location-icon i{font-size:18px;line-height:1;display:block;}
+.sp-contact-info-icon.sp-contact-location-icon{display:inline-flex;align-items:center;justify-content:center;}
+.sp-contact-quick-card:first-child img{display:none!important;}
+.sp-contact-quick-card:first-child{overflow:hidden;}
+
+/* Contact page final correction: location pin belongs only to Direct Contact. */
+.sp-contact-info-item .sp-contact-info-icon i.fas.fa-location-dot {
+  display: inline-block !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+.sp-contact-quick-card:first-child .sp-contact-quick-label i,
+.sp-contact-quick-card:first-child .sp-contact-quick-label img,
+.sp-contact-quick-card:first-child img {
+  display: none !important;
 }
