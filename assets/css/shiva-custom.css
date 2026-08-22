@@ -2906,3 +2906,144 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
   cursor: pointer !important;
 }
 .sp-contact-email-item .sp-contact-email-link { display: block !important; }
+
+/* USER REQUEST: mobile footer only. Desktop footer and all other sections remain unchanged. */
+.shiva-mobile-footer-nav{display:none;}
+@media(max-width:575px){
+  .shiva-footer-main{
+    background:linear-gradient(180deg,var(--sp-navy),var(--sp-navy-2)) !important;
+    padding:18px 0 0 !important;
+  }
+  .shiva-footer-brand{
+    margin:0 auto 12px !important;
+    padding:0 0 14px !important;
+    border-bottom:1px solid rgba(255,255,255,.09) !important;
+    max-width:100% !important;
+  }
+  .shiva-footer-logo{margin:0 auto 7px !important;}
+  .shiva-footer-logo img{width:145px !important;max-width:62% !important;}
+  .shiva-footer-brand p{max-width:330px !important;margin:0 auto 10px !important;font-size:10px !important;line-height:1.5 !important;}
+  .shiva-support{
+    width:calc(100% - 72px) !important;max-width:300px !important;min-height:0 !important;
+    padding:7px 9px !important;gap:9px !important;border-radius:14px !important;
+  }
+  .shiva-support .support-icon{width:34px !important;height:34px !important;flex-basis:34px !important;border-radius:10px !important;font-size:12px !important;}
+  .shiva-support small{font-size:8px !important;line-height:1.1 !important;}
+  .shiva-support strong{font-size:12px !important;line-height:1.1 !important;}
+  .shiva-support>i{font-size:15px !important;}
+  .shiva-footer-grid{display:none !important;}
+  .shiva-mobile-footer-nav{
+    display:block !important;width:100% !important;
+    border-top:1px solid rgba(255,255,255,.08) !important;
+  }
+  .shiva-mobile-footer-row{
+    min-height:56px !important;width:100% !important;margin:0 !important;padding:0 2px 0 14px !important;
+    box-sizing:border-box !important;border:0 !important;border-bottom:1px solid rgba(255,255,255,.09) !important;
+    border-radius:0 !important;background:transparent !important;color:#f2f5fa !important;
+    text-decoration:none !important;display:flex !important;align-items:center !important;
+    justify-content:space-between !important;gap:10px !important;font-size:12px !important;
+    font-weight:800 !important;letter-spacing:.04em !important;
+  }
+  .shiva-mobile-footer-row > span,.shiva-mobile-footer-row summary > span{color:#f2f5fa !important;}
+  .shiva-mobile-footer-row > i,.shiva-mobile-footer-row summary > i{
+    color:#f97316 !important;font-size:10px !important;line-height:1 !important;width:14px !important;height:14px !important;display:flex !important;align-items:center !important;justify-content:center !important;flex:0 0 14px !important;
+  }
+  .shiva-mobile-expand summary{
+    min-height:56px !important;width:100% !important;padding:0 !important;margin:0 !important;
+    display:flex !important;align-items:center !important;justify-content:space-between !important;
+    list-style:none !important;cursor:pointer !important;color:#f2f5fa !important;
+  }
+  .shiva-mobile-expand summary::-webkit-details-marker{display:none !important;}
+  .shiva-mobile-expand summary > i{transition:transform .18s ease !important;}
+  .shiva-mobile-expand[open] summary > i{transform:rotate(45deg) !important;}
+  .shiva-mobile-footer-content{
+    padding:0 14px 12px !important;border-top:1px solid rgba(255,255,255,.06) !important;
+    background:rgba(0,0,0,.035) !important;max-height:190px !important;overflow-y:auto !important;
+  }
+  .shiva-mobile-footer-content a,.shiva-mobile-address{
+    display:block !important;padding:8px 0 !important;color:#cbd5e1 !important;
+    font-size:10px !important;line-height:1.45 !important;text-decoration:none !important;
+  }
+  .shiva-mobile-footer-content a:hover{color:#fff !important;}
+  .shiva-mobile-address strong{
+    display:block !important;margin-bottom:3px !important;color:#fff !important;font-size:9px !important;letter-spacing:.05em !important;
+  }
+  .shiva-footer-bottom{padding:11px 0 !important;background:var(--sp-navy-2) !important;}
+  .shiva-footer-bottom p{font-size:8px !important;line-height:1.4 !important;}
+}
+@media(max-width:380px){
+  .shiva-footer-logo img{width:138px !important;}
+  .shiva-footer-brand p{font-size:9.5px !important;}
+  .shiva-support{width:calc(100% - 54px) !important;}
+}
+
+/* FINAL MOBILE FOOTER ALIGNMENT — plus icons + compact support card only */
+@media (max-width:575px){
+  .shiva-mobile-footer-row{
+    position:relative !important;
+    padding-left:14px !important;
+    padding-right:0 !important;
+  }
+  .shiva-mobile-footer-row > i,
+  .shiva-mobile-footer-row summary > i{
+    position:absolute !important;
+    right:12px !important;
+    top:50% !important;
+    transform:translateY(-50%) !important;
+    width:12px !important;
+    height:12px !important;
+    margin:0 !important;
+    font-size:9px !important;
+    line-height:12px !important;
+    flex:0 0 12px !important;
+  }
+  .shiva-mobile-expand summary{
+    position:relative !important;
+    width:100% !important;
+    padding:0 !important;
+    margin:0 !important;
+    box-sizing:border-box !important;
+  }
+  .shiva-mobile-expand summary > i{
+    right:12px !important;
+    top:50% !important;
+    transform:translateY(-50%) !important;
+  }
+  .shiva-mobile-expand[open] summary > i{
+    transform:translateY(-50%) rotate(45deg) !important;
+  }
+
+  .shiva-support{
+    width:250px !important;
+    max-width:250px !important;
+    min-height:0 !important;
+    padding:6px 8px !important;
+    gap:8px !important;
+    border-radius:13px !important;
+    box-sizing:border-box !important;
+  }
+  .shiva-support .support-icon{
+    width:31px !important;
+    height:31px !important;
+    flex-basis:31px !important;
+    border-radius:9px !important;
+    font-size:11px !important;
+  }
+  .shiva-support small{
+    font-size:7.5px !important;
+    line-height:1.05 !important;
+  }
+  .shiva-support strong{
+    font-size:11px !important;
+    line-height:1.05 !important;
+  }
+  .shiva-support > i{
+    font-size:13px !important;
+  }
+}
+@media (max-width:380px){
+  .shiva-support{
+    width:235px !important;
+    max-width:235px !important;
+  }
+}
