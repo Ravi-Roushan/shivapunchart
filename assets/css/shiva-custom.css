@@ -3227,3 +3227,59 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
   .shiva-footer-contact a{display:block!important;font-size:8.5px!important;padding:5px 2px!important;white-space:nowrap!important;text-align:center!important;}
   .shiva-footer-social{display:flex!important;justify-content:center!important;flex-wrap:wrap!important;gap:8px!important;margin-top:8px!important;}
 }
+
+/* FINAL: footer social alignment + compact mobile icons + crisp footer logo */
+.shiva-footer-social{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:8px !important;
+  width:100% !important;
+  margin:10px auto 0 !important;
+}
+.shiva-footer-social a{
+  width:28px !important;
+  height:28px !important;
+  flex:0 0 28px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+.shiva-footer-logo img{
+  display:block !important;
+  width:auto !important;
+  height:auto !important;
+  max-width:100% !important;
+  image-rendering:auto !important;
+  filter:none !important;
+}
+@media(max-width:575px){
+  .shiva-footer-social{
+    justify-content:center !important;
+    gap:6px !important;
+    margin:7px auto 0 !important;
+  }
+  .shiva-footer-social a{
+    width:23px !important;
+    height:23px !important;
+    flex:0 0 23px !important;
+    font-size:11px !important;
+  }
+}
+
+/* FINAL LOGO SIZE FIX: restore compact footer logo size; keep white tagline visible */
+.shiva-footer-logo img{
+  width:190px !important;
+  max-width:70% !important;
+  height:auto !important;
+  display:block !important;
+  margin:0 auto !important;
+  image-rendering:auto !important;
+}
+@media(max-width:575px){
+  .shiva-footer-logo img{
+    width:145px !important;
+    max-width:62% !important;
+    height:auto !important;
+  }
+}
