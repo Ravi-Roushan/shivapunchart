@@ -3283,3 +3283,208 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
     height:auto !important;
   }
 }
+
+
+/* =========================================================
+   SHIVA ASSISTANT — PREMIUM LAUNCHER + CHAT PANEL
+   ========================================================= */
+.shiva-chatbot{right:16px;bottom:16px;z-index:999999}
+.shiva-chatbot-launcher{
+  width:60px!important;height:60px!important;padding:0!important;
+  background:transparent!important;border:0!important;box-shadow:none!important;
+  border-radius:50%;overflow:visible;isolation:isolate;
+}
+.shiva-chatbot-launcher::before{
+  content:"";position:absolute;inset:2px;border-radius:50%;
+  background:rgba(255,255,255,.04);border:1px solid rgba(38,79,210,.25);
+  box-shadow:0 8px 24px rgba(15,29,62,.18);z-index:-1;transition:.25s ease;
+}
+.shiva-chatbot-launcher img{width:60px!important;height:60px!important;object-fit:contain;border-radius:50%;display:block}
+.shiva-chatbot-launcher:hover{transform:translateY(-2px) scale(1.025)}
+.shiva-chatbot-launcher:hover::before{
+  background:linear-gradient(145deg,rgba(54,91,235,.14),rgba(255,126,31,.16));
+  border-color:rgba(54,91,235,.55);
+  box-shadow:0 10px 28px rgba(37,67,160,.22),0 0 0 3px rgba(255,126,31,.08);
+}
+.shiva-chat-pulse{right:0;top:0;width:10px;height:10px;border:2px solid var(--sp-navy)!important}
+.shiva-chat-panel{
+  width:350px!important;bottom:72px!important;border-radius:20px!important;
+  background:#0f1b31!important;border:1px solid rgba(80,108,171,.42)!important;
+  box-shadow:0 24px 70px rgba(5,12,28,.42),0 0 0 1px rgba(255,126,31,.06)!important;
+}
+.shiva-chat-head{
+  min-height:68px!important;padding:12px 14px!important;
+  background:linear-gradient(135deg,#13244a 0%,#1737c9 100%)!important;
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+.shiva-chat-head strong{font-size:13px!important}.shiva-chat-head small{font-size:9.5px!important;color:#d5def0!important}
+.shiva-chat-head button{width:32px;height:32px;border-radius:10px;background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.12)!important}
+.shiva-chat-body{height:220px!important;padding:13px!important;background:linear-gradient(180deg,#101e37,#0d1930)!important}
+.shiva-bubble{font-size:11px!important;border-radius:13px!important;padding:9px 11px!important;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.shiva-bubble.bot{background:rgba(255,255,255,.075)!important;border:1px solid rgba(255,255,255,.10)!important;color:#eaf0fb!important}
+.shiva-bubble.user{background:linear-gradient(135deg,#2747d6,#1737c9)!important;color:#fff!important}
+.shiva-chat-actions{padding:10px!important;background:#0f1b31;border-top:1px solid rgba(255,255,255,.08)}
+.shiva-chat-actions button,.shiva-chat-actions a{background:rgba(255,255,255,.055)!important;color:#e8eef9!important;border-color:rgba(255,255,255,.10)!important;border-radius:10px!important}
+.shiva-chat-actions button:hover,.shiva-chat-actions a:hover{background:rgba(54,91,235,.20)!important;border-color:rgba(54,91,235,.48)!important;color:#fff!important}
+.shiva-chat-actions a:last-child{background:linear-gradient(135deg,#20bf68,#159d55)!important;border-color:#20bf68!important}
+.shiva-chat-input{padding:10px!important;background:#0b172b!important;border-top:1px solid rgba(255,255,255,.08)!important}
+.shiva-chat-input input{background:rgba(255,255,255,.07)!important;color:#fff!important;border-color:rgba(255,255,255,.13)!important;border-radius:10px!important}
+.shiva-chat-input input::placeholder{color:#8fa0bb!important}
+.shiva-chat-input button{background:linear-gradient(135deg,#3154e5,#1737c9)!important;border-radius:10px!important}
+@media(max-width:575px){
+  .shiva-chatbot{right:8px;bottom:8px}
+  .shiva-chatbot-launcher{width:50px!important;height:50px!important}
+  .shiva-chatbot-launcher img{width:50px!important;height:50px!important}
+  .shiva-chat-panel{bottom:60px!important;width:calc(100vw - 16px)!important;max-width:310px!important}
+  .shiva-chat-body{height:185px!important}
+}
+
+
+/* =========================================================
+   FINAL USER FIXES — AUG 2026
+   ========================================================= */
+
+/* Consistent site typography */
+body,
+button,
+input,
+textarea,
+select,
+.shiva-header,
+.shiva-footer,
+.sp-contact-section,
+.sp-contact-form-card,
+.sp-contact-fields,
+.sp-contact-direct {
+  font-family:'Poppins',sans-serif !important;
+}
+
+/* Mobile: center counter/stat blocks like the supplied reference */
+@media (max-width:575px){
+  .counter-area .row{
+    justify-content:center !important;
+  }
+  .counter-area .counter-item{
+    width:100% !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+  }
+  .counter-area .counter-item .icon,
+  .counter-area .counter-item .content,
+  .counter-area .counter-item .title{
+    text-align:center !important;
+    justify-content:center !important;
+    align-items:center !important;
+  }
+  .counter-area .counter-item .content{
+    width:100% !important;
+  }
+}
+
+/* Product image carousel: keep navigation above the clickable image layer. */
+.our-products-grid .carousel{
+  position:relative !important;
+  touch-action:pan-y !important;
+}
+.our-products-grid .carousel-item{
+  position:relative !important;
+}
+.our-products-grid .product-image-click-target{
+  z-index:1 !important;
+}
+.our-products-grid .carousel-control-prev,
+.our-products-grid .carousel-control-next{
+  z-index:6 !important;
+  pointer-events:auto !important;
+  cursor:pointer !important;
+}
+.our-products-grid .product-img{
+  cursor:zoom-in !important;
+}
+
+/* Product lightbox with previous/next navigation */
+.product-image-lightbox{
+  z-index:1000000 !important;
+}
+.product-lightbox-nav{
+  position:absolute !important;
+  top:50% !important;
+  transform:translateY(-50%) !important;
+  width:44px !important;
+  height:54px !important;
+  border:0 !important;
+  border-radius:10px !important;
+  background:rgba(24,67,93,.92) !important;
+  color:#fff !important;
+  font-size:28px !important;
+  line-height:1 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  cursor:pointer !important;
+  z-index:3 !important;
+  box-shadow:0 5px 20px rgba(0,0,0,.25) !important;
+}
+.product-lightbox-prev{left:18px !important;}
+.product-lightbox-next{right:18px !important;}
+.product-lightbox-nav:hover{background:#1800AD !important;}
+.product-lightbox-counter{
+  position:absolute !important;
+  left:50% !important;
+  bottom:18px !important;
+  transform:translateX(-50%) !important;
+  color:#fff !important;
+  background:rgba(0,0,0,.58) !important;
+  padding:5px 10px !important;
+  border-radius:999px !important;
+  font-size:11px !important;
+  font-weight:700 !important;
+  z-index:3 !important;
+}
+@media(max-width:575px){
+  .product-lightbox-nav{
+    width:38px !important;
+    height:46px !important;
+    font-size:23px !important;
+  }
+  .product-lightbox-prev{left:8px !important;}
+  .product-lightbox-next{right:8px !important;}
+  .product-lightbox-counter{bottom:12px !important;font-size:10px !important;}
+}
+
+/* Mobile footer accordion: reliable plus/dropdown interaction */
+@media(max-width:575px){
+  .shiva-mobile-footer-nav{
+    overflow:visible !important;
+  }
+  .shiva-mobile-footer-nav details.shiva-mobile-expand{
+    overflow:visible !important;
+  }
+  .shiva-mobile-footer-nav details.shiva-mobile-expand > summary{
+    user-select:none !important;
+    -webkit-tap-highlight-color:transparent !important;
+    cursor:pointer !important;
+  }
+  .shiva-mobile-footer-nav details.shiva-mobile-expand > summary > i{
+    pointer-events:none !important;
+  }
+  .shiva-mobile-footer-content{
+    position:relative !important;
+    z-index:2 !important;
+  }
+}
+
+/* Chatbot must never cover the Tcongs Infotech copyright line on mobile. */
+@media(max-width:575px){
+  .shiva-chatbot{
+    right:10px !important;
+    bottom:62px !important;
+    z-index:99999 !important;
+  }
+  .shiva-chatbot-launcher{
+    z-index:99999 !important;
+  }
+}

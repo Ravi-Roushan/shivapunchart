@@ -32,7 +32,7 @@
 
                                         <div class="col-lg-6">
                         <div class="about-thumbnail">
-                            <img src="assets/img/aboutimg.png" alt="about" />
+                            <img src="assets/img/about-premium.png" alt="about" />
                         </div>
                     </div>
                 </div>

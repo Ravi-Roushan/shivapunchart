@@ -2,7 +2,7 @@
        <?php include "common/header.php" ?>
        
        <!-- Start Hero Banner Area -->
-        <section class="hero-banner-area shiva-auto-hero shiva-hero-compact" style="background-image: url('assets/img/banner.png');">
+        <section class="hero-banner-area shiva-auto-hero shiva-hero-compact" style="background-image: url('assets/img/hero.png');">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 align-self-center">
@@ -74,7 +74,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="about-thumbnail">
-                            <img src="assets/img/tooling solutions.png" alt="about" />
+                            <img src="assets/img/6.png" alt="about" />
                         </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
@@ -503,7 +503,7 @@
                         <div class="col-lg-12 align-self-center">
 
                         <div class="col-lg-12">
-                            <div class="testimonial-item-full owl-carousel" style="background-image: url('assets/img/banner.png');">
+                            <div class="testimonial-item-full owl-carousel" style="background-image: url('assets/img/hero.png');">
                                 <!-- Single -->
                                 <div class="testimonial-item">
                                     
@@ -743,7 +743,7 @@
 
   // 3-slide loop: existing first image -> second -> uploaded third -> existing first...
   const slides = [
-    'assets/img/banner.png',
+    'assets/img/hero.png',
     'assets/img/hero-slide-2.png',
     'assets/img/hero-slide-3-user.png'
   ];

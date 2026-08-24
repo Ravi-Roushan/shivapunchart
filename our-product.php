@@ -67,16 +67,46 @@
 <div class="modal fade" id="imageModal" tabindex="-1">
 <div class="modal-dialog modal-dialog-centered modal-lg">
 <div class="modal-content">
-<div class="modal-body text-center">
+<div class="modal-body text-center position-relative">
+<button type="button" id="productModalPrev" class="product-lightbox-nav product-lightbox-prev" aria-label="Previous image">‹</button>
 <img class="img-fluid" id="popupImage" src=""/>
+<button type="button" id="productModalNext" class="product-lightbox-nav product-lightbox-next" aria-label="Next image">›</button>
+<div id="productModalCounter" class="product-lightbox-counter"></div>
 </div>
 </div>
 </div>
 </div>
 <script>
-function showImage(src){
-    document.getElementById("popupImage").src = src;
-}
+(function(){
+  var currentItems=[], currentIndex=0;
+  window.showImage=function(src,alt){
+    var img=null;
+    document.querySelectorAll('.our-products-grid img.product-img').forEach(function(x){
+      if(x.src===src || x.getAttribute('src')===src || x.src.endsWith(src.split('/').pop())) img=x;
+    });
+    var carousel=img ? img.closest('.carousel') : null;
+    var imgs=carousel ? carousel.querySelectorAll('.carousel-item .product-img') : [];
+    currentItems=Array.prototype.map.call(imgs,function(x){return {src:x.src,alt:x.alt||''};});
+    if(!currentItems.length) currentItems=[{src:src,alt:alt||''}];
+    currentIndex=Math.max(0,currentItems.findIndex(function(x){return x.src===src;}));
+    renderProductModal();
+    var modal=document.getElementById('imageModal');
+    if(modal && window.bootstrap && bootstrap.Modal) bootstrap.Modal.getOrCreateInstance(modal).show();
+  };
+  function renderProductModal(){
+    var item=currentItems[currentIndex]||{};
+    var p=document.getElementById('popupImage');
+    if(p){p.src=item.src||'';p.alt=item.alt||'Product image';}
+    var c=document.getElementById('productModalCounter');
+    if(c)c.textContent=(currentIndex+1)+' / '+currentItems.length;
+  }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest && e.target.closest('#productModalPrev,#productModalNext');
+    if(!b || currentItems.length<2)return;
+    currentIndex=(currentIndex+(b.id==='productModalNext'?1:-1)+currentItems.length)%currentItems.length;
+    renderProductModal();
+  });
+})();
 </script>
 <!-- Single -->
 <!-- Single -->
