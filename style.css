@@ -1150,6 +1150,19 @@ img{
 	width: 100%;
 	overflow: hidden;
 }
+/* Uniform image sizing for the Home "Some Of Our Work" slider */
+.latest-projects-slider-full .project-item .thumbnail {
+	height: 500px;
+	overflow: hidden;
+}
+.latest-projects-slider-full .project-item .thumbnail img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
 .project-item .thumbnail img {
 	width: 100%;
 	-webkit-transition: all .4s ease-in-out;
@@ -3195,3 +3208,9 @@ border-radius:8px;
 
 /* Our Products — Previous/Next arrows for all 19 product carousels */
 .our-products-grid .carousel-control-prev,.our-products-grid .carousel-control-next{z-index:5!important;opacity:.95!important;}
+
+@media (max-width: 767px) {
+	.latest-projects-slider-full .project-item .thumbnail {
+		height: 330px;
+	}
+}

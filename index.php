@@ -74,7 +74,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="about-thumbnail">
-                            <img src="assets/img/home-about-premium.png" alt="about" />
+                            <img src="assets/img/home-about-user.png" alt="about" />
                         </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
@@ -329,10 +329,9 @@
             </div>
             <div class="row">
                 <div class="latest-projects-slider-full owl-carousel">
-                    <!-- Single -->
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/project/work.png" alt="project" />
+                            <img src="assets/img/gallery/gallery-008.jpg" alt="Shiva Punch Art precision tooling project" />
                         </div>
                         <div class="info">
                             <div class="info-item">
@@ -342,16 +341,15 @@
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
-                                        <a href="assets/img/project/work.png"><i class="fas fa-plus"></i></a>
+                                        <a href="assets/img/gallery/gallery-008.jpg"><i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Single -->
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/project/work.png" alt="project" />
+                            <img src="assets/img/gallery/gallery-017.jpg" alt="Shiva Punch Art precision tooling project" />
                         </div>
                         <div class="info">
                             <div class="info-item">
@@ -361,17 +359,15 @@
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
-                                        <a href="assets/img/project/work.png"><i class="fas fa-plus"></i></a>
+                                        <a href="assets/img/gallery/gallery-017.jpg"><i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/project/work.png" alt="project" />
+                            <img src="assets/img/gallery/gallery-022.jpg" alt="Shiva Punch Art precision tooling project" />
                         </div>
                         <div class="info">
                             <div class="info-item">
@@ -381,16 +377,15 @@
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
-                                        <a href="assets/img/project/work.png"><i class="fas fa-plus"></i></a>
+                                        <a href="assets/img/gallery/gallery-022.jpg"><i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Single -->
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/project/work.png" alt="project" />
+                            <img src="assets/img/gallery/gallery-059.jpg" alt="Shiva Punch Art precision tooling project" />
                         </div>
                         <div class="info">
                             <div class="info-item">
@@ -400,7 +395,25 @@
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
-                                        <a href="assets/img/project/work.png"><i class="fas fa-plus"></i></a>
+                                        <a href="assets/img/gallery/gallery-059.jpg"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="thumbnail">
+                            <img src="assets/img/gallery/gallery-074.jpg" alt="Shiva Punch Art precision tooling project" />
+                        </div>
+                        <div class="info">
+                            <div class="info-item">
+                                <div class="left-info">
+                                    <h4><a href="product-details.php">Precision CNC Tooling</a></h4>
+                                    <a class="cat" href="#">Precision CNC Tooling</a>
+                                </div>
+                                <div class="right-info">
+                                    <div class="img-gallery-popup">
+                                        <a href="assets/img/gallery/gallery-074.jpg"><i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
