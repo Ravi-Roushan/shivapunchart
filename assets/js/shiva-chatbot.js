@@ -4,10 +4,10 @@
 
   const DATA={
     products:{title:'Our Products',text:'We provide precision tooling and die solutions for printing, packaging and converting applications.',link:'our-product.html',label:'View 19 Products'},
-    office:{title:'Head Office',text:'5RR9+MHP, Ali Talao Rd, Malad, Azmi Nagar, Malvani, Malad West, Mumbai, Maharashtra 400095.',link:'https://www.google.com/maps/search/?api=1&query=5RR9%2BMHP%2C+Ali+Talao+Rd%2C+Malad%2C+Azmi+Nagar%2C+Malvani%2C+Malad+West%2C+Mumbai%2C+Maharashtra+400095',label:'Open Office Location'},
+    office:{title:'Head Office',text:'Malad West, Mumbai — S NO 223 CTS-2675 HISSA-687, Kharodi Marve Road, Malwani, Malad West, Nr Chheda Complex, Mumbai 400095.',link:'https://www.google.com/maps/search/?api=1&query=S+NO+223+CTS-2675+HISSA-687%2C+Kharodi+Marve+Road%2C+Malwani%2C+Malad+West%2C+Nr+Chheda+Complex%2C+Mumbai+400095',label:'Open Office Location'},
     factory:{title:'Factory',text:'Gala No: C-2, Shree Ganesh Ind Estate, Behind Sagar Hotel, Chinchoti, Devdal, Kaman, Vasai (East) – 401208.',link:'https://www.google.com/maps/search/?api=1&query=Gala+No+C-2+Shree+Ganesh+Ind+Estate+Behind+Sagar+Hotel+Chinchoti+Devdal+Kaman+Vasai+East+401208',label:'Open Factory Location'},
-    contact:{title:'Contact Team',text:'Call us on +91 91367 30776, +91 72089 30777, +91 72089 30778 or +91 88282 30576. For email enquiries use shivapunchart@gmail.com or info@shivapunchart.com.',link:'mailto:shivapunchart@gmail.com',label:'Send Email'},
-    whatsapp:{title:'WhatsApp',text:'Start a direct WhatsApp conversation with our team.',link:'https://wa.me/919136730776',label:'Open WhatsApp'}
+    contact:{title:'Contact Team',text:'Call us on +91 84335 38141 or +91 72089 30779. For email enquiries use shivapunchart@gmail.com or info@shivapunchart.com.',link:'mailto:shivapunchart@gmail.com',label:'Send Email'},
+    whatsapp:{title:'WhatsApp',text:'Start a direct WhatsApp conversation with our team.',link:'https://wa.me/918433538141',label:'Open WhatsApp'}
   };
 
   const productNames=['3D Emboss','Laser Dies','Pre Rubber Dies','Punch + Emboss Online','Label Dies','Sandwich Dies','Stripping / Blanking Dies','Creasing Plates','Foil Blocks','Emboss Dies','Micro Effect','Step Emboss','Braille Emboss','Rotary Dies','Flexible Dies','Hot Foil Dies','Cutting Dies','Counter Plates','Special Purpose Dies'];

@@ -3148,77 +3148,82 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
 .shiva-chat-head{background:linear-gradient(135deg,var(--sp-navy),#21366a)!important}.shiva-chat-actions button{transition:transform .15s ease,background .15s ease,border-color .15s ease}.shiva-chat-actions button:hover{transform:translateY(-1px);border-color:#b8c5e8;background:#f4f6ff}.shiva-chat-input input{font-family:inherit}.shiva-chat-input button{background:var(--sp-blue)!important}.shiva-typing{display:flex!important;gap:4px;align-items:center;width:36px}.shiva-typing span{width:5px;height:5px;border-radius:50%;background:#9aa7ba;animation:spTyping 1s infinite}.shiva-typing span:nth-child(2){animation-delay:.15s}.shiva-typing span:nth-child(3){animation-delay:.3s}@keyframes spTyping{0%,60%,100%{opacity:.3;transform:translateY(0)}30%{opacity:1;transform:translateY(-2px)}}.shiva-product-chat-list{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:0 0 8px}.shiva-product-chat-list a{padding:5px 6px;border:1px solid #e0e6ef;border-radius:7px;background:#fff;color:#263b80!important;font-size:8.5px;line-height:1.25;text-decoration:none}.shiva-product-chat-list a:hover{background:#f0f3ff}.shiva-quote-box{background:#fff;border:1px solid #e0e6ef;border-radius:10px;padding:8px;margin-bottom:8px}.shiva-quote-box input,.shiva-quote-box textarea{width:100%;box-sizing:border-box;border:1px solid #dfe5ee;border-radius:7px;padding:7px 8px;margin-bottom:6px;font:inherit;font-size:9px;outline:none}.shiva-quote-box textarea{min-height:48px;resize:vertical}.shiva-quote-box input:focus,.shiva-quote-box textarea:focus{border-color:#8998d9}.shiva-quote-box button{width:100%;border:0;border-radius:7px;padding:8px;background:var(--sp-blue);color:#fff;font-size:9px;font-weight:800;cursor:pointer}.shiva-quote-box button:hover{filter:brightness(1.06)}
 @media(max-width:575px){.shiva-chat-panel{width:min(318px,calc(100vw - 18px));right:-2px}.shiva-chat-body{height:180px}.shiva-product-chat-list{grid-template-columns:1fr 1fr}.shiva-chat-actions{grid-template-columns:1fr 1fr}}
 
+/* Footer logo visibility fix: keep the exact same logo size, only improve the light tagline visibility on the dark footer. */
+.shiva-footer-logo img{
+  /* Keep the exact same logo size; the original tagline is dark/grey and
+     disappears on the navy footer. Give the transparent logo canvas a
+     small white background so the tagline remains visible like the header. */
+  background:#fff !important;
+  padding:3px 4px !important;
+  box-sizing:border-box !important;
+  filter:none !important;
+}
 
-/* ===== FINAL CONTACT / FOOTER UPDATE =====
-   Move the old top location/social strip out of the header.
-   Keep the footer branded and make all contact details consistent.
-*/
-.shiva-footer-social{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  margin:8px auto 0;
-}
-.shiva-footer-social > span{
-  color:#9aa8bf;
-  font-size:10px;
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:.08em;
-  margin-right:2px;
-}
-.shiva-footer-social a{
-  width:30px;
-  height:30px;
-  border-radius:50%;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff !important;
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.10);
-  text-decoration:none !important;
-  transition:all .2s ease;
-}
-.shiva-footer-social a:hover{
-  background:#1800ad;
-  border-color:#1800ad;
+/* FINAL FOOTER CONTACT/SOCIAL FIX */
+.shiva-footer-logo img{
+  background:transparent !important;
+  padding:0 !important;
+  filter:none !important;
 }
 .shiva-footer-contact{
-  display:flex !important;
-  flex-wrap:wrap !important;
-  gap:7px !important;
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:6px !important;
+  margin-top:9px !important;
 }
 .shiva-footer-contact a{
-  white-space:nowrap;
+  text-align:center !important;
+  white-space:nowrap !important;
 }
-.shiva-footer-logo img{
-  width:205px;
-  max-width:80%;
+.shiva-footer-social{
+  display:flex !important;
+  align-items:center !important;
+  gap:8px !important;
+  margin-top:10px !important;
 }
+.shiva-footer-social a{
+  width:28px !important;
+  height:28px !important;
+  border-radius:50% !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  background:rgba(255,255,255,.07) !important;
+  border:1px solid rgba(255,255,255,.10) !important;
+  color:#dbe5f4 !important;
+  text-decoration:none !important;
+  transition:.18s ease !important;
+}
+.shiva-footer-social a:hover{color:#fff !important;background:rgba(255,255,255,.13) !important;transform:translateY(-1px);}
 @media(max-width:575px){
-  .shiva-footer-social{
-    margin:7px auto 10px !important;
-    gap:8px !important;
-  }
-  .shiva-footer-social > span{
-    font-size:9px !important;
-  }
-  .shiva-footer-social a{
-    width:27px !important;
-    height:27px !important;
-    font-size:11px !important;
-  }
-  .shiva-footer-logo img{
-    width:180px !important;
-    max-width:78% !important;
-  }
-  .shiva-footer-contact{
-    gap:5px !important;
-  }
-  .shiva-footer-contact a{
-    font-size:9px !important;
-    padding:5px 6px !important;
-  }
+  .shiva-footer-contact{grid-template-columns:repeat(3,minmax(0,1fr)) !important;gap:5px !important;}
+  .shiva-footer-contact a{font-size:8.5px !important;padding:5px 2px !important;}
+  .shiva-footer-social{justify-content:center !important;margin-top:8px !important;}
+}
+
+/* FINAL: show all four footer contact numbers on every screen */
+.shiva-footer-contact{display:grid!important;grid-template-columns:1fr 1fr!important;gap:6px!important;}
+.shiva-footer-contact a{min-width:0!important;text-align:center!important;white-space:nowrap!important;}
+@media(max-width:575px){
+  .shiva-footer-contact{grid-template-columns:1fr!important;gap:5px!important;}
+  .shiva-footer-contact a{font-size:9px!important;padding:5px 4px!important;}
+  .shiva-mobile-contact-content{display:grid!important;grid-template-columns:1fr 1fr!important;gap:5px!important;}
+  .shiva-mobile-contact-content a{white-space:nowrap!important;text-align:center!important;font-size:9px!important;}
+}
+
+/* FINAL CONTACT NUMBERS: all four visible on desktop and mobile */
+.shiva-footer-contact{display:grid!important;grid-template-columns:1fr 1fr!important;gap:6px!important}
+.shiva-footer-contact a{min-width:0!important;text-align:center!important;white-space:nowrap!important}
+@media(max-width:575px){
+  .shiva-footer-contact{grid-template-columns:1fr!important;gap:5px!important}
+  .shiva-footer-contact a{font-size:9px!important;padding:5px 4px!important}
+  .shiva-mobile-contact-content{display:grid!important;grid-template-columns:1fr 1fr!important;gap:5px!important}
+  .shiva-mobile-contact-content a{white-space:nowrap!important;text-align:center!important;font-size:9px!important}
+}
+
+/* FINAL FOOTER: keep all four mobile numbers visible on mobile */
+@media(max-width:575px){
+  .shiva-footer-contact{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:5px!important;}
+  .shiva-footer-contact a{display:block!important;font-size:8.5px!important;padding:5px 2px!important;white-space:nowrap!important;text-align:center!important;}
+  .shiva-footer-social{display:flex!important;justify-content:center!important;flex-wrap:wrap!important;gap:8px!important;margin-top:8px!important;}
 }
