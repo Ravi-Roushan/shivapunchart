@@ -18,15 +18,7 @@
 </head>
 <body>
 <header class="header shiva-header">
-  <div class="header-top shiva-topbar">
-    <div class="container">
-      <div class="shiva-topbar-inner">
-        <a class="shiva-office-top" href="https://www.google.com/maps/search/?api=1&query=S+NO+223+CTS-2675+HISSA-687%2C+Kharodi+Marve+Road%2C+Malwani%2C+Malad+West%2C+Nr+Chheda+Complex%2C+Mumbai+400095" target="_blank" rel="noopener"><span class="shiva-top-icon"><i class="fas fa-map-marker-alt"></i></span><div><span>S NO 223 CTS-2675 HISSA-687, Kharodi Marve Road, Malwani, Malad West, Nr Chheda Complex, Mumbai 400095</span></div></a>
-        <div class="shiva-top-actions"><span class="office-time"><i class="far fa-clock"></i> Mon–Sat · 09:00 AM–08:00 PM</span><span class="shiva-divider"></span><a href="https://www.facebook.com/p/Shiva-Punch-Art-100063900795995/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.linkedin.com/in/shiva-punch-20215b313/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
-      </div>
-    </div>
-  </div>
-  <div class="header-bottom shiva-navbar">
+<div class="header-bottom shiva-navbar">
     <div class="container">
       <div class="shiva-nav-row">
         <div class="logo shiva-logo"><a href="index.html"><img src="assets/img/logo.png" alt="Shiva Punch Art" /></a></div>
