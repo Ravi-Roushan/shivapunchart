@@ -1047,7 +1047,7 @@ img{
 	clear: both;
 	display: block;
 	position: absolute;
-	width: 80%;
+	width: 100%;
 	height: 100%;
 	background: #1800AD;
 	z-index: -1;
@@ -1151,10 +1151,17 @@ img{
 	overflow: hidden;
 }
 /* Uniform image sizing for the Home "Some Of Our Work" slider */
+.latest-projects-slider-full {
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
 .latest-projects-slider-full .project-item .thumbnail {
 	height: 500px;
 	overflow: hidden;
 }
+
 .latest-projects-slider-full .project-item .thumbnail img {
 	display: block;
 	width: 100%;
@@ -3212,5 +3219,120 @@ border-radius:8px;
 @media (max-width: 767px) {
 	.latest-projects-slider-full .project-item .thumbnail {
 		height: 330px;
+	}
+}
+
+
+/* Shiva video modal + works-about alignment */
+.works-about-area {
+    padding-left: 0;
+    padding-right: 0;
+}
+/* Keep the blue Works About content on the exact same centered grid as the
+   product/work sections, while the blue background remains full width. */
+.works-about-area > .container {
+    position: relative;
+    z-index: 2;
+    width: min(1200px, calc(100% - 30px));
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+.works-about-area .row {
+    align-items: center;
+}
+.works-about-content,
+.works-about-thumbanil {
+    max-width: 100%;
+}
+.works-about-thumbanil .thumbnail {
+    width: 100%;
+    overflow: hidden;
+}
+.works-about-thumbanil .thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.shiva-video-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+.shiva-video-modal.is-open { display: flex; }
+.shiva-video-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 8, 20, .82);
+    backdrop-filter: blur(4px);
+}
+.shiva-video-dialog {
+    position: relative;
+    z-index: 2;
+    width: min(960px, 94vw);
+    background: #000;
+    border-radius: 14px;
+    overflow: visible;
+    box-shadow: 0 24px 80px rgba(0,0,0,.45);
+}
+.shiva-video-frame-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 14px;
+}
+.shiva-video-frame-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+.shiva-video-close {
+    position: absolute;
+    right: -14px;
+    top: -14px;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #1800AD;
+    color: #fff;
+    font-size: 27px;
+    line-height: 34px;
+    cursor: pointer;
+}
+body.shiva-video-open { overflow: hidden; }
+@media (max-width: 767px) {
+    .works-about-area::after { width: 100%; }
+    .works-about-area > .container { width: calc(100% - 30px); max-width: none; padding-left: 0; padding-right: 0; }
+    .works-about-content { margin-bottom: 28px; }
+    .works-about-thumbanil { width: 100%; }
+    .shiva-video-modal { padding: 14px; }
+    .shiva-video-close { right: -5px; top: -48px; }
+}
+
+/* Keep Home "Some Of Our Work" aligned with the same centered content width as Our Products */
+.latest-project-slider > .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+.latest-project-slider .latest-projects-slider-full {
+	width: min(1200px, calc(100% - 30px));
+	max-width: 1200px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+@media (max-width: 767px) {
+	.latest-project-slider .latest-projects-slider-full {
+		width: calc(100% - 30px);
 	}
 }

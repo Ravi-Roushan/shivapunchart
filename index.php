@@ -303,7 +303,7 @@
                             </div>
                             <div class="works-about-vedio">
     <div class="video-btn">
-        <a href="https://youtu.be/uOYIoX3srbw" target="_blank">
+        <a href="https://youtu.be/uOYIoX3srbw" class="shiva-video-trigger" data-video="uOYIoX3srbw" aria-label="Play company video">
             <i class="fas fa-play"></i>
         </a>
     </div>
@@ -331,13 +331,13 @@
                 <div class="latest-projects-slider-full owl-carousel">
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/gallery/gallery-008.jpg" alt="Shiva Punch Art precision tooling project" />
+                            <img src="assets/img/gallery/gallery-008.jpg" alt="Shiva Punch Art Mould Punch Tool" />
                         </div>
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="product-details.php">Precision CNC Tooling</a></h4>
-                                    <a class="cat" href="#">Precision CNC Tooling</a>
+                                    <h4><a href="product-details.php">Mould Punch Tool</a></h4>
+                                    <a class="cat" href="#">Mould Punch Tool</a>
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
@@ -349,13 +349,13 @@
                     </div>
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/gallery/gallery-017.jpg" alt="Shiva Punch Art precision tooling project" />
+                            <img src="assets/img/gallery/gallery-017.jpg" alt="Shiva Punch Art 3D Embossing Die" />
                         </div>
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="product-details.php">Precision CNC Tooling</a></h4>
-                                    <a class="cat" href="#">Precision CNC Tooling</a>
+                                    <h4><a href="product-details.php">3D Embossing Die</a></h4>
+                                    <a class="cat" href="#">3D Embossing Die</a>
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
@@ -367,13 +367,13 @@
                     </div>
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/gallery/gallery-022.jpg" alt="Shiva Punch Art precision tooling project" />
+                            <img src="assets/img/gallery/gallery-022.jpg" alt="Shiva Punch Art Foil Cum Emboss" />
                         </div>
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="product-details.php">Precision CNC Tooling</a></h4>
-                                    <a class="cat" href="#">Precision CNC Tooling</a>
+                                    <h4><a href="product-details.php">Foil Cum Emboss</a></h4>
+                                    <a class="cat" href="#">Foil Cum Emboss</a>
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
@@ -385,13 +385,13 @@
                     </div>
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/gallery/gallery-059.jpg" alt="Shiva Punch Art precision tooling project" />
+                            <img src="assets/img/gallery/gallery-059.jpg" alt="Shiva Punch Art Pre Rubber Dies" />
                         </div>
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="product-details.php">Precision CNC Tooling</a></h4>
-                                    <a class="cat" href="#">Precision CNC Tooling</a>
+                                    <h4><a href="product-details.php">Pre Rubber Dies</a></h4>
+                                    <a class="cat" href="#">Pre Rubber Dies</a>
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
@@ -403,13 +403,13 @@
                     </div>
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/gallery/gallery-074.jpg" alt="Shiva Punch Art precision tooling project" />
+                            <img src="assets/img/gallery/gallery-074.jpg" alt="Shiva Punch Art Laser Dies" />
                         </div>
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="product-details.php">Precision CNC Tooling</a></h4>
-                                    <a class="cat" href="#">Precision CNC Tooling</a>
+                                    <h4><a href="product-details.php">Laser Dies</a></h4>
+                                    <a class="cat" href="#">Laser Dies</a>
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
@@ -498,7 +498,7 @@
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="we-provide-content">
                             <div class="video-btn">
-                                <a href="https://youtu.be/i5WyUt1sC0o?t=4"><i class="fas fa-play"></i></a>
+                                <a href="https://youtu.be/i5WyUt1sC0o?t=4" class="shiva-video-trigger" data-video="i5WyUt1sC0o" aria-label="Play company video"><i class="fas fa-play"></i></a>
                             </div>
                             <h2>Engineering Precision. Delivering Perfection.</h2>
                             <p>Advanced CNC & laser technology combined with expert craftsmanship to produce reliable punch and die solutions for industrial applications.</p>
