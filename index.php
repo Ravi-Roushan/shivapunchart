@@ -97,7 +97,7 @@
                                     <div class="tab-pane fade show active" id="aboutus" role="tabpanel" aria-labelledby="aboutus-tab">
                                         <div class="about-content-navs-tab-content-full">
                                             <div class="title">
-                                                <h2>13+</h2>
+                                                <h2>25+</h2>
                                                 <span>Years of Experience</span>
                                             </div>
                                             <p>Shiva Punch Art is a trusted name in precision punch and die manufacturing, delivering high-quality tooling solutions to the printing, packaging, and converting industries. With years of hands-on experience and technical expertise, we are committed to accuracy, durability, and consistent performance in every product we manufacture.</p>

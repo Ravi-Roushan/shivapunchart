@@ -2945,17 +2945,22 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
     font-weight:800 !important;letter-spacing:.04em !important;
   }
   .shiva-mobile-footer-row > span,.shiva-mobile-footer-row summary > span{color:#f2f5fa !important;}
+  .shiva-mobile-footer-row{position:relative !important;padding-right:42px !important;}
   .shiva-mobile-footer-row > i,.shiva-mobile-footer-row summary > i{
-    color:#f97316 !important;font-size:10px !important;line-height:1 !important;width:14px !important;height:14px !important;display:flex !important;align-items:center !important;justify-content:center !important;flex:0 0 14px !important;
+    position:absolute !important;right:14px !important;top:50% !important;transform:translateY(-50%) !important;
+    color:#f97316 !important;font-size:9px !important;line-height:1 !important;width:12px !important;height:12px !important;
+    display:flex !important;align-items:center !important;justify-content:center !important;margin:0 !important;
+    flex:0 0 12px !important;
   }
+  .shiva-mobile-expand{display:block !important;position:relative !important;}
   .shiva-mobile-expand summary{
-    min-height:56px !important;width:100% !important;padding:0 !important;margin:0 !important;
-    display:flex !important;align-items:center !important;justify-content:space-between !important;
-    list-style:none !important;cursor:pointer !important;color:#f2f5fa !important;
+    min-height:56px !important;width:100% !important;padding:0 42px 0 0 !important;margin:0 !important;box-sizing:border-box !important;
+    display:flex !important;align-items:center !important;justify-content:flex-start !important;
+    list-style:none !important;cursor:pointer !important;color:#f2f5fa !important;position:relative !important;
   }
   .shiva-mobile-expand summary::-webkit-details-marker{display:none !important;}
   .shiva-mobile-expand summary > i{transition:transform .18s ease !important;}
-  .shiva-mobile-expand[open] summary > i{transform:rotate(45deg) !important;}
+  .shiva-mobile-expand[open] summary > i{transform:translateY(-50%) rotate(45deg) !important;}
   .shiva-mobile-footer-content{
     padding:0 14px 12px !important;border-top:1px solid rgba(255,255,255,.06) !important;
     background:rgba(0,0,0,.035) !important;max-height:190px !important;overflow-y:auto !important;
@@ -2977,73 +2982,165 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
   .shiva-support{width:calc(100% - 54px) !important;}
 }
 
-/* FINAL MOBILE FOOTER ALIGNMENT — plus icons + compact support card only */
-@media (max-width:575px){
-  .shiva-mobile-footer-row{
-    position:relative !important;
-    padding-left:14px !important;
-    padding-right:0 !important;
+/* Final mobile footer/address/contact corrections - mobile only */
+@media(max-width:575px){
+  /* Keep expanded footer address content on the same navy footer background. */
+  .shiva-mobile-footer-content,
+  .shiva-mobile-expand[open] .shiva-mobile-footer-content{
+    background:var(--sp-navy-2) !important;
+    color:#cbd5e1 !important;
+    border-top:1px solid rgba(255,255,255,.08) !important;
+    box-shadow:none !important;
   }
-  .shiva-mobile-footer-row > i,
-  .shiva-mobile-footer-row summary > i{
-    position:absolute !important;
-    right:12px !important;
-    top:50% !important;
-    transform:translateY(-50%) !important;
-    width:12px !important;
-    height:12px !important;
-    margin:0 !important;
-    font-size:9px !important;
-    line-height:12px !important;
-    flex:0 0 12px !important;
+  .shiva-mobile-address,
+  .shiva-mobile-footer-content .shiva-mobile-address{
+    background:transparent !important;
+    color:#cbd5e1 !important;
+    border:0 !important;
+    border-radius:0 !important;
   }
-  .shiva-mobile-expand summary{
-    position:relative !important;
-    width:100% !important;
-    padding:0 !important;
-    margin:0 !important;
-    box-sizing:border-box !important;
+  .shiva-mobile-footer-content a{
+    color:#dbe3ef !important;
+    background:transparent !important;
   }
-  .shiva-mobile-expand summary > i{
-    right:12px !important;
-    top:50% !important;
-    transform:translateY(-50%) !important;
-  }
-  .shiva-mobile-expand[open] summary > i{
-    transform:translateY(-50%) rotate(45deg) !important;
-  }
+  .shiva-mobile-footer-content a:hover{background:transparent !important;color:#fff !important;}
+  .shiva-mobile-address strong{color:#fff !important;}
 
-  .shiva-support{
-    width:250px !important;
-    max-width:250px !important;
-    min-height:0 !important;
-    padding:6px 8px !important;
-    gap:8px !important;
-    border-radius:13px !important;
-    box-sizing:border-box !important;
+  /* Keep the mobile menu address dark instead of the old white card. */
+  .offcanvas_menu .shiva-mobile-address{
+    background:var(--sp-navy-2) !important;
+    color:#dbe3ef !important;
+    border:1px solid rgba(255,255,255,.09) !important;
+    box-shadow:none !important;
   }
-  .shiva-support .support-icon{
-    width:31px !important;
-    height:31px !important;
-    flex-basis:31px !important;
-    border-radius:9px !important;
-    font-size:11px !important;
-  }
-  .shiva-support small{
-    font-size:7.5px !important;
-    line-height:1.05 !important;
-  }
-  .shiva-support strong{
-    font-size:11px !important;
-    line-height:1.05 !important;
-  }
-  .shiva-support > i{
-    font-size:13px !important;
-  }
+  .offcanvas_menu .shiva-mobile-address span{color:#fff !important;}
+  .offcanvas_menu .shiva-mobile-address span:after{color:#f97316 !important;}
+
+  /* Contact expands in the footer and shows phone numbers without leaving the page. */
+  .shiva-mobile-contact-content{max-height:100px !important;overflow-y:auto !important;}
+  .shiva-mobile-contact-content a{padding:7px 0 !important;font-size:11px !important;font-weight:700 !important;}
 }
-@media (max-width:380px){
-  .shiva-support{
-    width:235px !important;
-    max-width:235px !important;
+
+
+/* =========================================================
+   FINAL USER-REQUESTED MOBILE FOOTER / MENU CORRECTIONS
+   Only affects screens 575px and below.
+   ========================================================= */
+@media (max-width:575px){
+  /* Keep the mobile footer as the compact accordion version. */
+  .shiva-footer-grid{display:none !important;}
+  .shiva-mobile-footer-nav{display:block !important;width:100% !important;margin:0 !important;padding:0 !important;border-top:1px solid rgba(255,255,255,.08) !important;background:var(--sp-navy-2) !important;}
+  .shiva-mobile-footer-row{position:relative !important;display:flex !important;align-items:center !important;justify-content:space-between !important;box-sizing:border-box !important;width:100% !important;min-height:48px !important;margin:0 !important;padding:0 38px 0 14px !important;border:0 !important;border-bottom:1px solid rgba(255,255,255,.08) !important;border-radius:0 !important;background:transparent !important;color:#f3f6fb !important;}
+  .shiva-mobile-footer-row > span,.shiva-mobile-footer-row summary > span{color:#f3f6fb !important;font-size:11px !important;font-weight:800 !important;letter-spacing:.035em !important;}
+  .shiva-mobile-footer-row > i,.shiva-mobile-footer-row summary > i{position:absolute !important;right:13px !important;top:50% !important;left:auto !important;bottom:auto !important;width:11px !important;height:11px !important;margin:0 !important;padding:0 !important;transform:translateY(-50%) !important;display:flex !important;align-items:center !important;justify-content:center !important;color:#f97316 !important;font-size:10px !important;line-height:1 !important;}
+  .shiva-mobile-footer-row summary{position:relative !important;display:flex !important;align-items:center !important;width:100% !important;min-height:48px !important;margin:0 !important;padding:0 !important;box-sizing:border-box !important;list-style:none !important;cursor:pointer !important;}
+  .shiva-mobile-footer-row summary::-webkit-details-marker{display:none !important;}
+  .shiva-mobile-expand[open] summary > i{transform:translateY(-50%) rotate(45deg) !important;}
+  .shiva-mobile-footer-content{max-height:145px !important;overflow-y:auto !important;box-sizing:border-box !important;margin:0 !important;padding:6px 14px 8px !important;background:var(--sp-navy-2) !important;border-top:1px solid rgba(255,255,255,.06) !important;}
+  .shiva-mobile-footer-content a,.shiva-mobile-address{display:block !important;margin:0 !important;padding:6px 0 !important;background:transparent !important;border:0 !important;border-radius:0 !important;color:#cbd5e1 !important;font-size:9px !important;line-height:1.4 !important;text-decoration:none !important;}
+  .shiva-mobile-address span,.shiva-mobile-address strong{display:block !important;margin:0 0 2px !important;color:#fff !important;font-size:8px !important;font-weight:800 !important;letter-spacing:.05em !important;text-transform:uppercase !important;}
+  .shiva-mobile-product-list{max-height:150px !important;}
+  .shiva-mobile-contact-content{max-height:90px !important;}
+  .shiva-mobile-contact-content a{font-size:10px !important;color:#fff !important;font-weight:700 !important;}
+
+  /* Compact support block and keep the arrow aligned on one line. */
+  .shiva-footer-brand{margin-bottom:10px !important;padding-bottom:12px !important;}
+  .shiva-support{width:calc(100% - 72px) !important;max-width:270px !important;min-height:0 !important;padding:6px 8px !important;gap:8px !important;border-radius:13px !important;}
+  .shiva-support .support-icon{width:32px !important;height:32px !important;flex-basis:32px !important;border-radius:9px !important;font-size:11px !important;}
+  .shiva-support small{font-size:7.5px !important;line-height:1 !important;}
+  .shiva-support strong{font-size:11px !important;line-height:1 !important;white-space:nowrap !important;}
+  .shiva-support>i{margin-left:auto !important;font-size:13px !important;flex:0 0 auto !important;color:#91a7cf !important;}
+
+  /* Mobile off-canvas menu address: both addresses, compact, dark and never touching the edge. */
+  .offcanvas_menu .shiva-mobile-menu-addresses{display:block !important;margin:8px 12px 0 !important;padding:0 !important;background:var(--sp-navy-2) !important;border:1px solid rgba(255,255,255,.08) !important;border-radius:8px !important;overflow:hidden !important;}
+  .offcanvas_menu .shiva-mobile-menu-addresses .shiva-mobile-address{display:block !important;margin:0 !important;padding:8px 9px !important;background:transparent !important;border:0 !important;border-bottom:1px solid rgba(255,255,255,.07) !important;color:#cbd5e1 !important;font-size:8.5px !important;line-height:1.35 !important;}
+  .offcanvas_menu .shiva-mobile-menu-addresses .shiva-mobile-address:last-child{border-bottom:0 !important;}
+  .offcanvas_menu .shiva-mobile-menu-addresses .shiva-mobile-address span{display:block !important;margin-bottom:2px !important;color:#fff !important;font-size:8px !important;font-weight:800 !important;text-transform:uppercase !important;letter-spacing:.05em !important;}
+  .shiva-footer-bottom{padding:9px 0 !important;background:var(--sp-navy-2) !important;}
+  .shiva-footer-bottom p{font-size:8px !important;line-height:1.35 !important;margin:0 !important;}
+}
+
+
+/* =========================================================
+   FINAL MOBILE FOOTER ALIGNMENT — ALL PLUS ICONS ON ONE LINE
+   Mobile only; does not affect desktop footer.
+   ========================================================= */
+@media (max-width:575px){
+  .shiva-mobile-footer-nav{
+    width:100% !important;
+    overflow:hidden !important;
+  }
+  /* Direct rows (About / Gallery) */
+  .shiva-mobile-footer-nav > a.shiva-mobile-footer-row{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 16px !important;
+    align-items:center !important;
+    width:100% !important;
+    min-width:0 !important;
+    box-sizing:border-box !important;
+    padding:0 13px 0 14px !important;
+    position:relative !important;
+  }
+  .shiva-mobile-footer-nav > a.shiva-mobile-footer-row > i{
+    position:static !important;
+    grid-column:2 !important;
+    grid-row:1 !important;
+    width:16px !important;
+    height:16px !important;
+    margin:0 !important;
+    transform:none !important;
+    display:grid !important;
+    place-items:center !important;
+    color:#f97316 !important;
+    font-size:10px !important;
+    line-height:1 !important;
+  }
+  /* Expandable rows (Address / Contact / Our Products) */
+  .shiva-mobile-footer-nav > details.shiva-mobile-footer-row{
+    display:block !important;
+    width:100% !important;
+    min-width:0 !important;
+    box-sizing:border-box !important;
+    padding:0 !important;
+    position:relative !important;
+  }
+  .shiva-mobile-footer-nav > details.shiva-mobile-footer-row > summary{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 16px !important;
+    align-items:center !important;
+    width:100% !important;
+    min-width:0 !important;
+    min-height:48px !important;
+    box-sizing:border-box !important;
+    margin:0 !important;
+    padding:0 13px 0 14px !important;
+    position:relative !important;
+  }
+  .shiva-mobile-footer-nav > details.shiva-mobile-footer-row > summary > i{
+    position:static !important;
+    grid-column:2 !important;
+    grid-row:1 !important;
+    width:16px !important;
+    height:16px !important;
+    margin:0 !important;
+    transform:none !important;
+    display:grid !important;
+    place-items:center !important;
+    color:#f97316 !important;
+    font-size:10px !important;
+    line-height:1 !important;
+  }
+  .shiva-mobile-footer-nav > details.shiva-mobile-footer-row[open] > summary > i{
+    transform:rotate(45deg) !important;
+  }
+  /* Keep labels aligned and prevent inherited width/position rules. */
+  .shiva-mobile-footer-nav > .shiva-mobile-footer-row > span,
+  .shiva-mobile-footer-nav > .shiva-mobile-footer-row > summary > span{
+    grid-column:1 !important;
+    grid-row:1 !important;
+    min-width:0 !important;
+    margin:0 !important;
+    padding:0 !important;
+    text-align:left !important;
   }
 }

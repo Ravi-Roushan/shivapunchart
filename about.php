@@ -7,7 +7,7 @@
                     <div class="col-lg-6 align-self-center">
                         <div class="about-content">
                             <h5>About Our Company</h5>
-                            <h2>15+ Years of Manufacturing Excellence</h2>
+                            <h2>25+ Years of Manufacturing Excellence</h2>
                             <div class="about-content-navs-tab">
 
                                 <div class="tab-content" id="myTabContent">
