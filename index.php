@@ -74,7 +74,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="about-thumbnail">
-                            <img src="assets/img/6.png" alt="about" />
+                            <img src="assets/img/home-about-premium.png" alt="about" />
                         </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
@@ -299,7 +299,7 @@
                     <div class="col-lg-6 align-self-center">
                         <div class="works-about-thumbanil">
                             <div class="thumbnail">
-                                <img src="assets/img/work-about.png" alt="img" />
+                                <img src="assets/img/about-home-premium.png" alt="img" />
                             </div>
                             <div class="works-about-vedio">
     <div class="video-btn">

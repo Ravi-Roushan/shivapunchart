@@ -3488,3 +3488,29 @@ select,
     z-index:99999 !important;
   }
 }
+
+
+/* Final mobile chatbot position adjustment */
+@media (max-width: 575px){
+  .shiva-chatbot{bottom:3px !important;}
+}
+
+/* Final mobile chatbot position: keep the launcher clear of the Tcongs Infotech copyright line. */
+@media (max-width: 575px){
+  .shiva-chatbot{
+    right: 9px !important;
+    bottom: 28px !important;
+  }
+  .shiva-chatbot-launcher{
+    width: 62px !important;
+    height: 62px !important;
+  }
+  .shiva-chatbot-launcher img{
+    width: 58px !important;
+    height: 58px !important;
+  }
+  .shiva-chat-panel{
+    bottom: 82px !important;
+    max-height: 430px;
+  }
+}
