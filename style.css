@@ -3678,3 +3678,323 @@ body.shiva-video-open { overflow: hidden; }
         padding: 17px 16px;
     }
 }
+
+/* Refined Shiva Punch Art About layout */
+.shiva-about-only{overflow:hidden;position:relative}
+.shiva-about-only .container{position:relative;z-index:1}
+.shiva-about-hero{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center;margin-bottom:86px}
+.shiva-about-hero-copy{padding-left:4px}
+.shiva-about-only .shiva-about-kicker{display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;color:#1800AD;font-size:12px;font-weight:700;letter-spacing:1.8px}
+.shiva-about-only .shiva-about-kicker:before{content:"";width:34px;height:2px;background:#ff3b3b;display:inline-block}
+.shiva-about-only .shiva-about-hero h1{font-size:42px;line-height:1.16;margin:0 0 22px;font-weight:700;letter-spacing:-.6px;color:#1d2746}
+.shiva-about-only .shiva-about-hero h1 span{color:#1800AD}
+.shiva-about-only .shiva-about-hero h1 em{font-style:normal;color:#ff3b3b}
+.shiva-about-only .shiva-about-hero-copy p{font-size:15px;line-height:1.85;color:#555;margin:0 0 13px;max-width:680px}
+.shiva-about-only .shiva-about-hero-copy .shiva-about-intro{font-size:16px;color:#3f4653;font-weight:500}
+.shiva-about-stats{display:flex;gap:0;margin-top:28px;border-top:1px solid #e4e6ec;border-bottom:1px solid #e4e6ec;padding:18px 0}
+.shiva-about-stats>div{flex:1;padding:0 20px;border-right:1px solid #e4e6ec}
+.shiva-about-stats>div:first-child{padding-left:0}
+.shiva-about-stats>div:last-child{border-right:0}
+.shiva-about-stats strong{display:block;color:#1800AD;font-size:27px;line-height:1.1}
+.shiva-about-stats span{display:block;margin-top:5px;color:#777;font-size:11px;text-transform:uppercase;letter-spacing:.7px}
+.shiva-about-image{position:relative;text-align:center}
+.shiva-about-image-frame{position:relative;display:inline-block;padding:14px;background:#fff;box-shadow:0 18px 50px rgba(29,39,70,.10)}
+.shiva-about-image-frame img{display:block;max-width:100%;height:auto}
+.shiva-about-corner{position:absolute;width:38px;height:38px;z-index:2}
+.corner-tl{left:-7px;top:-7px;border-left:3px solid #1800AD;border-top:3px solid #1800AD}
+.corner-br{right:-7px;bottom:-7px;border-right:3px solid #ff3b3b;border-bottom:3px solid #ff3b3b}
+.shiva-about-section-heading{text-align:center;max-width:760px;margin:0 auto 34px}
+.shiva-about-section-heading>span,.shiva-about-mini-label{color:#1800AD;font-size:11px;font-weight:700;letter-spacing:1.8px}
+.shiva-about-section-heading h2{margin:8px 0 9px;color:#1d2746;font-size:29px;line-height:1.25}
+.shiva-about-section-heading p{margin:0;color:#777;font-size:14px;line-height:1.7}
+.shiva-about-only .shiva-about-points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px}
+.shiva-about-only .shiva-about-point{display:flex;align-items:flex-start;gap:14px;padding:18px 18px;background:#fff;border:1px solid #ececf0;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.shiva-about-only .shiva-about-point:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(29,39,70,.07);border-color:#dfe0e8}
+.shiva-about-only .shiva-about-point>i{width:38px;height:38px;min-width:38px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(24,0,173,.07);color:#1800AD;font-size:15px}
+.shiva-about-only .shiva-about-point:nth-child(3n)>i{color:#ff3b3b;background:rgba(255,59,59,.08)}
+.shiva-about-only .shiva-about-point strong{display:block;color:#2f3542;font-size:14px;line-height:1.45;font-weight:700}
+.shiva-about-only .shiva-about-point span{display:block;color:#7a7d84;font-size:12px;line-height:1.55;margin-top:3px}
+.shiva-about-bottom{display:grid;grid-template-columns:1.5fr .9fr;gap:24px;margin-top:55px;align-items:stretch}
+.shiva-about-only .shiva-about-commitment{margin:0;padding:28px 30px;border-left:3px solid #ff3b3b;background:#fff;box-shadow:0 8px 28px rgba(29,39,70,.05)}
+.shiva-about-only .shiva-about-commitment h2{font-size:23px;line-height:1.3;color:#1d2746;margin:8px 0 10px}
+.shiva-about-only .shiva-about-commitment p{margin:0;color:#666;font-size:13px;line-height:1.75}
+.shiva-about-only .shiva-about-commitment strong{color:#1800AD}
+.shiva-about-tagline{display:flex;flex-wrap:wrap;align-content:center;gap:6px 9px;padding:28px 26px;background:#1d2746;box-shadow:0 8px 28px rgba(29,39,70,.09)}
+.shiva-about-tagline span{width:100%;color:#fff;font-size:12px;font-weight:700;letter-spacing:1.2px;margin-bottom:4px}
+.shiva-about-tagline strong{color:#fff;font-size:12px;line-height:1.5}
+.shiva-about-tagline b{color:#ff3b3b;font-size:12px}
+@media(max-width:991px){.shiva-about-hero{grid-template-columns:1fr;gap:38px;margin-bottom:65px}.shiva-about-hero-copy{padding:0}.shiva-about-image{order:-1}.shiva-about-bottom{grid-template-columns:1fr}.shiva-about-only .shiva-about-point{padding:16px}.shiva-about-only .shiva-about-hero h1{font-size:36px}}
+@media(max-width:575px){.shiva-about-only.section-padding{padding:70px 0!important}.shiva-about-hero{gap:30px;margin-bottom:52px}.shiva-about-only .shiva-about-hero h1{font-size:29px;line-height:1.2}.shiva-about-only .shiva-about-hero-copy p{font-size:13.5px;line-height:1.75}.shiva-about-only .shiva-about-intro{font-size:14px!important}.shiva-about-stats{margin-top:22px}.shiva-about-stats>div{padding:0 9px}.shiva-about-stats strong{font-size:21px}.shiva-about-stats span{font-size:9px;letter-spacing:.3px}.shiva-about-section-heading h2{font-size:24px}.shiva-about-section-heading p{font-size:12.5px}.shiva-about-only .shiva-about-points{grid-template-columns:1fr;gap:10px}.shiva-about-only .shiva-about-point{padding:14px}.shiva-about-only .shiva-about-point>i{width:34px;height:34px;min-width:34px;font-size:13px}.shiva-about-only .shiva-about-point strong{font-size:13px}.shiva-about-only .shiva-about-point span{font-size:11px}.shiva-about-only .shiva-about-commitment{padding:23px 20px}.shiva-about-only .shiva-about-commitment h2{font-size:20px}.shiva-about-tagline{padding:22px 19px}.shiva-about-tagline strong{font-size:11px}.shiva-about-image-frame{padding:9px}.shiva-about-corner{width:28px;height:28px}}
+
+/* =========================================================
+   SHIVA PUNCH ART — ABOUT PREMIUM REFINEMENT
+   Styling only: existing image, typography family and brand
+   colours are preserved. Scoped exclusively to About section.
+   ========================================================= */
+.shiva-about-only{
+  background:
+    radial-gradient(circle at 8% 10%,rgba(24,0,173,.045),transparent 30%),
+    radial-gradient(circle at 94% 42%,rgba(255,59,59,.035),transparent 28%),
+    #f8f9fc;
+}
+.shiva-about-only:before{
+  content:"";position:absolute;left:0;right:0;top:0;height:4px;
+  background:linear-gradient(90deg,#1800AD 0 72%,#ff3b3b 72% 100%);
+}
+.shiva-about-only .container{max-width:1180px}
+
+/* Hero */
+.shiva-about-hero{
+  position:relative;grid-template-columns:1.03fr .97fr;gap:58px;
+  margin-bottom:72px;padding:34px 0 10px;
+}
+.shiva-about-hero-copy{position:relative}
+.shiva-about-hero-copy:before{
+  content:"";position:absolute;left:-18px;top:4px;width:3px;height:92px;
+  background:linear-gradient(#1800AD,#ff3b3b);border-radius:4px;opacity:.9;
+}
+.shiva-about-only .shiva-about-kicker{
+  margin-bottom:13px;padding:7px 12px;border:1px solid rgba(24,0,173,.12);
+  border-radius:999px;background:rgba(255,255,255,.75);font-size:10px;
+  letter-spacing:1.7px;box-shadow:0 5px 16px rgba(29,39,70,.035);
+}
+.shiva-about-only .shiva-about-kicker:before{width:22px;height:2px}
+.shiva-about-only .shiva-about-hero h1{
+  font-size:44px;line-height:1.12;letter-spacing:-1px;margin-bottom:18px;
+}
+.shiva-about-only .shiva-about-hero h1 span{position:relative;display:inline-block}
+.shiva-about-only .shiva-about-hero h1 span:after{
+  content:"";position:absolute;left:0;right:12%;bottom:-5px;height:3px;
+  background:#ff3b3b;border-radius:10px;opacity:.75;
+}
+.shiva-about-only .shiva-about-hero-copy p{max-width:650px;font-size:14px;line-height:1.8}
+.shiva-about-only .shiva-about-hero-copy .shiva-about-intro{
+  font-size:15px;line-height:1.75;color:#3a4353;
+}
+
+/* Existing image — styling only, image itself untouched */
+.shiva-about-image{padding:12px 12px 20px 20px}
+.shiva-about-image:before{
+  content:"";position:absolute;right:2px;top:0;width:74%;height:88%;
+  border:1px solid rgba(24,0,173,.10);border-radius:18px;transform:translate(8px,-5px);
+}
+.shiva-about-image-frame{
+  position:relative;z-index:1;padding:10px;border-radius:16px;
+  box-shadow:0 22px 55px rgba(29,39,70,.13);overflow:visible;
+}
+.shiva-about-image-frame:after{
+  content:"";position:absolute;left:18px;right:18px;bottom:-10px;height:18px;
+  background:rgba(24,0,173,.09);filter:blur(12px);z-index:-1;
+}
+.shiva-about-corner{width:42px;height:42px}
+
+/* Stats */
+.shiva-about-stats{
+  position:relative;margin-top:25px;padding:0;border:0;gap:10px;
+}
+.shiva-about-stats>div{
+  position:relative;padding:15px 17px!important;border:1px solid #e5e8ef!important;
+  border-radius:12px;background:rgba(255,255,255,.86);box-shadow:0 8px 22px rgba(29,39,70,.045);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.shiva-about-stats>div:hover{transform:translateY(-3px);box-shadow:0 13px 28px rgba(29,39,70,.08);border-color:rgba(24,0,173,.18)!important}
+.shiva-about-stats strong{font-size:25px;color:#1800AD}
+.shiva-about-stats>div:nth-child(2) strong{color:#ff3b3b}
+.shiva-about-stats span{font-size:9.5px;letter-spacing:.55px;margin-top:6px}
+
+/* Why choose heading */
+.shiva-about-section-heading{position:relative;margin-bottom:29px}
+.shiva-about-section-heading>span{
+  display:inline-flex;align-items:center;gap:8px;padding:6px 11px;border-radius:999px;
+  background:rgba(24,0,173,.06);border:1px solid rgba(24,0,173,.10);font-size:9.5px;
+}
+.shiva-about-section-heading>span:after{content:"";width:6px;height:6px;border-radius:50%;background:#ff3b3b}
+.shiva-about-section-heading h2{font-size:31px;margin:10px 0 7px;letter-spacing:-.45px}
+.shiva-about-section-heading p{font-size:13px}
+
+/* Feature cards */
+.shiva-about-only .shiva-about-points{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 14px}
+.shiva-about-only .shiva-about-point{
+  position:relative;min-height:92px;padding:16px 17px 15px 16px!important;
+  border:1px solid #e5e8ef;background:rgba(255,255,255,.92);border-radius:14px;
+  box-shadow:0 7px 20px rgba(29,39,70,.035);overflow:hidden;
+}
+.shiva-about-only .shiva-about-point:before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:#1800AD;
+  transform:scaleY(0);transform-origin:center;transition:transform .25s ease;
+}
+.shiva-about-only .shiva-about-point:nth-child(even):before{background:#ff3b3b}
+.shiva-about-only .shiva-about-point:hover:before{transform:scaleY(1)}
+.shiva-about-only .shiva-about-point:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(29,39,70,.08);border-color:#dfe3eb}
+.shiva-about-only .shiva-about-point>i{
+  width:40px;height:40px;min-width:40px;border-radius:11px;
+  background:rgba(24,0,173,.065);color:#1800AD;font-size:14px;
+}
+.shiva-about-only .shiva-about-point:nth-child(3n)>i,
+.shiva-about-only .shiva-about-point:nth-child(2n)>i{color:#ff3b3b;background:rgba(255,59,59,.07)}
+.shiva-about-only .shiva-about-point strong{font-size:13.2px;line-height:1.4;color:#252d3c}
+.shiva-about-only .shiva-about-point span{font-size:11px;line-height:1.5;color:#7b8492;margin-top:4px}
+
+/* Commitment + tagline */
+.shiva-about-bottom{gap:16px;margin-top:45px;grid-template-columns:1.45fr .85fr}
+.shiva-about-only .shiva-about-commitment{
+  position:relative;padding:27px 29px 25px 30px;border:1px solid #e3e7ef;border-left:4px solid #ff3b3b;
+  border-radius:15px;background:#fff;box-shadow:0 10px 28px rgba(29,39,70,.055);overflow:hidden;
+}
+.shiva-about-only .shiva-about-commitment:after{
+  content:"";position:absolute;right:-35px;bottom:-45px;width:130px;height:130px;border-radius:50%;
+  background:rgba(24,0,173,.045);
+}
+.shiva-about-only .shiva-about-mini-label{font-size:9.5px;padding:6px 10px;border-radius:999px;background:rgba(255,59,59,.07);color:#ff3b3b}
+.shiva-about-only .shiva-about-commitment h2{font-size:22px;margin:13px 0 9px;position:relative;z-index:1}
+.shiva-about-only .shiva-about-commitment p{font-size:12.5px;line-height:1.75;position:relative;z-index:1}
+.shiva-about-only .shiva-about-commitment strong{color:#1800AD}
+.shiva-about-tagline{
+  position:relative;padding:27px 25px;border-radius:15px;
+  background:linear-gradient(145deg,#1800AD 0%,#2115a8 65%,#140b78 100%);
+  box-shadow:0 13px 30px rgba(24,0,173,.16);overflow:hidden;
+}
+.shiva-about-tagline:before,.shiva-about-tagline:after{
+  content:"";position:absolute;border:1px solid rgba(255,255,255,.12);border-radius:50%;
+}
+.shiva-about-tagline:before{width:150px;height:150px;right:-65px;top:-65px}
+.shiva-about-tagline:after{width:90px;height:90px;left:-48px;bottom:-48px}
+.shiva-about-tagline span{position:relative;z-index:1;color:#fff;font-size:10px;letter-spacing:1.7px}
+.shiva-about-tagline strong{position:relative;z-index:1;font-size:11.5px}
+.shiva-about-tagline b{position:relative;z-index:1;color:#ff5a67}
+
+@media(max-width:991px){
+  .shiva-about-hero{grid-template-columns:1fr;gap:34px;padding-top:24px}
+  .shiva-about-image{order:-1;max-width:680px;margin:0 auto;width:100%}
+  .shiva-about-only .shiva-about-hero h1{font-size:38px}
+  .shiva-about-bottom{grid-template-columns:1fr}
+}
+@media(max-width:575px){
+  .shiva-about-hero{gap:26px;margin-bottom:48px;padding-top:17px}
+  .shiva-about-hero-copy:before{display:none}
+  .shiva-about-image{padding:7px 7px 14px 10px}
+  .shiva-about-image:before{right:0;width:72%;height:82%}
+  .shiva-about-image-frame{padding:7px;border-radius:12px}
+  .shiva-about-corner{width:27px;height:27px}
+  .shiva-about-only .shiva-about-hero h1{font-size:29px;letter-spacing:-.5px}
+  .shiva-about-only .shiva-about-hero-copy p{font-size:12.5px;line-height:1.7}
+  .shiva-about-only .shiva-about-hero-copy .shiva-about-intro{font-size:13.5px}
+  .shiva-about-stats{gap:7px}
+  .shiva-about-stats>div{padding:12px 7px!important;border-radius:10px}
+  .shiva-about-stats strong{font-size:20px}
+  .shiva-about-stats span{font-size:8px;letter-spacing:.25px}
+  .shiva-about-section-heading{margin-bottom:22px}
+  .shiva-about-section-heading h2{font-size:23px;line-height:1.25}
+  .shiva-about-section-heading p{font-size:11.5px}
+  .shiva-about-only .shiva-about-points{gap:9px}
+  .shiva-about-only .shiva-about-point{min-height:0;padding:13px 12px!important;border-radius:11px}
+  .shiva-about-only .shiva-about-point>i{width:34px;height:34px;min-width:34px;border-radius:9px;font-size:12px}
+  .shiva-about-only .shiva-about-point strong{font-size:12.2px}
+  .shiva-about-only .shiva-about-point span{font-size:10.5px}
+  .shiva-about-bottom{margin-top:34px;gap:11px}
+  .shiva-about-only .shiva-about-commitment{padding:21px 18px 20px;border-radius:12px}
+  .shiva-about-only .shiva-about-commitment h2{font-size:19px}
+  .shiva-about-only .shiva-about-commitment p{font-size:11.5px}
+  .shiva-about-tagline{padding:20px 17px;border-radius:12px}
+  .shiva-about-tagline strong{font-size:10.5px}
+}
+
+/* =========================================================
+   SHIVA ABOUT — SIMPLE PREMIUM FINAL
+   Scoped only to the About section. Existing image + font family
+   are preserved; only the section layout and brand accents change.
+   ========================================================= */
+.shiva-about-only{background:#fff!important;position:relative;overflow:hidden}
+.shiva-about-only:before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,#1800AD 0 78%,#ff3b3b 78% 100%)}
+.shiva-about-only .container{max-width:1160px}
+.shiva-about-hero{grid-template-columns:minmax(0,1fr) minmax(420px,.88fr);gap:64px;align-items:center;margin-bottom:68px;padding:26px 0 0}
+.shiva-about-hero-copy{padding-left:0!important}
+.shiva-about-hero-copy:before{display:none!important}
+.shiva-about-kicker{display:flex!important;align-items:center;gap:9px!important;margin:0 0 14px!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important;color:#1800AD!important;font-size:10px!important;font-weight:700!important;letter-spacing:1.6px!important}
+.shiva-about-kicker span{width:26px;height:2px;background:#ff3b3b;display:inline-block}
+.shiva-about-only .shiva-about-hero h1{margin:0 0 16px!important;font-size:44px!important;line-height:1.08!important;letter-spacing:-1.1px!important;color:#20283b!important;font-weight:700!important}
+.shiva-about-only .shiva-about-hero h1 strong{color:#1800AD!important;font-weight:700!important}
+.shiva-about-meta{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin:0 0 22px;color:#3d4656;font-size:11px;font-weight:600}
+.shiva-about-meta i{width:4px;height:4px;border-radius:50%;background:#ff3b3b;display:inline-block}
+.shiva-about-only .shiva-about-hero-copy p{max-width:610px!important;margin:0 0 12px!important;font-size:13px!important;line-height:1.75!important;color:#687181!important}
+.shiva-about-only .shiva-about-hero-copy .shiva-about-intro{font-size:14px!important;line-height:1.75!important;color:#394354!important;font-weight:500!important}
+.shiva-about-stats{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:0!important;margin-top:25px!important;padding:0!important;border:1px solid #e7e9ef!important;border-radius:12px!important;overflow:hidden!important;background:#fff!important;box-shadow:0 8px 24px rgba(24,31,48,.045)!important}
+.shiva-about-stats>div{padding:14px 16px!important;border:0!important;border-right:1px solid #e7e9ef!important;border-radius:0!important;background:#fff!important;box-shadow:none!important;transform:none!important}
+.shiva-about-stats>div:last-child{border-right:0!important}
+.shiva-about-stats>div:hover{transform:none!important;box-shadow:none!important}
+.shiva-about-stats strong{font-size:24px!important;line-height:1!important;color:#1800AD!important}
+.shiva-about-stats>div:nth-child(2) strong{color:#ff3b3b!important}
+.shiva-about-stats span{margin-top:5px!important;font-size:9px!important;letter-spacing:.35px!important;color:#7b8491!important;text-transform:uppercase}
+.shiva-about-image{padding:0 8px 10px 0!important}
+.shiva-about-image:before{right:0!important;top:10px!important;width:94%!important;height:91%!important;border:1px solid rgba(24,0,173,.14)!important;border-radius:16px!important;transform:translate(7px,-7px)!important}
+.shiva-about-image-frame{padding:7px!important;border:1px solid #e7e9ef!important;border-radius:15px!important;background:#fff!important;box-shadow:0 18px 45px rgba(25,35,55,.10)!important}
+.shiva-about-image-frame img{width:100%!important;display:block!important;aspect-ratio:4/3!important;object-fit:cover!important;border-radius:10px!important}
+.shiva-about-corner{width:32px!important;height:32px!important}
+.corner-tl{left:-5px!important;top:-5px!important;border-left:2px solid #1800AD!important;border-top:2px solid #1800AD!important}
+.corner-br{right:-5px!important;bottom:-5px!important;border-right:2px solid #ff3b3b!important;border-bottom:2px solid #ff3b3b!important}
+.shiva-about-section-heading{max-width:none!important;margin:0 auto 25px!important;text-align:center!important}
+.shiva-about-heading-line{display:flex;align-items:center;gap:14px;justify-content:center}
+.shiva-about-heading-line span{height:1px;background:#dfe3ea;flex:1;max-width:210px}
+.shiva-about-heading-line span:first-child:after,.shiva-about-heading-line span:last-child:before{content:"";display:block;width:5px;height:5px;background:#ff3b3b;border-radius:50%;margin-top:-2px}
+.shiva-about-heading-line span:first-child:after{margin-left:auto}
+.shiva-about-heading-line span:last-child:before{margin-left:0}
+.shiva-about-section-heading h2{margin:0!important;color:#20283b!important;font-size:27px!important;line-height:1.2!important;font-weight:700!important;white-space:nowrap}
+.shiva-about-section-heading p{margin:8px 0 0!important;color:#7a8390!important;font-size:12px!important}
+.shiva-about-only .shiva-about-points{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0!important;border:1px solid #e5e8ee!important;border-radius:13px!important;overflow:hidden!important;background:#fff!important;box-shadow:0 8px 25px rgba(24,31,48,.035)!important}
+.shiva-about-only .shiva-about-point{min-height:68px!important;padding:14px 17px!important;border:0!important;border-bottom:1px solid #e9ebef!important;border-right:1px solid #e9ebef!important;border-radius:0!important;background:#fff!important;box-shadow:none!important;transform:none!important;display:flex!important;align-items:center!important;gap:12px!important}
+.shiva-about-only .shiva-about-point:nth-child(even){border-right:0!important}
+.shiva-about-only .shiva-about-point:nth-last-child(-n+2){border-bottom:0!important}
+.shiva-about-only .shiva-about-point:before{display:none!important}
+.shiva-about-only .shiva-about-point:hover{transform:none!important;box-shadow:none!important;background:#fcfcfe!important}
+.shiva-about-only .shiva-about-point>i{width:31px!important;height:31px!important;min-width:31px!important;border-radius:8px!important;background:#f1f2fb!important;color:#1800AD!important;font-size:12px!important}
+.shiva-about-only .shiva-about-point:nth-child(even)>i{background:#fff1f2!important;color:#ff3b3b!important}
+.shiva-about-only .shiva-about-point strong{font-size:12.5px!important;line-height:1.35!important;color:#2b3445!important;font-weight:600!important}
+.shiva-about-bottom{grid-template-columns:1.25fr .75fr!important;gap:14px!important;margin-top:34px!important}
+.shiva-about-only .shiva-about-commitment{padding:23px 25px!important;border:1px solid #e2e6ed!important;border-left:3px solid #1800AD!important;border-radius:13px!important;background:#fff!important;box-shadow:0 8px 24px rgba(24,31,48,.045)!important}
+.shiva-about-only .shiva-about-mini-label{font-size:9px!important;letter-spacing:1.5px!important;padding:0!important;background:none!important;color:#ff3b3b!important}
+.shiva-about-only .shiva-about-commitment h2{font-size:20px!important;margin:9px 0 7px!important;color:#20283b!important}
+.shiva-about-only .shiva-about-commitment p{font-size:11.5px!important;line-height:1.7!important;color:#707987!important;margin:0!important}
+.shiva-about-only .shiva-about-commitment strong{color:#1800AD!important}
+.shiva-about-tagline{padding:23px 24px!important;border:1px solid #e2e6ed!important;border-radius:13px!important;background:#1800AD!important;box-shadow:0 8px 24px rgba(24,0,173,.12)!important;display:flex!important;align-content:center!important;align-items:center!important;gap:5px 8px!important}
+.shiva-about-tagline:before,.shiva-about-tagline:after{display:none!important}
+.shiva-about-tagline span{font-size:9px!important;letter-spacing:1.5px!important;color:#fff!important;margin-bottom:3px!important}
+.shiva-about-tagline strong{font-size:10.5px!important;line-height:1.45!important;color:#fff!important}
+.shiva-about-tagline b{font-size:10px!important;color:#ff5a67!important}
+@media(max-width:991px){
+ .shiva-about-hero{grid-template-columns:1fr!important;gap:35px!important}
+ .shiva-about-image{order:-1!important;max-width:620px!important;margin:0 auto!important;width:100%!important}
+ .shiva-about-only .shiva-about-hero h1{font-size:38px!important}
+ .shiva-about-bottom{grid-template-columns:1fr!important}
+}
+@media(max-width:575px){
+ .shiva-about-only.section-padding{padding:55px 0 58px!important}
+ .shiva-about-hero{gap:27px!important;margin-bottom:46px!important;padding-top:13px!important}
+ .shiva-about-image{padding:0 5px 8px 0!important}
+ .shiva-about-image-frame{padding:5px!important;border-radius:12px!important}
+ .shiva-about-image-frame img{border-radius:8px!important}
+ .shiva-about-only .shiva-about-hero h1{font-size:29px!important;line-height:1.12!important;letter-spacing:-.6px!important}
+ .shiva-about-meta{font-size:9px!important;gap:6px!important;line-height:1.5!important;margin-bottom:17px!important}
+ .shiva-about-meta i{width:3px;height:3px}
+ .shiva-about-only .shiva-about-hero-copy p{font-size:11.5px!important;line-height:1.7!important}
+ .shiva-about-only .shiva-about-hero-copy .shiva-about-intro{font-size:12.5px!important}
+ .shiva-about-stats{margin-top:19px!important;border-radius:10px!important}
+ .shiva-about-stats>div{padding:11px 7px!important}
+ .shiva-about-stats strong{font-size:19px!important}
+ .shiva-about-stats span{font-size:7.5px!important;letter-spacing:.2px!important}
+ .shiva-about-heading-line{gap:8px}
+ .shiva-about-heading-line span{max-width:65px}
+ .shiva-about-section-heading h2{font-size:21px!important}
+ .shiva-about-section-heading p{font-size:10.5px!important;line-height:1.5!important}
+ .shiva-about-only .shiva-about-points{grid-template-columns:1fr!important;border-radius:10px!important}
+ .shiva-about-only .shiva-about-point{min-height:56px!important;padding:11px 12px!important;border-right:0!important}
+ .shiva-about-only .shiva-about-point:nth-last-child(-n+2){border-bottom:1px solid #e9ebef!important}
+ .shiva-about-only .shiva-about-point:last-child{border-bottom:0!important}
+ .shiva-about-only .shiva-about-point>i{width:28px!important;height:28px!important;min-width:28px!important;font-size:10px!important}
+ .shiva-about-only .shiva-about-point strong{font-size:11px!important}
+ .shiva-about-bottom{margin-top:25px!important;gap:10px!important}
+ .shiva-about-only .shiva-about-commitment{padding:19px 17px!important;border-radius:10px!important}
+ .shiva-about-only .shiva-about-commitment h2{font-size:17px!important}
+ .shiva-about-only .shiva-about-commitment p{font-size:10.5px!important;line-height:1.65!important}
+ .shiva-about-tagline{padding:18px 17px!important;border-radius:10px!important}
+ .shiva-about-tagline strong{font-size:9.5px!important}
+}
