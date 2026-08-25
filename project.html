@@ -588,7 +588,15 @@
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/script.js"></script>
         <script src="assets/js/mobile-menu.js"></script>
-    </body>
+    
+<div class="project-gallery-lightbox" id="projectGalleryLightbox" aria-hidden="true"><button type="button" class="project-gallery-lb-close" aria-label="Close">×</button><button type="button" class="project-gallery-lb-prev" aria-label="Previous">‹</button><img id="projectGalleryLbImage" alt="Project gallery image" src=""><button type="button" class="project-gallery-lb-next" aria-label="Next">›</button><div class="project-gallery-lb-counter" id="projectGalleryLbCounter"></div></div>
+<style>
+.project-gallery-lightbox{position:fixed;inset:0;z-index:999999;background:rgba(10,15,22,.94);display:none;align-items:center;justify-content:center;padding:30px}.project-gallery-lightbox.is-open{display:flex}.project-gallery-lightbox img{max-width:92vw;max-height:88vh;object-fit:contain;border-radius:10px}.project-gallery-lb-close,.project-gallery-lb-prev,.project-gallery-lb-next{position:absolute;border:0;color:#fff;background:rgba(255,255,255,.14);width:44px;height:44px;border-radius:50%;font-size:32px;line-height:40px;cursor:pointer}.project-gallery-lb-close{right:22px;top:18px}.project-gallery-lb-prev{left:22px;top:50%;transform:translateY(-50%)}.project-gallery-lb-next{right:22px;top:50%;transform:translateY(-50%)}.project-gallery-lb-counter{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px}.project-gallery-lightbox-open{overflow:hidden}
+</style>
+<script id="project-gallery-lightbox-fix">
+(function(){function init(){var lb=document.getElementById('projectGalleryLightbox'),im=document.getElementById('projectGalleryLbImage'),ct=document.getElementById('projectGalleryLbCounter');var links=[].slice.call(document.querySelectorAll('.img-gallery-popup a'));if(!lb||!im||!links.length)return;var i=0;function open(n){i=(n+links.length)%links.length;im.src=links[i].getAttribute('href');ct.textContent=(i+1)+' / '+links.length;lb.classList.add('is-open');lb.setAttribute('aria-hidden','false');document.body.classList.add('project-gallery-lightbox-open')}function close(){lb.classList.remove('is-open');lb.setAttribute('aria-hidden','true');document.body.classList.remove('project-gallery-lightbox-open');im.src=''}links.forEach(function(a,n){a.addEventListener('click',function(e){e.preventDefault();e.stopImmediatePropagation();open(n)},true)});document.querySelector('.project-gallery-lb-close').onclick=close;document.querySelector('.project-gallery-lb-prev').onclick=function(){open(i-1)};document.querySelector('.project-gallery-lb-next').onclick=function(){open(i+1)};lb.onclick=function(e){if(e.target===lb)close()};document.addEventListener('keydown',function(e){if(!lb.classList.contains('is-open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')open(i-1);if(e.key==='ArrowRight')open(i+1)});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();
+</script>
+</body>
 
 <!-- Mirrored from preetheme.com/html/codeit/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jan 2022 16:16:06 GMT -->
 

@@ -7,3 +7,30 @@ FINAL PRODUCT IMAGE UPDATE
 - Rebuilt About as a complete static page from about.php.
 - Added exhibitions.html as the working static Exhibition page.
 - Mobile menu JavaScript was rewritten so About, Exhibition and all normal links navigate correctly and the drawer closes after selection.
+
+
+PRE RUBBER DIES — CURRENT BATCH
+- 01-pre-rubber-dies.jpg = Pre Rubber Dies Front.jpg
+- 02-pre-rubber-dies-1.jpg = Pre Rubber Dies 14.jpg
+- 03-pre-rubber-dies-2.jpg = Pre Rubber Dies 10.jpg
+- 04-pre-rubber-dies-3.jpg = Pre Rubber Dies 9.jpg
+- 05-pre-rubber-dies-4.jpg = Pre Rubber Dies 8.jpg
+- 06-pre-rubber-dies-5.jpg = Pre Rubber Dies 7.jpg
+- Replaced the previous Pre Rubber Dies image set with this uploaded batch only.
+- Product name, order, carousel ID, styling, and description were preserved.
+
+
+FINAL ALL-PRODUCT IMAGE BATCH — 25 AUG 2026
+- punch-emboss-online: 6 uploaded images replaced/added
+- sandwich-dies: 5 uploaded images replaced/added
+- steel-counter-plate: 5 uploaded images replaced/added
+- step-emboss: 4 uploaded images replaced/added
+- stripping-tool: 6 uploaded images replaced/added
+- texter-foil-block: 5 uploaded images replaced/added
+- braille-embossing-die: 10 uploaded images replaced/added
+- blanking-die-male-female: 9 uploaded images replaced/added
+- 3d-emboss: 12 uploaded images replaced/added
+- pre-rubberized-die: 6 uploaded images replaced/added
+- Gallery: first 68 existing gallery images replaced with the uploaded product images; remaining gallery images preserved.
+- Gallery lightbox/click-to-open behavior preserved and verified in gallery.html.
+- Product image click-to-open behavior enabled for all updated product carousels.
