@@ -34,3 +34,29 @@ FINAL ALL-PRODUCT IMAGE BATCH — 25 AUG 2026
 - Gallery: first 68 existing gallery images replaced with the uploaded product images; remaining gallery images preserved.
 - Gallery lightbox/click-to-open behavior preserved and verified in gallery.html.
 - Product image click-to-open behavior enabled for all updated product carousels.
+
+
+UPDATED IMAGE BATCH — 25 AUG 2026 (NAME-WISE REPLACEMENT)
+- Replaced old product-specific images with the newly uploaded name-wise batches across Our Product cards.
+- Updated 19 product image sets; 118 uploaded product images are now used.
+- Gallery product-image block rebuilt with all 118 uploaded images; non-product gallery images 69–84 were preserved.
+- Gallery total is now 134 images; existing click-to-open/lightbox behavior preserved.
+  - 3D Emboss: 12 images
+  - Laser Dies: 6 images
+  - Pre Rubber Dies: 6 images
+  - Punch + Emboss Online: 6 images
+  - Label Dies: 2 images
+  - Sandwich Dies: 5 images
+  - Steel Counter Plate: 5 images
+  - Stripping Die Male Female: 6 images
+  - Blanking Die Male Female: 9 images
+  - Creasing Pertinex: 5 images
+  - Elecro Etg Foil Block: 6 images
+  - Mag Etg Foil Block: 4 images
+  - Texter Foil Block: 5 images
+  - CNC Foil Block: 14 images
+  - Foil + Emboss One Shot: 4 images
+  - Emboss Dies: 2 images
+  - Micro Effect Dies: 7 images
+  - Step Emboss: 4 images
+  - Braille Emboss: 10 images
