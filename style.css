@@ -3526,3 +3526,155 @@ body.shiva-video-open { overflow: hidden; }
     box-sizing: border-box !important;
   }
 }
+
+
+/* Shiva Punch Art - About Section */
+.shiva-about-only .shiva-about-content {
+    padding-right: 28px;
+}
+
+.shiva-about-only .shiva-about-kicker {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #1800AD;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.shiva-about-only .shiva-about-content h2 {
+    margin-bottom: 7px;
+}
+
+.shiva-about-only .shiva-about-highlight {
+    margin-bottom: 22px;
+    color: #1d2746;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.shiva-about-only .shiva-about-highlight span {
+    color: #ff3b3b;
+    padding: 0 5px;
+}
+
+.shiva-about-only .shiva-about-content p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.shiva-about-only .shiva-about-lead {
+    font-weight: 500;
+}
+
+.shiva-about-only .shiva-about-divider {
+    width: 52px;
+    height: 3px;
+    margin: 21px 0 20px;
+    background: #1800AD;
+}
+
+.shiva-about-only .shiva-about-content h3 {
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+.shiva-about-only .shiva-about-points {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px 18px;
+}
+
+.shiva-about-only .shiva-about-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    color: #4a4a4a;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.shiva-about-only .shiva-about-point span {
+    flex: 0 0 18px;
+    color: #1800AD;
+    font-weight: 700;
+}
+
+.shiva-about-only .shiva-about-commitment {
+    margin-top: 25px;
+    padding: 20px 21px;
+    border-left: 3px solid #ff3b3b;
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.shiva-about-only .shiva-about-commitment h3 {
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+
+.shiva-about-only .shiva-about-commitment p {
+    margin-bottom: 0;
+}
+
+.shiva-about-only .shiva-about-commitment strong {
+    color: #1800AD;
+}
+
+.shiva-about-only .shiva-about-tagline {
+    margin-top: 23px;
+    padding-top: 17px;
+    border-top: 1px solid #e7e7e7;
+}
+
+.shiva-about-only .shiva-about-tagline strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #1d2746;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+.shiva-about-only .shiva-about-tagline span {
+    color: #4a4a4a;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.shiva-about-only .shiva-about-tagline b {
+    color: #ff3b3b;
+    padding: 0 3px;
+}
+
+.shiva-about-only .shiva-about-image {
+    text-align: center;
+}
+
+.shiva-about-only .shiva-about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 991px) {
+    .shiva-about-only .shiva-about-content {
+        padding-right: 0;
+        margin-bottom: 35px;
+    }
+
+    .shiva-about-only .shiva-about-points {
+        gap: 9px 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .shiva-about-only .shiva-about-content h2 {
+        font-size: 28px;
+    }
+
+    .shiva-about-only .shiva-about-points {
+        grid-template-columns: 1fr;
+    }
+
+    .shiva-about-only .shiva-about-commitment {
+        padding: 17px 16px;
+    }
+}
