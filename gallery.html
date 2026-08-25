@@ -268,24 +268,7 @@
 .shiva-gallery-premium .sp-gallery-count{color:var(--sp-brand-blue)!important;}
 .shiva-gallery-premium .shiva-gallery-image:hover{border-color:var(--sp-brand-red)!important;box-shadow:0 12px 28px rgba(255,40,56,.15)!important;}
 </style>
-<script>
-(function(){
-  const track=document.getElementById('spGalleryTrack');
-  const prev=document.getElementById('spGalleryPrev');
-  const next=document.getElementById('spGalleryNext');
-  const count=document.querySelector('.sp-gallery-count');
-  if(!track)return;
-  const step=()=>Math.min(track.clientWidth*.72,(track.querySelector('.sp-gallery-image')?.getBoundingClientRect().width||270)*2.4);
-  prev.addEventListener('click',()=>track.scrollBy({left:-step(),behavior:'smooth'}));
-  next.addEventListener('click',()=>track.scrollBy({left:step(),behavior:'smooth'}));
-  let down=false,startX=0,startScroll=0;
-  track.addEventListener('pointerdown',e=>{down=true;track.classList.add('dragging');startX=e.clientX;startScroll=track.scrollLeft;track.setPointerCapture(e.pointerId)});
-  track.addEventListener('pointermove',e=>{if(down)track.scrollLeft=startScroll-(e.clientX-startX)*1.15});
-  ['pointerup','pointercancel','mouseleave'].forEach(ev=>track.addEventListener(ev,()=>{down=false;track.classList.remove('dragging')}));
-  track.addEventListener('scroll',()=>{const max=track.scrollWidth-track.clientWidth;const ratio=max?track.scrollLeft/max:0;const n=Math.min(84,Math.max(1,Math.round(1+ratio*83)));count.textContent=String(n).padStart(2,'0')+' / 84';});
-  if(window.jQuery&&jQuery.fn.magnificPopup)jQuery('.shiva-gallery-image').magnificPopup({type:'image',gallery:{enabled:true}});
-})();
-</script>
+
 <!-- End Premium Gallery Area -->
 <!-- Start Subscriber Area -->
 <div class="subscribe-area pt-70 pb-70" style="background-image: url('assets/img/sub.jpg');">
@@ -414,37 +397,35 @@
 (function(){
   function init(){
     var track=document.getElementById('spGalleryTrack'), lb=document.getElementById('spLightbox'), img=document.getElementById('spLbImage'), counter=document.getElementById('spLbCounter');
-    var prev=document.getElementById('spGalleryPrev'), next=document.getElementById('spGalleryNext');
     if(!track||!lb||!img)return;
-    var cards=[].slice.call(track.querySelectorAll('.shiva-gallery-image'));
+    var cards=[].slice.call(track.querySelectorAll('a.shiva-gallery-image'));
     var idx=0;
     function open(i){
       if(!cards.length)return;
       idx=(i+cards.length)%cards.length;
-      var a=cards[idx], source=a.getAttribute('href')||a.querySelector('img')?.getAttribute('src');
+      var a=cards[idx], source=a.getAttribute('data-full')||a.getAttribute('href')||(a.querySelector('img')&&a.querySelector('img').getAttribute('src'));
       if(!source)return;
-      img.src=source; img.alt=(a.querySelector('img')?.alt)||'Gallery image';
+      img.src=source; img.alt=(a.querySelector('img')&&a.querySelector('img').alt)||'Gallery image';
       if(counter)counter.textContent=String(idx+1).padStart(2,'0')+' / '+String(cards.length).padStart(2,'0');
-      lb.classList.add('is-open');lb.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
+      lb.classList.add('is-open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden';
     }
     function close(){lb.classList.remove('is-open');lb.setAttribute('aria-hidden','true');document.body.style.overflow='';}
     function move(d){open(idx+d);}
-    function step(){var c=cards[0];return c?c.getBoundingClientRect().width+16:286;}
-    function update(){var max=Math.max(0,track.scrollWidth-track.clientWidth-2);if(prev)prev.disabled=track.scrollLeft<=2;if(next)next.disabled=track.scrollLeft>=max-2;}
-    if(prev)prev.addEventListener('click',function(e){e.preventDefault();track.scrollBy({left:-step(),behavior:'smooth'});});
-    if(next)next.addEventListener('click',function(e){e.preventDefault();track.scrollBy({left:step(),behavior:'smooth'});});
-    track.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);update();
     cards.forEach(function(a,i){
       a.style.cursor='zoom-in';
-      a.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();open(i);});
+      a.addEventListener('click',function(e){ e.preventDefault(); e.stopImmediatePropagation(); open(i); },true);
       a.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(i);}});
     });
-    var all=document.getElementById('spOpenAllGallery');if(all)all.addEventListener('click',function(e){e.preventDefault();open(0);});
+    var prev=document.getElementById('spGalleryPrev'),next=document.getElementById('spGalleryNext');
+    function step(){var c=cards[0];return c?c.getBoundingClientRect().width+16:286;}
+    if(prev)prev.onclick=function(e){e.preventDefault();track.scrollBy({left:-step(),behavior:'smooth'});};
+    if(next)next.onclick=function(e){e.preventDefault();track.scrollBy({left:step(),behavior:'smooth'});};
+    var all=document.getElementById('spOpenAllGallery');if(all)all.onclick=function(e){e.preventDefault();open(0);};
     var closeBtn=document.getElementById('spLbClose'),prevLb=document.getElementById('spLbPrev'),nextLb=document.getElementById('spLbNext');
-    if(closeBtn)closeBtn.addEventListener('click',function(e){e.preventDefault();close();});
-    if(prevLb)prevLb.addEventListener('click',function(e){e.preventDefault();move(-1);});
-    if(nextLb)nextLb.addEventListener('click',function(e){e.preventDefault();move(1);});
-    lb.addEventListener('click',function(e){if(e.target===lb)close();});
+    if(closeBtn)closeBtn.onclick=function(e){e.preventDefault();close();};
+    if(prevLb)prevLb.onclick=function(e){e.preventDefault();move(-1);};
+    if(nextLb)nextLb.onclick=function(e){e.preventDefault();move(1);};
+    lb.onclick=function(e){if(e.target===lb)close();};
     document.addEventListener('keydown',function(e){if(!lb.classList.contains('is-open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1);});
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();

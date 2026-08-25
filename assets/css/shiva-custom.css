@@ -3514,3 +3514,10 @@ select,
     max-height: 430px;
   }
 }
+
+/* Desktop gallery click fix: images open on normal click; no pointer-capture drag interference. */
+.sp-gallery-track{cursor:default !important;}
+.shiva-gallery-image{cursor:zoom-in !important;pointer-events:auto !important;}
+.shiva-gallery-image img{pointer-events:none !important;}
+.sp-lightbox{pointer-events:none;}
+.sp-lightbox.is-open{pointer-events:auto;}
