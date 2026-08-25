@@ -1158,7 +1158,7 @@ img{
 	margin-right: auto !important;
 }
 .latest-projects-slider-full .project-item .thumbnail {
-	height: 500px;
+	height: 320px;
 	overflow: hidden;
 }
 
@@ -3218,7 +3218,7 @@ border-radius:8px;
 
 @media (max-width: 767px) {
 	.latest-projects-slider-full .project-item .thumbnail {
-		height: 330px;
+		height: 260px;
 	}
 }
 
@@ -3289,11 +3289,13 @@ border-radius:8px;
     overflow: hidden;
     border-radius: 14px;
 }
-.shiva-video-frame-wrap iframe {
+.shiva-video-frame-wrap iframe,
+.shiva-video-frame-wrap video {
     width: 100%;
     height: 100%;
     border: 0;
     display: block;
+    background: #000;
 }
 .shiva-video-close {
     position: absolute;

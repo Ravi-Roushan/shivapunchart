@@ -3,7 +3,7 @@
     <div class="shiva-footer-brand">
       <a href="index.html" class="shiva-footer-logo"><img src="assets/img/logo-footer.png" alt="Shiva Punch Art" /></a>
       <p>Precision punch, die and embossing solutions for printing, packaging and converting applications.</p>
-      <a class="shiva-support" href="tel:+919136730776"><span class="support-icon"><i class="fas fa-phone-volume"></i></span><span><small>Talk To Our Support</small><strong>+91 91367 30776</strong></span><i class="fas fa-arrow-right"></i></a>
+      <a class="shiva-support" href="tel:+917208930779"><span class="support-icon"><i class="fas fa-phone-volume"></i></span><span><small>Talk To Our Support</small><strong>+91 72089 30779</strong></span><i class="fas fa-arrow-right"></i></a>
     </div>
     <div class="shiva-footer-grid">
       <section class="shiva-footer-card"><h3>Quick Links</h3><ul class="shiva-footer-links"><li><a href="about.html">About Us</a></li><li><a href="our-product.html">Our Products</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="exhibitions.html">Exhibitions</a></li><li><a href="contact.html">Contact Us</a></li></ul></section>

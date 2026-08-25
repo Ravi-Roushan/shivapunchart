@@ -303,7 +303,7 @@
                             </div>
                             <div class="works-about-vedio">
     <div class="video-btn">
-        <a href="https://youtu.be/uOYIoX3srbw" class="shiva-video-trigger" data-video="uOYIoX3srbw" aria-label="Play company video">
+        <a href="assets/img/project/video/1.mp4" class="shiva-video-trigger" data-video="assets/img/project/video/1.mp4" aria-label="Play company video">
             <i class="fas fa-play"></i>
         </a>
     </div>
@@ -331,17 +331,17 @@
                 <div class="latest-projects-slider-full owl-carousel">
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/gallery/gallery-008.jpg" alt="Shiva Punch Art Mould Punch Tool" />
+                            <img src="assets/img/our-work/work-1.png" alt="Shiva Punch Art" />
                         </div>
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="product-details.php">Mould Punch Tool</a></h4>
-                                    <a class="cat" href="#">Mould Punch Tool</a>
+                                    <h4><a href="product-details.php">Shiva Punch Art</a></h4>
+                                    <a class="cat" href="#">Our Work</a>
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
-                                        <a href="assets/img/gallery/gallery-008.jpg"><i class="fas fa-plus"></i></a>
+                                        <a href="assets/img/our-work/work-1.png"><i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -349,17 +349,17 @@
                     </div>
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/gallery/gallery-017.jpg" alt="Shiva Punch Art 3D Embossing Die" />
+                            <img src="assets/img/our-work/work-2.png" alt="Shiva Punch Art Laser Die Cutting" />
                         </div>
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="product-details.php">3D Embossing Die</a></h4>
-                                    <a class="cat" href="#">3D Embossing Die</a>
+                                    <h4><a href="product-details.php">Laser Die Cutting</a></h4>
+                                    <a class="cat" href="#">Our Work</a>
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
-                                        <a href="assets/img/gallery/gallery-017.jpg"><i class="fas fa-plus"></i></a>
+                                        <a href="assets/img/our-work/work-2.png"><i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -367,17 +367,17 @@
                     </div>
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/gallery/gallery-022.jpg" alt="Shiva Punch Art Foil Cum Emboss" />
+                            <img src="assets/img/our-work/work-3.png" alt="Shiva Punch Art Precision Tooling" />
                         </div>
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="product-details.php">Foil Cum Emboss</a></h4>
-                                    <a class="cat" href="#">Foil Cum Emboss</a>
+                                    <h4><a href="product-details.php">Precision Tooling</a></h4>
+                                    <a class="cat" href="#">Our Work</a>
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
-                                        <a href="assets/img/gallery/gallery-022.jpg"><i class="fas fa-plus"></i></a>
+                                        <a href="assets/img/our-work/work-3.png"><i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -385,17 +385,17 @@
                     </div>
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/gallery/gallery-059.jpg" alt="Shiva Punch Art Pre Rubber Dies" />
+                            <img src="assets/img/our-work/work-4.jpg" alt="Shiva Punch Art CNC Micro Texturing" />
                         </div>
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="product-details.php">Pre Rubber Dies</a></h4>
-                                    <a class="cat" href="#">Pre Rubber Dies</a>
+                                    <h4><a href="product-details.php">CNC Micro Texturing</a></h4>
+                                    <a class="cat" href="#">Our Work</a>
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
-                                        <a href="assets/img/gallery/gallery-059.jpg"><i class="fas fa-plus"></i></a>
+                                        <a href="assets/img/our-work/work-4.jpg"><i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -403,23 +403,42 @@
                     </div>
                     <div class="project-item">
                         <div class="thumbnail">
-                            <img src="assets/img/gallery/gallery-074.jpg" alt="Shiva Punch Art Laser Dies" />
+                            <img src="assets/img/our-work/work-5.png" alt="Shiva Punch Art Multi Head Punching" />
                         </div>
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="product-details.php">Laser Dies</a></h4>
-                                    <a class="cat" href="#">Laser Dies</a>
+                                    <h4><a href="product-details.php">Multi Head Punching</a></h4>
+                                    <a class="cat" href="#">Our Work</a>
                                 </div>
                                 <div class="right-info">
                                     <div class="img-gallery-popup">
-                                        <a href="assets/img/gallery/gallery-074.jpg"><i class="fas fa-plus"></i></a>
+                                        <a href="assets/img/our-work/work-5.png"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="thumbnail">
+                            <img src="assets/img/our-work/work-6.jpg" alt="Shiva Punch Art Laser Cutting" />
+                        </div>
+                        <div class="info">
+                            <div class="info-item">
+                                <div class="left-info">
+                                    <h4><a href="product-details.php">Laser Cutting</a></h4>
+                                    <a class="cat" href="#">Our Work</a>
+                                </div>
+                                <div class="right-info">
+                                    <div class="img-gallery-popup">
+                                        <a href="assets/img/our-work/work-6.jpg"><i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            
             </div>
         </section>
         <!-- End Latest Projects Slider -->
@@ -498,7 +517,7 @@
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="we-provide-content">
                             <div class="video-btn">
-                                <a href="https://youtu.be/i5WyUt1sC0o?t=4" class="shiva-video-trigger" data-video="i5WyUt1sC0o" aria-label="Play company video"><i class="fas fa-play"></i></a>
+                                <a href="assets/img/project/video/1.mp4" class="shiva-video-trigger" data-video="assets/img/project/video/1.mp4" aria-label="Play company video"><i class="fas fa-play"></i></a>
                             </div>
                             <h2>Engineering Precision. Delivering Perfection.</h2>
                             <p>Advanced CNC & laser technology combined with expert craftsmanship to produce reliable punch and die solutions for industrial applications.</p>
