@@ -3998,3 +3998,33 @@ body.shiva-video-open { overflow: hidden; }
  .shiva-about-tagline{padding:18px 17px!important;border-radius:10px!important}
  .shiva-about-tagline strong{font-size:9.5px!important}
 }
+
+/* Our Infrastructure & Our Clients (About page) */
+.shiva-infra-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:26px}
+.shiva-infra-item{display:flex;align-items:flex-start;gap:12px;padding:16px 16px;background:#fff;border:1px solid #ececf0;border-radius:10px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.shiva-infra-item:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(29,39,70,.07);border-color:#dfe0e8}
+.shiva-infra-item>i{width:34px;height:34px;min-width:34px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:rgba(24,0,173,.07);color:#1800AD;font-size:14px}
+.shiva-infra-item:nth-child(3n)>i{color:#ff3b3b;background:rgba(255,59,59,.08)}
+.shiva-infra-item strong{display:block;color:#2b3445;font-size:13px;line-height:1.4;font-weight:700}
+.shiva-infra-item span{display:block;color:#8991a0;font-size:11px;margin-top:3px;letter-spacing:.3px}
+
+.shiva-clients-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:26px}
+.shiva-client-item{display:flex;align-items:center;gap:10px;padding:14px 16px;background:#fff;border:1px solid #ececf0;border-radius:10px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.shiva-client-item:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(29,39,70,.07);border-color:#dfe0e8}
+.shiva-client-item>i{width:30px;height:30px;min-width:30px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:rgba(255,59,59,.08);color:#ff3b3b;font-size:12px}
+.shiva-client-item span{font-size:12.5px;font-weight:600;color:#2b3445;line-height:1.4}
+
+@media(max-width:991px){
+  .shiva-infra-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .shiva-clients-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:575px){
+  .shiva-infra-grid{grid-template-columns:1fr;gap:10px;margin-top:20px}
+  .shiva-infra-item{padding:13px 14px}
+  .shiva-infra-item>i{width:30px;height:30px;min-width:30px;font-size:12px}
+  .shiva-infra-item strong{font-size:12.5px}
+  .shiva-infra-item span{font-size:10.5px}
+  .shiva-clients-grid{grid-template-columns:1fr;gap:10px;margin-top:20px}
+  .shiva-client-item{padding:12px 14px}
+  .shiva-client-item span{font-size:12px}
+}

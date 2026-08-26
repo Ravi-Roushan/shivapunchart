@@ -1685,11 +1685,14 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
 /* Keep each slide in the exact same hero frame. */
 section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-0,
 section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-1,
-section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-3,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-4,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-5{
   background-size:cover !important;
 }
 
-/* The second image contains the Shiva Punch Art logo near the top.
+/* Slide 0 is the Shiva Punch Art banner with logo/text near the top.
    On phones, show that upper portion instead of vertically centering/cropping it away. */
 @media (max-width:767px){
   section.hero-banner-area.shiva-auto-hero.shiva-hero-compact{
@@ -1699,16 +1702,16 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
     background-position:center center !important;
   }
 
-  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-1{
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-0{
     background-position:center top !important;
   }
 
-  /* Keep the other two slides visually balanced on mobile. */
-  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-0{
-    background-position:63% center !important;
-  }
-
-  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2{
+  /* Keep the other slides visually balanced on mobile. */
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-1,
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-2,
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-3,
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-4,
+  section.hero-banner-area.shiva-auto-hero.shiva-hero-compact.shiva-slide-5{
     background-position:center center !important;
   }
 

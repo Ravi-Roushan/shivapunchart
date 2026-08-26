@@ -2,7 +2,7 @@
        <?php include "common/header.php" ?>
        
        <!-- Start Hero Banner Area -->
-        <section class="hero-banner-area shiva-auto-hero shiva-hero-compact" style="background-image: url('assets/img/hero.png');">
+        <section class="hero-banner-area shiva-auto-hero shiva-hero-compact" style="background-image: url('assets/img/our-work/work-1.png');">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 align-self-center">
@@ -140,13 +140,13 @@
                         <!-- Top Content -->
                         <div class="content-top">
                             <div class="icon image-box">
-                                <img src="assets/img/1.png" alt="Embossing Make Ready">
+                                <img src="assets/img/home-services/punch-emboss-online.jpg" alt="Punch + Emboss Online">
                             </div>
 
                             <div class="con">
-                                <h2>Mould Punch Tool</h2>
+                                <h2>Punch + Emboss Online</h2>
                                 <p>
-                                    High-accuracy punch dies crafted for consistent performance, sharp detailing, and long tool life. Engineered for demanding printing and packaging applications
+                                    Punch + Emboss Online tooling combines punching and embossing in a coordinated setup for accurate registration and consistent, efficient production.
                                 </p>
                             </div>
                         </div>
@@ -154,9 +154,9 @@
                         <!-- Hover Overlay Content -->
                         <div class="content-overly">
                             <div class="content-overly-full">
-                                <h2>Mould Punch Tool</h2>
+                                <h2>Punch + Emboss Online</h2>
                                 <p>
-                                    High-accuracy punch dies crafted for consistent performance, sharp detailing, and long tool life. Engineered for demanding printing and packaging applications
+                                    Punch + Emboss Online tooling combines punching and embossing operations in a coordinated setup, helping achieve accurate registration, consistent forming and efficient production for packaging, labels and printed materials.
                                 </p>
                             </div>
                         </div>
@@ -169,20 +169,18 @@
                         <div class="info-box-2">
                             <div class="content-top">
                             <div class="icon image-box">
-                                <img src="assets/img/home-original/rubbering.jpg" alt="Embossing Make Ready">
+                                <img src="assets/img/home-services/cnc-foil-block.jpg" alt="CNC Foil Block">
                             </div>
                                 <div class="con">
-                                    <h2>Rubbering</h2>
-                                    <p>Our Embossing Make Ready process is engineered for absolute precision..</p>
+                                    <h2>CNC Foil Block</h2>
+                                    <p>Precision-machined blocks for high-quality hot foil stamping, giving sharp, consistent reproduction of logos and designs.</p>
                                 </div>
                             </div>
                         <div class="content-overly">
                             <div class="content-overly-full">
-                                <h2>Rubbering</h2>
+                                <h2>CNC Foil Block</h2>
                                 <p>
-                                    Our Embossing Make Ready process is engineered for absolute precision.
-                                    By ensuring flawless alignment between die and substrate, we guarantee
-                                    sharp, high-definition results that elevate the tactile quality of your packaging.
+                                    CNC Foil Blocks are precision-machined tooling blocks used for high-quality hot foil stamping. CNC engraving enables accurate reproduction of logos, typography and detailed designs with consistent depth and finish.
                                 </p>
                             </div>
                         </div>
@@ -193,17 +191,17 @@
                         <div class="info-box-2">
                             <div class="content-top">
                             <div class="icon image-box">
-                                <img src="assets/img/3.png" alt="Embossing Make Ready">
+                                <img src="assets/img/home-services/creasing-pertinex.jpg" alt="Creasing Pertinax Plate">
                             </div>
                                 <div class="con">
-                                    <h2>Stereo Flex</h2>
-                                    <p>Our Embossing Make Ready process is engineered for absolute precision..</p>
+                                    <h2>Creasing Pertinax Plate</h2>
+                                    <p>Durable counter plates used in die-cutting machines for accurate, consistent creasing in folding carton production.</p>
                                 </div>
                             </div>
                             <div class="content-overly">
                                 <div class="content-overly-full">
-                                    <h2>Stereo Flex</h2>
-                                    <p>Our Embossing Make Ready process is engineered for absolute precision. By ensuring flawless alignment between die and substrate, we guarantee sharp, high-definition results that elevate the tactile quality of your packaging.</p>
+                                    <h2>Creasing Pertinax Plate</h2>
+                                    <p>Pertinax (Pertinex) is a durable material used as a counter sheet/plate in die-cutting machines, delivering precise and consistent creasing for folding carton production.</p>
                                 </div>
                             </div>
                         </div>
@@ -213,17 +211,17 @@
                         <div class="info-box-2">
                             <div class="content-top">
                             <div class="icon image-box">
-                                <img src="assets/img/home-original/stripping-tool.jpg" alt="Embossing Make Ready">
+                                <img src="assets/img/home-services/stripping-die-male-female.jpg" alt="Stripping Die Male Female">
                             </div>
                                 <div class="con">
-                                    <h2>Stripping Tool</h2>
-                                    <p>Our Embossing Make Ready process is engineered for absolute precision..</p>
+                                    <h2>Stripping Die Male Female</h2>
+                                    <p>Matched male-female tooling that automatically removes scrap from cartons, speeding up production and cutting manual labor.</p>
                                 </div>
                             </div>
                             <div class="content-overly">
                                 <div class="content-overly-full">
-                                    <h2>Stripping Tool</h2>
-                                    <p>Our Embossing Make Ready process is engineered for absolute precision. By ensuring flawless alignment between die and substrate, we guarantee sharp, high-definition results that elevate the tactile quality of your packaging.</p>
+                                    <h2>Stripping Die Male Female</h2>
+                                    <p>Male &amp; Female Stripping Dies are specialized tooling used in automatic packaging machinery to remove waste material (scrap) from cartons, increasing production speed and reducing manual labor.</p>
                                 </div>
                             </div>
                         </div>
@@ -233,17 +231,17 @@
                         <div class="info-box-2">
                             <div class="content-top">
                             <div class="icon image-box">
-                                <img src="assets/img/home-original/3d-emblem-block.jpg" alt="Embossing Make Ready">
+                                <img src="assets/img/home-services/braille-emboss.jpg" alt="Braille Emboss">
                             </div>
                                 <div class="con">
-                                    <h2>3D Emblem Block</h2>
-                                    <p>Our Embossing Make Ready process is engineered for absolute precision..</p>
+                                    <h2>Braille Emboss</h2>
+                                    <p>High-precision matched male and female dies that create raised, tactile Braille dots for packaging and pharmaceuticals.</p>
                                 </div>
                             </div>
                             <div class="content-overly">
                                 <div class="content-overly-full">
-                                    <h2>3D Emblem Block</h2>
-                                    <p>Our Embossing Make Ready process is engineered for absolute precision. By ensuring flawless alignment between die and substrate, we guarantee sharp, high-definition results that elevate the tactile quality of your packaging.</p>
+                                    <h2>Braille Emboss</h2>
+                                    <p>Braille embossing dies are specialized, high-precision tools used to create raised, tactile Braille dots on packaging, pharmaceuticals and documents, ensuring crisp and durable, readable dots.</p>
                                 </div>
                             </div>
                         </div>
@@ -253,17 +251,17 @@
                         <div class="info-box-2">
                             <div class="content-top">
                             <div class="icon image-box">
-                                <img src="assets/img/home-original/foil-cum-emboss.jpg" alt="Embossing Make Ready">
+                                <img src="assets/img/home-services/3d-emboss.jpg" alt="3D Emboss">
                             </div>
                                 <div class="con">
-                                    <h2>Foil Cum Emboss</h2>
-                                    <p>Our Embossing Make Ready process is engineered for absolute precision..</p>
+                                    <h2>3D Emboss</h2>
+                                    <p>Precision tooling that creates multi-level, sculpted, highly detailed raised effects on paper, board and premium print products.</p>
                                 </div>
                             </div>
                             <div class="content-overly">
                                 <div class="content-overly-full">
-                                    <h2>Foil Cum Emboss</h2>
-                                    <p>Our Embossing Make Ready process is engineered for absolute precision. By ensuring flawless alignment between die and substrate, we guarantee sharp, high-definition results that elevate the tactile quality of your packaging.</p>
+                                    <h2>3D Emboss</h2>
+                                    <p>3D Emboss dies are precision tooling solutions used to create multi-level, sculpted and highly detailed raised effects on paper, board, packaging and premium print products, with controlled depth and sharp definition.</p>
                                 </div>
                             </div>
                         </div>
@@ -273,6 +271,7 @@
                 </div>
             </div>
         </section>
+        <!-- End Services Area -->
         <!-- End Services Area -->
         <!-- Start Works About Area -->
         <section class="works-about-area section-padding">
@@ -447,29 +446,14 @@
             <div class="container">
                 <div class="row">
                     <!-- Single -->
-                    <div class="col-lg-3 col-md-6 mb-30">
-                        <div class="counter-item">
-                            <div class="icon">
-                                <i class="fas fa-tasks"></i>
-                            </div>
-                            <div class="content">
-                                <div class="title">
-                                    <h2 class="counter">201</h2>
-                                    <h3>+</h3>
-                                </div>
-                                <p>Projects Completed</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single -->
-                    <div class="col-lg-3 col-md-6 mb-30">
+                    <div class="col-lg-4 col-md-6 mb-30">
                         <div class="counter-item">
                             <div class="icon">
                                 <i class="fas fa-dna"></i>
                             </div>
                             <div class="content">
                                 <div class="title">
-                                    <h2 class="counter">13</h2>
+                                    <h2 class="counter">25</h2>
                                     <h3>+</h3>
                                 </div>
                                 <p>Industry Experience</p>
@@ -477,7 +461,7 @@
                         </div>
                     </div>
                     <!-- Single -->
-                    <div class="col-lg-3 col-md-6 mb-30">
+                    <div class="col-lg-4 col-md-6 mb-30">
                         <div class="counter-item">
                             <div class="icon">
                                 <i class="far fa-gem"></i>
@@ -492,7 +476,7 @@
                         </div>
                     </div>
                     <!-- Single -->
-                    <div class="col-lg-3 col-md-6 mb-30">
+                    <div class="col-lg-4 col-md-6 mb-30">
                         <div class="counter-item">
                             <div class="icon">
                                 <i class="fas fa-user-tie"></i>
