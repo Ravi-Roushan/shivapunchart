@@ -4243,3 +4243,412 @@ body.shiva-video-open { overflow: hidden; }
     padding:20px 18px !important;
   }
 }
+
+
+/* Turn the existing bullet-separated text into three vertical lines. */
+.shiva-about-only .shiva-about-tagline strong{
+  font-size:0 !important;
+}
+.shiva-about-only .shiva-about-tagline strong::before{
+  content:"Innovation in Every Die" !important;
+  display:block !important;
+  font-size:12px !important;
+  line-height:1.35 !important;
+}
+.shiva-about-only .shiva-about-tagline strong::after{
+  content:"Precision in Every Detail\\A Quality You Can Trust" !important;
+  white-space:pre-line !important;
+  display:block !important;
+  font-size:12px !important;
+  line-height:1.65 !important;
+}
+
+/* Keep a little more breathing room before the two lower sections. */
+.shiva-about-only .shiva-infra-grid{
+  margin-top:20px !important;
+}
+.shiva-about-only .shiva-clients-grid{
+  margin-top:20px !important;
+}
+
+/* Mobile: retain equal cards while stacking cleanly. */
+@media(max-width:991px){
+  .shiva-about-only .shiva-about-bottom{
+    grid-template-columns:1fr !important;
+  }
+  .shiva-about-only .shiva-about-commitment,
+  .shiva-about-only .shiva-about-tagline{
+    height:auto !important;
+    min-height:176px !important;
+  }
+}
+@media(max-width:575px){
+  .shiva-about-only .shiva-about-section-heading.shiva-clients-heading,
+  .shiva-about-only .shiva-about-section-heading:has(+ .shiva-infra-grid){
+    margin-top:40px !important;
+  }
+  .shiva-about-only .shiva-about-bottom{
+    gap:14px !important;
+    margin-top:28px !important;
+  }
+  .shiva-about-only .shiva-about-commitment,
+  .shiva-about-only .shiva-about-tagline{
+    min-height:170px !important;
+  }
+  .shiva-about-only .shiva-about-tagline{
+    padding:22px 18px !important;
+  }
+}
+
+/* ===== About v4: simple premium Shiva Punch Art tagline box ===== */
+.shiva-about-only .shiva-about-bottom{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  gap:18px !important;
+  align-items:stretch !important;
+  margin-top:34px !important;
+}
+.shiva-about-only .shiva-about-commitment,
+.shiva-about-only .shiva-about-tagline{
+  width:100% !important;
+  height:176px !important;
+  min-height:176px !important;
+  box-sizing:border-box !important;
+}
+.shiva-about-only .shiva-about-commitment{
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+}
+.shiva-about-only .shiva-about-tagline{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  gap:13px !important;
+  padding:22px 26px !important;
+  border-radius:13px !important;
+}
+.shiva-about-only .shiva-about-tagline span{
+  width:auto !important;
+  margin:0 !important;
+  font-size:12px !important;
+  line-height:1.2 !important;
+  letter-spacing:1.7px !important;
+  text-align:center !important;
+}
+.shiva-about-only .shiva-about-tagline strong{
+  width:100% !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:9px !important;
+  margin:0 !important;
+  font-size:13px !important;
+  line-height:1.35 !important;
+}
+.shiva-about-only .shiva-about-tagline strong::before,
+.shiva-about-only .shiva-about-tagline strong::after{
+  content:none !important;
+}
+.shiva-about-only .shiva-about-tagline strong{
+  font-size:0 !important;
+}
+.shiva-about-only .shiva-about-tagline strong::before{
+  content:"Innovation in Every Die\A•\A Precision in Every Detail\A•\A Quality You Can Trust" !important;
+  white-space:pre-line !important;
+  display:block !important;
+  font-size:13px !important;
+  line-height:1.85 !important;
+  font-weight:700 !important;
+}
+.shiva-about-only .shiva-about-tagline strong b{
+  display:none !important;
+}
+
+/* More breathing room between the major lower sections. */
+.shiva-about-only .shiva-about-section-heading:has(+ .shiva-infra-grid){
+  margin-top:52px !important;
+}
+.shiva-about-only .shiva-clients-heading{
+  margin-top:52px !important;
+}
+.shiva-about-only .shiva-infra-grid,
+.shiva-about-only .shiva-clients-grid{
+  margin-top:20px !important;
+}
+
+@media(max-width:991px){
+  .shiva-about-only .shiva-about-bottom{
+    grid-template-columns:1fr !important;
+  }
+  .shiva-about-only .shiva-about-commitment,
+  .shiva-about-only .shiva-about-tagline{
+    height:176px !important;
+    min-height:176px !important;
+  }
+}
+@media(max-width:575px){
+  .shiva-about-only .shiva-about-bottom{
+    gap:15px !important;
+    margin-top:30px !important;
+  }
+  .shiva-about-only .shiva-about-commitment,
+  .shiva-about-only .shiva-about-tagline{
+    height:176px !important;
+    min-height:176px !important;
+  }
+  .shiva-about-only .shiva-about-tagline{
+    padding:20px 16px !important;
+    gap:11px !important;
+  }
+  .shiva-about-only .shiva-about-tagline strong::before{
+    font-size:12px !important;
+    line-height:1.9 !important;
+  }
+}
+
+/* ===== About v5: final clean tagline — no generated text ===== */
+.shiva-about-only .shiva-about-tagline{
+  display:flex !important;
+  flex-direction:column !important;
+  flex-wrap:nowrap !important;
+  align-items:center !important;
+  justify-content:center !important;
+  align-content:center !important;
+  text-align:center !important;
+  gap:14px !important;
+  width:100% !important;
+  height:176px !important;
+  min-height:176px !important;
+  padding:20px 24px !important;
+  box-sizing:border-box !important;
+  background:#1800AD !important;
+  color:#fff !important;
+  overflow:hidden !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-brand{
+  display:block !important;
+  width:auto !important;
+  height:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#fff !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  font-size:12px !important;
+  font-weight:800 !important;
+  line-height:1.2 !important;
+  letter-spacing:2px !important;
+  text-align:center !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-points{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:5px !important;
+  width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-points > span{
+  display:block !important;
+  width:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#fff !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  font-size:13px !important;
+  font-weight:700 !important;
+  line-height:1.35 !important;
+  letter-spacing:.2px !important;
+  text-align:center !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-points .shiva-tagline-dot{
+  font-size:12px !important;
+  line-height:1 !important;
+  color:#ff3b3b !important;
+  font-weight:800 !important;
+}
+.shiva-about-only .shiva-about-tagline strong,
+.shiva-about-only .shiva-about-tagline b{
+  display:none !important;
+}
+.shiva-about-only .shiva-about-tagline::before,
+.shiva-about-only .shiva-about-tagline::after,
+.shiva-about-only .shiva-about-tagline strong::before,
+.shiva-about-only .shiva-about-tagline strong::after{
+  content:none !important;
+  display:none !important;
+}
+@media(max-width:991px){
+  .shiva-about-only .shiva-about-tagline{
+    height:176px !important;
+    min-height:176px !important;
+  }
+}
+@media(max-width:575px){
+  .shiva-about-only .shiva-about-tagline{
+    height:176px !important;
+    min-height:176px !important;
+    padding:18px 14px !important;
+    gap:12px !important;
+  }
+  .shiva-about-only .shiva-about-tagline .shiva-tagline-brand{
+    font-size:11px !important;
+    letter-spacing:1.8px !important;
+  }
+  .shiva-about-only .shiva-about-tagline .shiva-tagline-points > span{
+    font-size:11.5px !important;
+    line-height:1.3 !important;
+  }
+}
+
+/* ===== Contact + Gallery: compact Trust box ===== */
+.shiva-compact-trust-contact .subscribe-area,
+.shiva-compact-trust-gallery .subscribe-area{
+    width:min(1080px, calc(100% - 36px)) !important;
+    max-width:1080px !important;
+    margin:28px auto 48px !important;
+    padding:34px 0 !important;
+    border-radius:14px !important;
+    overflow:hidden !important;
+}
+.shiva-compact-trust-contact .subscribe-area > .container,
+.shiva-compact-trust-gallery .subscribe-area > .container{
+    padding-left:30px !important;
+    padding-right:30px !important;
+}
+.shiva-compact-trust-contact .subscribe-content h2,
+.shiva-compact-trust-gallery .subscribe-content h2{
+    font-size:24px !important;
+    line-height:1.2 !important;
+    margin-bottom:8px !important;
+}
+.shiva-compact-trust-contact .subscribe-content p,
+.shiva-compact-trust-gallery .subscribe-content p{
+    font-size:13px !important;
+    line-height:21px !important;
+    margin-bottom:8px !important;
+}
+.shiva-compact-trust-contact .subscribe-content .row.mt-4,
+.shiva-compact-trust-gallery .subscribe-content .row.mt-4{
+    margin-top:12px !important;
+}
+.shiva-compact-trust-contact .subscribe-content ul,
+.shiva-compact-trust-gallery .subscribe-content ul{
+    margin-bottom:0 !important;
+}
+.shiva-compact-trust-contact .subscribe-content li,
+.shiva-compact-trust-gallery .subscribe-content li{
+    font-size:12px !important;
+    line-height:20px !important;
+    margin-bottom:2px !important;
+}
+.shiva-compact-trust-contact .subscribe-area .button-1,
+.shiva-compact-trust-gallery .subscribe-area .button-1{
+    font-size:12px !important;
+    padding:10px 18px !important;
+}
+.shiva-compact-trust-contact .subscribe-area + .shiva-footer,
+.shiva-compact-trust-gallery .subscribe-area + .shiva-footer{
+    margin-top:0 !important;
+}
+
+@media (max-width:767px){
+    .shiva-compact-trust-contact .subscribe-area,
+    .shiva-compact-trust-gallery .subscribe-area{
+        width:calc(100% - 24px) !important;
+        margin:22px auto 38px !important;
+        padding:28px 0 !important;
+        border-radius:12px !important;
+    }
+    .shiva-compact-trust-contact .subscribe-area > .container,
+    .shiva-compact-trust-gallery .subscribe-area > .container{
+        padding-left:20px !important;
+        padding-right:20px !important;
+    }
+    .shiva-compact-trust-contact .subscribe-content h2,
+    .shiva-compact-trust-gallery .subscribe-content h2{
+        font-size:20px !important;
+    }
+    .shiva-compact-trust-contact .subscribe-content p,
+    .shiva-compact-trust-gallery .subscribe-content p{
+        font-size:12px !important;
+        line-height:19px !important;
+    }
+    .shiva-compact-trust-contact .subscribe-content li,
+    .shiva-compact-trust-gallery .subscribe-content li{
+        font-size:11px !important;
+        line-height:18px !important;
+    }
+    .shiva-compact-trust-contact .subscribe-area .row > .col-lg-4,
+    .shiva-compact-trust-gallery .subscribe-area .row > .col-lg-4{
+        margin-top:12px !important;
+        text-align:center !important;
+    }
+}
+
+/* ===== About v7: guaranteed visible tagline points ===== */
+.shiva-about-only .shiva-about-tagline{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:14px !important;
+  overflow:visible !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-brand{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  color:#fff !important;
+  font-size:14px !important;
+  font-weight:800 !important;
+  line-height:1.2 !important;
+  letter-spacing:2px !important;
+  text-align:center !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-points{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  gap:5px !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-points > span{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  color:#fff !important;
+  font-size:14px !important;
+  font-weight:700 !important;
+  line-height:1.35 !important;
+  letter-spacing:.15px !important;
+  text-align:center !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-points > .shiva-tagline-dot{
+  color:#ff3b3b !important;
+  font-size:13px !important;
+  line-height:1 !important;
+}
+@media(max-width:575px){
+  .shiva-about-only .shiva-about-tagline{
+    height:176px !important;
+    min-height:176px !important;
+    padding:16px 12px !important;
+    gap:10px !important;
+  }
+  .shiva-about-only .shiva-about-tagline .shiva-tagline-brand{
+    font-size:12px !important;
+  }
+  .shiva-about-only .shiva-about-tagline .shiva-tagline-points > span{
+    font-size:11.5px !important;
+  }
+}
