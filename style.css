@@ -4936,3 +4936,266 @@ body.shiva-about-only .shiva-about-only{
     font-size:11px !important;
   }
 }
+
+
+/* ===== v12: client logo visibility/path-safe presentation ===== */
+.shiva-about-only .shiva-client-logo-image{
+  flex:0 0 48px !important;
+  width:48px !important;
+  height:48px !important;
+  min-width:48px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  overflow:hidden !important;
+  padding:3px !important;
+  box-sizing:border-box !important;
+  background:#fff !important;
+  border:1px solid rgba(24,0,173,.12) !important;
+  border-radius:8px !important;
+  position:relative !important;
+}
+.shiva-about-only .shiva-client-logo-image img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  max-height:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+.shiva-about-only .shiva-client-card{
+  overflow:hidden !important;
+}
+@media(max-width:575px){
+  .shiva-about-only .shiva-client-logo-image{
+    flex-basis:42px !important;
+    width:42px !important;
+    height:42px !important;
+    min-width:42px !important;
+  }
+}
+
+/* v13: keep all client names; supplied logos + clean fallback marks */
+.shiva-about-only .shiva-client-logo:not(.shiva-client-logo-image){
+  flex:0 0 44px!important;width:44px!important;height:44px!important;min-width:44px!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  border-radius:9px!important;background:rgba(22,0,184,.07)!important;color:#1600b8!important;
+  font-weight:800!important;font-size:16px!important;line-height:1!important;
+}
+.shiva-about-only .shiva-client-logo:not(.shiva-client-logo-image) small{font-size:11px!important;margin-left:1px!important;font-weight:800!important}
+
+
+/* ===== Our Products: compact Trust box ===== */
+.shiva-compact-trust-products .subscribe-area{
+    width:min(900px, calc(100% - 44px)) !important;
+    max-width:900px !important;
+    margin:30px auto 64px !important;
+    padding:22px 0 !important;
+    border-radius:13px !important;
+    overflow:hidden !important;
+}
+.shiva-compact-trust-products .subscribe-area > .container{
+    padding-left:28px !important;
+    padding-right:28px !important;
+}
+.shiva-compact-trust-products .subscribe-content h2{
+    font-size:21px !important;
+    line-height:1.2 !important;
+    margin:0 0 6px !important;
+}
+.shiva-compact-trust-products .subscribe-content p{
+    font-size:12px !important;
+    line-height:18px !important;
+    margin:0 0 5px !important;
+}
+.shiva-compact-trust-products .subscribe-content .row.mt-4{
+    margin-top:8px !important;
+}
+.shiva-compact-trust-products .subscribe-content ul{
+    margin:0 !important;
+    padding-left:0 !important;
+}
+.shiva-compact-trust-products .subscribe-content li{
+    font-size:11px !important;
+    line-height:17px !important;
+    margin:0 !important;
+}
+.shiva-compact-trust-products .subscribe-area .button-1{
+    font-size:11px !important;
+    padding:8px 15px !important;
+}
+.shiva-compact-trust-products .subscribe-area + .shiva-footer{
+    margin-top:0 !important;
+}
+@media(max-width:767px){
+    .shiva-compact-trust-products .subscribe-area{
+        width:calc(100% - 24px) !important;
+        margin:24px auto 52px !important;
+        padding:18px 0 !important;
+        border-radius:11px !important;
+    }
+    .shiva-compact-trust-products .subscribe-area > .container{
+        padding-left:18px !important;
+        padding-right:18px !important;
+    }
+    .shiva-compact-trust-products .subscribe-content h2{
+        font-size:18px !important;
+        line-height:1.2 !important;
+    }
+    .shiva-compact-trust-products .subscribe-content p{
+        font-size:11px !important;
+        line-height:17px !important;
+    }
+    .shiva-compact-trust-products .subscribe-content li{
+        font-size:10.5px !important;
+        line-height:16px !important;
+    }
+    .shiva-compact-trust-products .subscribe-area .row > .col-lg-4{
+        margin-top:9px !important;
+        text-align:center !important;
+    }
+}
+
+/* ===== v16: Sandwich Dies card isolation ===== */
+.sandwich-product-card{
+  position:relative !important;
+  overflow:hidden !important;
+  height:auto !important;
+  min-height:0 !important;
+}
+.sandwich-product-card > .info-box-1-inner{
+  position:relative !important;
+  display:block !important;
+  height:auto !important;
+  min-height:0 !important;
+}
+.sandwich-product-card .carousel{
+  overflow:hidden !important;
+}
+@media(max-width:767px){
+  .sandwich-product-card{
+    height:auto !important;
+    min-height:0 !important;
+  }
+  .sandwich-product-card .product-img{
+    height:180px !important;
+    object-fit:cover !important;
+  }
+  .sandwich-product-card .content{
+    margin-top:10px !important;
+    padding-bottom:12px !important;
+  }
+}
+
+/* ===== v17: footer X + YouTube ===== */
+.shiva-footer-social a[aria-label="X"],
+.shiva-footer-social a[aria-label="YouTube"]{
+  display:inline-flex !important;
+}
+
+/* ===== v17: Home hero mobile image fully visible ===== */
+@media(max-width:767px){
+  .shiva-auto-hero{
+    min-height:420px !important;
+    height:420px !important;
+    background-size:contain !important;
+    background-repeat:no-repeat !important;
+    background-position:center center !important;
+    background-color:#111 !important;
+  }
+  .shiva-auto-hero .container{
+    position:relative !important;
+    z-index:2 !important;
+    height:100% !important;
+  }
+  .shiva-auto-hero .hero-banner-content{
+    position:relative !important;
+    z-index:3 !important;
+  }
+}
+@media(max-width:480px){
+  .shiva-auto-hero{
+    min-height:350px !important;
+    height:350px !important;
+    background-size:contain !important;
+  }
+}
+
+/* ===== v18: footer social cleanup ===== */
+.shiva-footer-social a[aria-label="X"],
+.shiva-footer-social a[aria-label="YouTube"]{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+.shiva-footer-social a[aria-label="X"] i{
+  font-size:15px !important;
+}
+.shiva-footer-social a[aria-label="YouTube"] i{
+  font-size:15px !important;
+}
+.shiva-product-count{
+  margin:0 0 14px !important;
+  font-size:13px !important;
+  line-height:1.3 !important;
+}
+
+/* ===== v19: real X.com footer icon ===== */
+.shiva-footer-social .footer-x-link{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:34px !important;
+  height:34px !important;
+}
+.shiva-footer-social .footer-x-link svg{
+  width:15px !important;
+  height:15px !important;
+  fill:currentColor !important;
+  display:block !important;
+}
+
+/* ===== v19: mobile bottom image slider - no crop ===== */
+@media(max-width:767px){
+  /* Common bottom/portfolio slider wrappers */
+  .shiva-home-compact .swiper,
+  .shiva-home-compact .swiper-container,
+  .shiva-home-compact .slick-slider,
+  .shiva-home-compact .portfolio-slider,
+  .shiva-home-compact .project-slider{
+    overflow:hidden !important;
+  }
+
+  /* Keep each slide's full image visible */
+  .shiva-home-compact .swiper-slide img,
+  .shiva-home-compact .slick-slide img,
+  .shiva-home-compact .portfolio-slider img,
+  .shiva-home-compact .project-slider img{
+    width:100% !important;
+    height:auto !important;
+    max-height:260px !important;
+    object-fit:contain !important;
+    object-position:center center !important;
+    display:block !important;
+  }
+
+  /* Prevent fixed-height slide wrappers from cutting the first image */
+  .shiva-home-compact .swiper-slide,
+  .shiva-home-compact .slick-slide,
+  .shiva-home-compact .portfolio-slider .slide,
+  .shiva-home-compact .project-slider .slide{
+    height:auto !important;
+    min-height:0 !important;
+  }
+}
+@media(max-width:480px){
+  .shiva-home-compact .swiper-slide img,
+  .shiva-home-compact .slick-slide img,
+  .shiva-home-compact .portfolio-slider img,
+  .shiva-home-compact .project-slider img{
+    max-height:220px !important;
+  }
+}
