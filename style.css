@@ -5214,3 +5214,121 @@ body.shiva-about-only .shiva-about-only{
     object-position: center top !important;
   }
 }
+
+/* =========================================================
+   FINAL REQUEST — PRODUCT DESCRIPTION + PAGE TYPOGRAPHY
+   ========================================================= */
+.our-products-grid .info-box-1 {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow: visible !important;
+}
+.our-products-grid .content {
+  overflow: visible !important;
+}
+.our-products-grid .content h3 {
+  font-family: 'Poppins', sans-serif !important;
+}
+.our-products-grid .content p {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: anywhere !important;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 575px) {
+  .our-products-grid .content p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* Gallery + Contact use the exact same Poppins typography as Home. */
+body.shiva-compact-trust-gallery,
+body.shiva-compact-trust-contact,
+body.shiva-compact-trust-gallery h1,
+body.shiva-compact-trust-gallery h2,
+body.shiva-compact-trust-gallery h3,
+body.shiva-compact-trust-gallery h4,
+body.shiva-compact-trust-gallery h5,
+body.shiva-compact-trust-gallery h6,
+body.shiva-compact-trust-gallery p,
+body.shiva-compact-trust-gallery a,
+body.shiva-compact-trust-gallery button,
+body.shiva-compact-trust-gallery input,
+body.shiva-compact-trust-gallery textarea,
+body.shiva-compact-trust-gallery label,
+body.shiva-compact-trust-gallery span,
+body.shiva-compact-trust-gallery strong,
+body.shiva-compact-trust-gallery small,
+body.shiva-compact-trust-gallery b,
+body.shiva-compact-trust-gallery summary,
+body.shiva-compact-trust-contact h1,
+body.shiva-compact-trust-contact h2,
+body.shiva-compact-trust-contact h3,
+body.shiva-compact-trust-contact h4,
+body.shiva-compact-trust-contact h5,
+body.shiva-compact-trust-contact h6,
+body.shiva-compact-trust-contact p,
+body.shiva-compact-trust-contact a,
+body.shiva-compact-trust-contact button,
+body.shiva-compact-trust-contact input,
+body.shiva-compact-trust-contact textarea,
+body.shiva-compact-trust-contact label,
+body.shiva-compact-trust-contact span,
+body.shiva-compact-trust-contact strong,
+body.shiva-compact-trust-contact small,
+body.shiva-compact-trust-contact b,
+body.shiva-compact-trust-contact summary {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* Product cards — larger descriptions with fully expandable, equal-height cards. */
+.our-products-grid > [class*="col-"] {
+  display: flex;
+  align-items: stretch;
+}
+.our-products-grid .info-box-1 {
+  width: 100%;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  overflow: visible !important;
+}
+.our-products-grid .info-box-1-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: visible !important;
+}
+.our-products-grid .content {
+  flex: 1 1 auto;
+  overflow: visible !important;
+}
+.our-products-grid .content p {
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+}
+@media (max-width: 575px) {
+  .our-products-grid > [class*="col-"] {
+    display: flex;
+  }
+  .our-products-grid .content p {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+}

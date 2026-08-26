@@ -3531,3 +3531,41 @@ select,
   .shiva-footer-social a i{font-size:13px!important;}
   .shiva-footer-social .footer-x-link svg{width:13px!important;height:13px!important;max-width:13px!important;max-height:13px!important;}
 }
+
+/* =========================================================
+   FINAL REQUEST — FOOTER GET IN TOUCH + CLICKABLE DETAILS
+   ========================================================= */
+.shiva-get-in-touch { gap: 8px; }
+.shiva-get-in-touch details { overflow: hidden; }
+.shiva-get-in-touch .shiva-unit-details {
+  display: grid;
+  gap: 7px;
+  padding: 9px 10px 11px;
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+.shiva-footer-detail-link {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 8px;
+  color: #cbd6e7 !important;
+  text-decoration: none !important;
+  font-size: 10.5px !important;
+  line-height: 1.5 !important;
+  overflow-wrap: anywhere;
+}
+.shiva-footer-detail-link i {
+  width: 15px;
+  flex: 0 0 15px;
+  margin-top: 2px;
+  color: #ff6970 !important;
+  text-align: center;
+  font-size: 10px;
+}
+.shiva-footer-detail-link:hover { color: #fff !important; }
+.shiva-get-in-touch summary { font-family: 'Poppins', sans-serif !important; }
+.shiva-get-in-touch summary > span i { color: #ff6970 !important; }
+@media (max-width: 575px) {
+  .shiva-get-in-touch .shiva-unit-details { padding: 9px 9px 10px; }
+  .shiva-footer-detail-link { font-size: 10px !important; }
+}
