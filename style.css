@@ -5199,3 +5199,11 @@ body.shiva-about-only .shiva-about-only{
     max-height:220px !important;
   }
 }
+
+
+/* ===== v27: footer social icons — identical circular sizing ===== */
+.shiva-footer-social{display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;flex-wrap:wrap!important;}
+.shiva-footer-social a,.shiva-footer-social .footer-x-link{width:34px!important;height:34px!important;min-width:34px!important;min-height:34px!important;flex:0 0 34px!important;border-radius:50%!important;box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:0!important;margin:0!important;}
+.shiva-footer-social a i{font-size:15px!important;line-height:1!important;width:auto!important;height:auto!important;}
+.shiva-footer-social .footer-x-link svg{width:15px!important;height:15px!important;max-width:15px!important;max-height:15px!important;display:block!important;fill:currentColor!important;}
+@media(max-width:575px){.shiva-footer-social{gap:7px!important;}.shiva-footer-social a,.shiva-footer-social .footer-x-link{width:30px!important;height:30px!important;min-width:30px!important;min-height:30px!important;flex-basis:30px!important;}.shiva-footer-social a i{font-size:13px!important;}.shiva-footer-social .footer-x-link svg{width:13px!important;height:13px!important;}}
