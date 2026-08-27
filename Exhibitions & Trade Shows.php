@@ -52,7 +52,7 @@
                                 Shiva Punch Art proudly participated in the leading printing & packaging exhibition held at NESCO Exhibition Center, Mumbai. We showcased our high-precision punch tools and packaging die solutions to industry professionals.
                             </p>
                             <ul>
-                                <li><b>Event Date :</b> <span>18 September 2025</span></li>
+                                <li><b>Event Date :</b> <span>27 January to 30 January 2026</span></li>
                                 <!--<li><b>Client :</b> <span>Jonathom Doe</span></li>-->
                                 <li><b>Location :</b> <span>NESCO Exhibition Centerbr,<br> Goregaon, Mumbai</span></li>
                                 <li><b>Industry :</b> <span>Printing & Packaging</span></li>

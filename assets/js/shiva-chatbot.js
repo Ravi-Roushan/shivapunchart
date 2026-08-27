@@ -4,9 +4,9 @@
 
   const DATA={
     products:{title:'Our Products',text:'We provide precision tooling and die solutions for printing, packaging and converting applications.',link:'our-product.html',label:'View 19 Products'},
-    office:{title:'Head Office',text:'Malad West, Mumbai — S NO 223 CTS-2675 HISSA-687, Kharodi Marve Road, Malwani, Malad West, Nr Chheda Complex, Mumbai 400095.',link:'https://www.google.com/maps/search/?api=1&query=S+NO+223+CTS-2675+HISSA-687%2C+Kharodi+Marve+Road%2C+Malwani%2C+Malad+West%2C+Nr+Chheda+Complex%2C+Mumbai+400095',label:'Open Office Location'},
-    factory:{title:'Factory',text:'Gala No: C-2, Shree Ganesh Ind Estate, Behind Sagar Hotel, Chinchoti, Devdal, Kaman, Vasai (East) – 401208.',link:'https://www.google.com/maps/search/?api=1&query=Gala+No+C-2+Shree+Ganesh+Ind+Estate+Behind+Sagar+Hotel+Chinchoti+Devdal+Kaman+Vasai+East+401208',label:'Open Factory Location'},
-    contact:{title:'Contact Team',text:'Our team is available on these numbers: +91 91367 30776, +91 72089 30777, +91 72089 30778, +91 88282 30576. For email enquiries use shivapunchart@gmail.com or info@shivapunchart.com.',link:'mailto:shivapunchart@gmail.com',label:'Send Email'},
+    office:{title:'Malad Unit',text:'Malad West, Mumbai — S NO 223 CTS-2675 HISSA-687, Kharodi Marve Road, Malwani, Malad West, Nr Chheda Complex, Mumbai 400095.',link:'https://www.google.com/maps/search/?api=1&query=S+NO+223+CTS-2675+HISSA-687%2C+Kharodi+Marve+Road%2C+Malwani%2C+Malad+West%2C+Nr+Chheda+Complex%2C+Mumbai+400095',label:'Open Malad Unit Location'},
+    factory:{title:'Vasai Unit',text:'Gala No: C-2, Shree Ganesh Ind Estate, Behind Sagar Hotel, Chinchoti, Devdal, Kaman, Vasai (East) – 401208.',link:'https://www.google.com/maps/search/?api=1&query=Gala+No+C-2+Shree+Ganesh+Ind+Estate+Behind+Sagar+Hotel+Chinchoti+Devdal+Kaman+Vasai+East+401208',label:'Open Vasai Unit Location'},
+    contact:{title:'Contact Team',text:'Our team is available on these numbers: +91 88282 30576, +91 72089 30779, +91 88282 30575, +91 84465 42824. For email enquiries use shivapunchart@gmail.com.',link:'mailto:shivapunchart@gmail.com',label:'Send Email'},
     whatsapp:{title:'WhatsApp',text:'Start a direct WhatsApp conversation with our team.',link:'https://wa.me/918433538141',label:'Open WhatsApp'}
   };
 
@@ -61,8 +61,8 @@
     if(/factory|vasai|chinchoti|kaman/.test(q)) return DATA.factory.text;
     if(/whatsapp|chat/.test(q)) return DATA.whatsapp.text;
     if(/contact|phone|call|email|mail/.test(q)) return DATA.contact.text;
-    if(/hello|hi|hey|namaste/.test(q)) return 'Hi! 👋 How can I help you today? You can ask about products, quotation, office, factory, contact or WhatsApp.';
-    return 'I can help with Products, Get a Quote, Office, Factory, Contact and WhatsApp. Choose an option below or type your question.';
+    if(/hello|hi|hey|namaste/.test(q)) return 'Hi! 👋 How can I help you today? You can ask about products, quotation, Malad Unit, Vasai Unit, contact or WhatsApp.';
+    return 'I can help with Products, Get a Quote, Malad Unit, Vasai Unit, Contact and WhatsApp. Choose an option below or type your question.';
   }
 
   launch.addEventListener('click',e=>{e.stopPropagation();setOpen(!panel.classList.contains('open'));});
