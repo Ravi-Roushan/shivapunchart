@@ -3569,3 +3569,290 @@ select,
   .shiva-get-in-touch .shiva-unit-details { padding: 9px 9px 10px; }
   .shiva-footer-detail-link { font-size: 10px !important; }
 }
+
+/* ===== FINAL TYPOGRAPHY MATCH: Gallery + Contact use the same typography as Home ===== */
+.shiva-gallery-premium,
+.shiva-gallery-premium * ,
+.sp-contact-section,
+.sp-contact-section * {
+  font-family:'Poppins',sans-serif;
+}
+
+/* Home-style section heading typography */
+.shiva-gallery-premium .sp-gallery-intro h2,
+.sp-contact-section .sp-contact-intro h2 {
+  margin-top:10px!important;
+  margin-bottom:20px!important;
+  color:#1d2746!important;
+  font-size:32px!important;
+  font-weight:700!important;
+  line-height:1.2!important;
+  letter-spacing:normal!important;
+  text-transform:none!important;
+  background:none!important;
+  -webkit-background-clip:initial!important;
+  background-clip:initial!important;
+}
+
+.shiva-gallery-premium .sp-gallery-intro h2 em,
+.sp-contact-section .sp-contact-intro h2 em {
+  color:#1d2746!important;
+  font-style:normal!important;
+}
+
+.shiva-gallery-premium .sp-kicker,
+.shiva-gallery-premium .sp-mini-label,
+.sp-contact-section .sp-contact-kicker {
+  color:#1800AD!important;
+  font-size:14px!important;
+  font-weight:500!important;
+  letter-spacing:normal!important;
+  line-height:1.2!important;
+  text-transform:uppercase!important;
+}
+
+.shiva-gallery-premium .sp-gallery-intro p,
+.sp-contact-section .sp-contact-intro > div:first-child p {
+  color:#4a4a4a!important;
+  font-size:16px!important;
+  font-weight:400!important;
+  line-height:1.7!important;
+  letter-spacing:normal!important;
+}
+
+/* Supporting gallery headings/text */
+.shiva-gallery-premium .sp-video-copy h3,
+.shiva-gallery-premium .sp-title-wrap h3 {
+  font-family:'Poppins',sans-serif!important;
+  font-weight:700!important;
+  letter-spacing:normal!important;
+}
+.shiva-gallery-premium .sp-video-copy p,
+.shiva-gallery-premium .sp-gallery-hint,
+.shiva-gallery-premium .sp-gallery-meta,
+.shiva-gallery-premium .sp-title-wrap .sp-mini-label {
+  font-family:'Poppins',sans-serif!important;
+  letter-spacing:normal!important;
+}
+
+/* Supporting contact headings/text */
+.sp-contact-section .sp-contact-form-head h3,
+.sp-contact-section .sp-contact-info-top h3 {
+  font-family:'Poppins',sans-serif!important;
+  font-weight:700!important;
+  letter-spacing:normal!important;
+}
+.sp-contact-section .sp-contact-form-head p,
+.sp-contact-section .sp-contact-info-top p,
+.sp-contact-section .sp-contact-info-item,
+.sp-contact-section .sp-contact-info-item strong,
+.sp-contact-section .sp-contact-info-item b,
+.sp-contact-section .sp-contact-hours,
+.sp-contact-section .sp-contact-form-bottom p {
+  font-family:'Poppins',sans-serif!important;
+  letter-spacing:normal!important;
+}
+
+@media(max-width:575px){
+  .shiva-gallery-premium .sp-gallery-intro h2,
+  .sp-contact-section .sp-contact-intro h2{font-size:29px!important;line-height:1.2!important;}
+  .shiva-gallery-premium .sp-gallery-intro p,
+  .sp-contact-section .sp-contact-intro > div:first-child p{font-size:13px!important;line-height:1.7!important;}
+  .shiva-gallery-premium .sp-kicker,
+  .shiva-gallery-premium .sp-mini-label,
+  .sp-contact-section .sp-contact-kicker{font-size:12px!important;}
+}
+
+
+/* =========================================================
+   FINAL HOME-STYLE TYPOGRAPHY — GALLERY + CONTACT
+   Keep all existing icons and use Shiva Punch Art logo colours.
+   Logo blue: #1800AD | Logo red: #ff3b3b
+   ========================================================= */
+
+/* Gallery uses the same base font and heading treatment as Home. */
+body.shiva-gallery-page,
+body.shiva-gallery-page h1,
+body.shiva-gallery-page h2,
+body.shiva-gallery-page h3,
+body.shiva-gallery-page h4,
+body.shiva-gallery-page h5,
+body.shiva-gallery-page h6,
+body.shiva-gallery-page p,
+body.shiva-gallery-page a,
+body.shiva-gallery-page button,
+body.shiva-gallery-page li,
+body.shiva-gallery-page span {
+  font-family:'Poppins',sans-serif !important;
+}
+
+body.shiva-gallery-page .breadcrumb-content h2{
+  font-family:'Poppins',sans-serif !important;
+  font-size:50px !important;
+  line-height:1.2 !important;
+  font-weight:700 !important;
+  letter-spacing:1.2px !important;
+  text-transform:capitalize !important;
+  color:#fff !important;
+}
+
+body.shiva-gallery-page .portfolio-cate-list-full ul li{
+  font-family:'Poppins',sans-serif !important;
+  color:#1800AD !important;
+  font-size:14px !important;
+  line-height:1.2 !important;
+  font-weight:500 !important;
+  letter-spacing:normal !important;
+}
+body.shiva-gallery-page .portfolio-cate-list-full ul li:hover,
+body.shiva-gallery-page .portfolio-cate-list-full ul li.mixitup-control-active{
+  color:#ff3b3b !important;
+}
+body.shiva-gallery-page .project-item .info .info-item .left-info h4,
+body.shiva-gallery-page .project-item .info .info-item .left-info h4 a{
+  font-family:'Poppins',sans-serif !important;
+  font-size:18px !important;
+  line-height:1.2 !important;
+  font-weight:600 !important;
+  letter-spacing:normal !important;
+  color:#333 !important;
+}
+body.shiva-gallery-page .project-item .info .info-item .left-info h4:hover a{
+  color:#1800AD !important;
+}
+body.shiva-gallery-page .project-item .info .info-item .left-info a.cat{
+  font-family:'Poppins',sans-serif !important;
+  color:#666 !important;
+  font-size:14px !important;
+  line-height:1.4 !important;
+  font-weight:500 !important;
+}
+
+/* Restore bundled Font Awesome for all icons after Home-style Poppins overrides. */
+.shiva-gallery-premium .fas,
+.shiva-gallery-premium .far,
+.shiva-gallery-premium .fab,
+.sp-contact-section .fas,
+.sp-contact-section .far,
+.sp-contact-section .fab,
+.shiva-footer .fas,
+.shiva-footer .far,
+.shiva-footer .fab {
+  font-family:"Font Awesome 5 Free" !important;
+  font-style:normal !important;
+  font-variant:normal !important;
+  text-rendering:auto !important;
+  -webkit-font-smoothing:antialiased !important;
+}
+.shiva-gallery-premium .fab,
+.sp-contact-section .fab,
+.shiva-footer .fab {
+  font-family:"Font Awesome 5 Brands" !important;
+  font-weight:400 !important;
+}
+.shiva-gallery-premium .fas,
+.sp-contact-section .fas,
+.shiva-footer .fas { font-weight:900 !important; }
+.shiva-gallery-premium .far,
+.sp-contact-section .far,
+.shiva-footer .far { font-weight:400 !important; }
+
+/* Do not hide gallery action icons. */
+body.shiva-gallery-page .project-item .right-info,
+body.shiva-gallery-page .project-item .right-info .img-gallery-popup,
+body.shiva-gallery-page .project-item .right-info .img-gallery-popup a,
+body.shiva-gallery-page .project-item .right-info .img-gallery-popup a i{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+body.shiva-gallery-page .project-item .right-info .img-gallery-popup a{
+  color:#fff !important;
+  background:#1800AD !important;
+}
+body.shiva-gallery-page .project-item .right-info .img-gallery-popup a:hover{
+  color:#fff !important;
+  background:#ff3b3b !important;
+}
+
+/* Contact: same Home Poppins + logo colours, without removing any icons. */
+.sp-contact-section,
+.sp-contact-section h1,
+.sp-contact-section h2,
+.sp-contact-section h3,
+.sp-contact-section h4,
+.sp-contact-section h5,
+.sp-contact-section h6,
+.sp-contact-section p,
+.sp-contact-section a,
+.sp-contact-section button,
+.sp-contact-section input,
+.sp-contact-section textarea,
+.sp-contact-section label,
+.sp-contact-section span,
+.sp-contact-section strong,
+.sp-contact-section small,
+.sp-contact-section b,
+.sp-contact-section i{
+  font-family:'Poppins',sans-serif !important;
+}
+.sp-contact-section .sp-contact-kicker{
+  color:#1800AD !important;
+  font-size:14px !important;
+  font-weight:500 !important;
+  letter-spacing:normal !important;
+}
+.sp-contact-section .sp-contact-intro h2{
+  color:#1d2746 !important;
+  font-size:32px !important;
+  line-height:1.2 !important;
+  font-weight:700 !important;
+  letter-spacing:normal !important;
+}
+.sp-contact-section .sp-contact-intro h2 em{color:#1800AD !important;}
+.sp-contact-section .sp-contact-intro>div:first-child p{
+  color:#4a4a4a !important;
+  font-size:16px !important;
+  font-weight:400 !important;
+  line-height:1.7 !important;
+}
+.sp-contact-section .sp-contact-form-head h3,
+.sp-contact-section .sp-contact-info-top h3{
+  font-weight:700 !important;
+  letter-spacing:normal !important;
+}
+.sp-contact-section .sp-contact-form-head>div>span,
+.sp-contact-section .sp-contact-submit{
+  background:#1800AD !important;
+}
+.sp-contact-section .sp-contact-submit:hover{
+  background:#ff3b3b !important;
+}
+.sp-contact-section .sp-contact-info-card{
+  background:linear-gradient(145deg,#1800AD 0%,#1800AD 58%,#120079 100%) !important;
+}
+.sp-contact-section .sp-contact-info-card .sp-contact-kicker,
+.sp-contact-section .sp-contact-info-top h3 em,
+.sp-contact-section .sp-contact-info-icon,
+.sp-contact-section .sp-contact-hours span i{
+  color:#ff3b3b !important;
+}
+.sp-contact-section .sp-contact-info-icon{
+  display:grid !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+.sp-contact-section .sp-contact-info-icon i{
+  display:inline-block !important;
+  visibility:visible !important;
+}
+
+@media(max-width:575px){
+  body.shiva-gallery-page .breadcrumb-content h2{font-size:34px !important;}
+  body.shiva-gallery-page .portfolio-cate-list-full ul li{font-size:13px !important;}
+  body.shiva-gallery-page .project-item .info .info-item .left-info h4{font-size:16px !important;}
+  body.shiva-gallery-page .project-item .info .info-item .left-info a.cat{font-size:13px !important;}
+  .sp-contact-section .sp-contact-intro h2{font-size:29px !important;}
+  .sp-contact-section .sp-contact-intro>div:first-child p{font-size:13px !important;}
+  .sp-contact-section .sp-contact-kicker{font-size:12px !important;}
+}

@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/shiva-custom.css" />
 </head>
-<body>
+<?php $shiva_page_class = (basename($_SERVER['PHP_SELF']) === 'gallery.php') ? ' shiva-gallery-page' : ''; ?>
+<body class="<?php echo trim($shiva_page_class); ?>">
 <header class="header shiva-header">
 <div class="header-bottom shiva-navbar">
     <div class="container">
