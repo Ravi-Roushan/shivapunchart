@@ -5332,3 +5332,15 @@ body.shiva-compact-trust-contact summary {
     line-height: 1.55 !important;
   }
 }
+
+/* Mobile footer: Get In Touch matches the desktop unit/contact presentation. */
+@media (max-width: 767px) {
+  .shiva-mobile-get-in-touch-content { padding-top: 4px; }
+  .shiva-mobile-unit-block { padding: 10px 0 14px; border-bottom: 1px solid rgba(255,255,255,.12); }
+  .shiva-mobile-unit-block:last-child { border-bottom: 0; padding-bottom: 4px; }
+  .shiva-mobile-unit-title { display: flex; align-items: center; gap: 8px; margin-bottom: 9px; }
+  .shiva-mobile-unit-title i { width: 16px; text-align: center; }
+  .shiva-mobile-get-in-touch-content a { display: flex; align-items: flex-start; gap: 8px; }
+  .shiva-mobile-get-in-touch-content a > i { width: 16px; min-width: 16px; margin-top: 3px; text-align: center; }
+  .shiva-mobile-get-in-touch-content .shiva-mobile-address span { flex: 1; }
+}
