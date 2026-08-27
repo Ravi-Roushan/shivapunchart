@@ -54,7 +54,7 @@
                             <ul>
                                 <li><b>Event Date :</b> <span>27 January to 30 January 2026</span></li>
                                 <!--<li><b>Client :</b> <span>Jonathom Doe</span></li>-->
-                                <li><b>Location :</b> <span>NESCO Exhibition Centerbr,<br> Goregaon, Mumbai</span></li>
+                                <li><b>Location :</b> <span>NESCO Exhibition Center, Goregaon, Mumbai</span></li>
                                 <li><b>Industry :</b> <span>Printing & Packaging</span></li>
                                 <!--<li><b>Address :</b> <span>California, TX 70240</span></li>-->
                                 <li>

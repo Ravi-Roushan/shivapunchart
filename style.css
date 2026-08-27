@@ -5344,3 +5344,72 @@ body.shiva-compact-trust-contact summary {
   .shiva-mobile-get-in-touch-content a > i { width: 16px; min-width: 16px; margin-top: 3px; text-align: center; }
   .shiva-mobile-get-in-touch-content .shiva-mobile-address span { flex: 1; }
 }
+
+/* Exhibition details: alignment-only fix. Preserve existing typography, colors and design. */
+.project-details-info ul li {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  column-gap: 10px;
+  align-items: start;
+}
+.project-details-info ul li > b {
+  white-space: nowrap;
+}
+.project-details-info ul li > span,
+.project-details-info ul li > a {
+  float: none !important;
+  text-align: left !important;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+@media (max-width: 767px) {
+  .project-details-info ul li {
+    grid-template-columns: 74px minmax(0, 1fr);
+    column-gap: 8px;
+  }
+}
+
+/* Exhibition: subtle size/alignment adjustment only. Existing font family, colors and styling are preserved. */
+.portfolio-area .project-details-content > .thumbnail img {
+  width: 92%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+.portfolio-area .project-details-info ul li {
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.portfolio-area .project-details-info ul li > b {
+  font-size: 14px;
+}
+.portfolio-area .project-details-info ul li > span,
+.portfolio-area .project-details-info ul li > a {
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (max-width: 767px) {
+  .portfolio-area .project-details-content > .thumbnail img {
+    width: 94%;
+    height: auto;
+  }
+  .portfolio-area .project-details-info ul li {
+    grid-template-columns: 76px minmax(0, 1fr);
+    column-gap: 7px;
+    font-size: 13px;
+    line-height: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .portfolio-area .project-details-info ul li > b,
+  .portfolio-area .project-details-info ul li > span,
+  .portfolio-area .project-details-info ul li > a {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
