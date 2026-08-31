@@ -3856,3 +3856,36 @@ body.shiva-gallery-page .project-item .right-info .img-gallery-popup a:hover{
   .sp-contact-section .sp-contact-intro>div:first-child p{font-size:13px !important;}
   .sp-contact-section .sp-contact-kicker{font-size:12px !important;}
 }
+
+/* ===== FINAL VISIBILITY TUNE: brighter footer logo + clearer home hero ===== */
+.shiva-footer-logo img{
+  filter: brightness(1.32) saturate(1.18) contrast(1.04) !important;
+  opacity:1 !important;
+  image-rendering:auto !important;
+}
+
+/* Keep the hero photo crisp and much more visible while preserving the
+   existing slider, timing, swipe support and layout. */
+.shiva-hero-compact{
+  background-color:#111 !important;
+  background-blend-mode:normal !important;
+  filter:none !important;
+  -webkit-backface-visibility:hidden !important;
+  backface-visibility:hidden !important;
+}
+.shiva-hero-compact::before{
+  background:linear-gradient(
+    90deg,
+    rgba(8,12,24,.10) 0%,
+    rgba(8,12,24,.025) 50%,
+    rgba(8,12,24,.08) 100%
+  ) !important;
+}
+
+/* Make the actual hero image render as large and clean as the source allows. */
+@media(min-width:768px){
+  .shiva-hero-compact{
+    background-size:cover !important;
+    background-position:center center !important;
+  }
+}
