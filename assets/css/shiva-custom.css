@@ -3889,3 +3889,24 @@ body.shiva-gallery-page .project-item .right-info .img-gallery-popup a:hover{
     background-position:center center !important;
   }
 }
+
+/* ===== FINAL VISIBILITY POLISH: brighter footer logo + maximum hero clarity ===== */
+.shiva-footer-logo img{
+  filter: brightness(1.14) saturate(1.08) contrast(1.02) !important;
+  opacity:1 !important;
+}
+
+/* Keep the existing hero slider exactly as-is, but remove the visual haze over photos. */
+.shiva-hero-compact::after{
+  background:rgba(0,0,0,.055) !important;
+}
+.shiva-hero-compact::before{
+  background:linear-gradient(90deg,rgba(8,12,24,.035) 0%,rgba(8,12,24,.01) 50%,rgba(8,12,24,.035) 100%) !important;
+}
+.shiva-hero-compact{
+  image-rendering:auto !important;
+  -webkit-font-smoothing:antialiased !important;
+}
+@media(max-width:767px){
+  .shiva-hero-compact::after{background:rgba(0,0,0,.035) !important;}
+}
