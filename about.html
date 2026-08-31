@@ -15,6 +15,20 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/shiva-custom.css" />
+
+<style id="shiva-client-logo-slider">
+.shiva-about-only .shiva-client-slider{width:100%;overflow:hidden;margin-top:24px;padding:10px 0 18px;position:relative;}
+.shiva-about-only .shiva-client-track{display:flex;width:max-content;align-items:stretch;animation:shivaClientSlide 34s linear infinite;will-change:transform;}
+.shiva-about-only .shiva-client-slider:hover .shiva-client-track{animation-play-state:paused;}
+.shiva-about-only .shiva-client-slide{width:230px;flex:0 0 230px;padding:0 9px;}
+.shiva-about-only .shiva-client-logo-card{height:132px;background:#fff;border:1px solid rgba(19,53,99,.12);border-radius:14px;box-shadow:0 8px 24px rgba(16,38,70,.07);display:flex;align-items:center;justify-content:center;padding:18px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;}
+.shiva-about-only .shiva-client-logo-card:hover{transform:translateY(-3px);border-color:rgba(22,0,184,.25);box-shadow:0 14px 30px rgba(16,38,70,.11);}
+.shiva-about-only .shiva-client-logo-card img{display:block;max-width:100%;max-height:92px;width:auto;height:auto;object-fit:contain;}
+@keyframes shivaClientSlide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:991px){.shiva-about-only .shiva-client-slide{width:205px;flex-basis:205px}.shiva-about-only .shiva-client-logo-card{height:120px;padding:16px}.shiva-about-only .shiva-client-logo-card img{max-height:84px}}
+@media(max-width:575px){.shiva-about-only .shiva-client-slider{margin-top:18px;padding-bottom:10px}.shiva-about-only .shiva-client-slide{width:178px;flex-basis:178px;padding:0 7px}.shiva-about-only .shiva-client-logo-card{height:105px;border-radius:12px;padding:13px}.shiva-about-only .shiva-client-logo-card img{max-height:74px}}
+@media(prefers-reduced-motion:reduce){.shiva-about-only .shiva-client-track{animation:none;overflow-x:auto;}}
+</style>
 </head>
 <body class="shiva-about-only">
 <header class="header shiva-header">
@@ -126,20 +140,35 @@
       <div class="shiva-about-heading-line"><span></span><h2>Our Clients</h2><span></span></div>
       <p>Trusted by leading names across the printing and packaging industry.</p>
     </div>
-    <div class="shiva-clients-grid shiva-clients-premium">
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/dirba-arts.jpg" alt="Dirba Arts logo"></span><span class="shiva-client-name">Dirba Printing &amp; Packaging LLP</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/naxnova.png" alt="Naxnova Technologies logo"></span><span class="shiva-client-name">Naxnova Technologies Private Limited</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/skypack.png" alt="Skyprintpack logo"></span><span class="shiva-client-name">Skyprintpack Pvt. Ltd.</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/ajanta-print-arts.jfif" alt="Ajanta Print Arts logo"></span><span class="shiva-client-name">Ajanta Print Arts</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/globe-print-n-pack.jfif" alt="Globe Print N Pack Industries Private Limited logo"></span><span class="shiva-client-name">Globe Print N Pack Industries Private Limited</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/jasmine-art-printers.png" alt="Jasmine Art Printers Pvt. Ltd. logo"></span><span class="shiva-client-name">Jasmine Art Printers Pvt. Ltd.</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/laxmi-arts.jpg" alt="Laxmi Arts logo"></span><span class="shiva-client-name">Laxmi Arts</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/noble-printing-press.png" alt="Noble Printing Press Private Limited logo"></span><span class="shiva-client-name">Noble Printing Press Private Limited</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/ok-print-pack.jfif" alt="O.K. Print & Pack logo"></span><span class="shiva-client-name">O.K. Print & Pack</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/papierus-packaging.png" alt="Papierus Packaging and Paper Private Limited logo"></span><span class="shiva-client-name">Papierus Packaging and Paper Private Limited</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/printografik-packaging.png" alt="Printografik Packaging India Pvt Ltd logo"></span><span class="shiva-client-name">Printografik Packaging India Pvt Ltd</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/rich-printers.gif" alt="Rich Printers Pvt. Ltd (Bhilad) logo"></span><span class="shiva-client-name">Rich Printers Pvt. Ltd (Bhilad)</span></div>
-      <div class="shiva-client-card"><span class="shiva-client-logo shiva-client-logo-image"><img src="assets/img/client-logos/york-print.jfif" alt="York Print Private Limited logo"></span><span class="shiva-client-name">York Print Private Limited</span></div>
+    <div class="shiva-client-slider" aria-label="Our Clients logos">
+      <div class="shiva-client-track">
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/dirba-arts.jpg" alt="Dirba Arts logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/naxnova.png" alt="Naxnova Technologies logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/skypack.png" alt="Skyprintpack logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/ajanta-print-arts.jfif" alt="Ajanta Print Arts logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/globe-print-n-pack.jfif" alt="Globe Print N Pack logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/jasmine-art-printers.png" alt="Jasmine Art Printers logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/laxmi-arts.jpg" alt="Laxmi Arts logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/noble-printing-press.png" alt="Noble Printing Press logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/ok-print-pack.jfif" alt="O.K. Print & Pack logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/papierus-packaging.png" alt="Papierus Packaging logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/printografik-packaging.png" alt="Printografik Packaging logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/rich-printers.gif" alt="Rich Printers logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/york-print.jfif" alt="York Print logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/dirba-arts.jpg" alt="Dirba Arts logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/naxnova.png" alt="Naxnova Technologies logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/skypack.png" alt="Skyprintpack logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/ajanta-print-arts.jfif" alt="Ajanta Print Arts logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/globe-print-n-pack.jfif" alt="Globe Print N Pack logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/jasmine-art-printers.png" alt="Jasmine Art Printers logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/laxmi-arts.jpg" alt="Laxmi Arts logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/noble-printing-press.png" alt="Noble Printing Press logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/ok-print-pack.jfif" alt="O.K. Print & Pack logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/papierus-packaging.png" alt="Papierus Packaging logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/printografik-packaging.png" alt="Printografik Packaging logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/rich-printers.gif" alt="Rich Printers logo"></div></div>
+<div class="shiva-client-slide"><div class="shiva-client-logo-card"><img src="assets/img/client-logos/york-print.jfif" alt="York Print logo"></div></div>
+      </div>
     </div>
 </div>
 </section>

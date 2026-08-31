@@ -74,7 +74,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="about-thumbnail">
-                            <img src="assets/img/home-about-user.png" alt="about" />
+                            <img src="assets/img/home-main-exhibition.jpg" alt="Shiva Punch Art Exhibition" />
                         </div>
                     </div>
                     <div class="col-lg-6 align-self-center">
