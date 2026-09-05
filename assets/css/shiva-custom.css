@@ -3910,3 +3910,40 @@ body.shiva-gallery-page .project-item .right-info .img-gallery-popup a:hover{
 @media(max-width:767px){
   .shiva-hero-compact::after{background:rgba(0,0,0,.035) !important;}
 }
+
+/* Navbar: center navigation text and add Bombay Master Printers Association logo after WhatsApp. */
+.shiva-nav-row{position:relative}
+.shiva-nav-center{flex:1;display:flex;align-items:center;justify-content:center;min-width:0}
+.shiva-nav-center .menu{margin:0}
+.shiva-nav-center .menu nav>ul{display:flex;align-items:center;justify-content:center;gap:25px;margin:0;padding:0}
+.shiva-nav-center .menu nav>ul>li>a{text-align:center}
+.shiva-nav-right{flex:0 0 auto}
+.shiva-bombay-logo{display:flex;align-items:center;justify-content:center;width:52px;height:52px;flex:0 0 52px;overflow:hidden;background:#fff;text-decoration:none!important}
+.shiva-bombay-logo img{width:52px;height:52px;object-fit:contain;display:block}
+@media(max-width:1199px){.shiva-nav-center .menu nav>ul{gap:17px}.shiva-bombay-logo{width:48px;height:48px;flex-basis:48px}.shiva-bombay-logo img{width:48px;height:48px}}
+@media(max-width:991px){.shiva-nav-center{display:none}.shiva-bombay-logo{width:42px;height:42px;flex-basis:42px}.shiva-bombay-logo img{width:42px;height:42px}}
+@media(max-width:575px){.shiva-bombay-logo{width:36px;height:36px;flex-basis:36px}.shiva-bombay-logo img{width:36px;height:36px}}
+
+/* ===== FINAL NAVBAR COMPACT + CLEAR ASSOCIATION LOGO ===== */
+.shiva-nav-row{gap:10px !important}
+.shiva-nav-center{flex:1 1 auto !important;min-width:0 !important}
+.shiva-nav-center .menu nav>ul{gap:11px !important}
+.shiva-nav-center .menu nav>ul>li>a{font-size:13px !important;text-align:center !important;white-space:nowrap !important}
+.shiva-nav-right{gap:7px !important}
+.shiva-follow-btn{padding:7px 9px !important;font-size:10px !important}
+.shiva-bombay-logo{width:70px !important;height:70px !important;flex:0 0 70px !important;overflow:hidden !important;background:#fff !important}
+.shiva-bombay-logo img{width:70px !important;height:70px !important;object-fit:contain !important;display:block !important;image-rendering:auto !important}
+@media(max-width:1199px){
+  .shiva-nav-center .menu nav>ul{gap:8px !important}
+  .shiva-nav-center .menu nav>ul>li>a{font-size:12px !important}
+  .shiva-bombay-logo{width:62px !important;height:62px !important;flex-basis:62px !important}
+  .shiva-bombay-logo img{width:62px !important;height:62px !important}
+}
+@media(max-width:991px){
+  .shiva-bombay-logo{width:50px !important;height:50px !important;flex-basis:50px !important}
+  .shiva-bombay-logo img{width:50px !important;height:50px !important}
+}
+@media(max-width:575px){
+  .shiva-bombay-logo{width:46px !important;height:46px !important;flex-basis:46px !important}
+  .shiva-bombay-logo img{width:46px !important;height:46px !important}
+}

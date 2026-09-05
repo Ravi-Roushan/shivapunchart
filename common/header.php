@@ -23,11 +23,14 @@
     <div class="container">
       <div class="shiva-nav-row">
         <div class="logo shiva-logo"><a href="index.html"><img src="assets/img/logo.png" alt="Shiva Punch Art" /></a></div>
-        <div class="shiva-nav-right">
+        <div class="shiva-nav-center">
           <div class="menu"><nav><ul>
             <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="our-product.html">Our Product</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="exhibitions.html">Exhibitions</a></li><li><a href="contact.html">Contact Us</a></li>
           </ul></nav></div>
+        </div>
+        <div class="shiva-nav-right">
           <a class="shiva-follow-btn" href="https://whatsapp.com/channel/0029VbCCeCcEVccFQmXFQ00V" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i><span>Follow Channel</span></a>
+          <a class="shiva-bombay-logo" href="javascript:void(0)" aria-label="Bombay Master Printers Association"><img src="assets/img/client-logos/bombay-master-printers.png" alt="Bombay Master Printers Association" /></a>
           <div class="canvas_open"><a href="javascript:void(0)" aria-label="Open menu"><span></span><span></span><span></span></a></div>
         </div>
       </div>
