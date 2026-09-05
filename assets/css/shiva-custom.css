@@ -3947,3 +3947,14 @@ body.shiva-gallery-page .project-item .right-info .img-gallery-popup a:hover{
   .shiva-bombay-logo{width:46px !important;height:46px !important;flex-basis:46px !important}
   .shiva-bombay-logo img{width:46px !important;height:46px !important}
 }
+
+
+/* Contact locations moved from the footer: two clean, responsive unit cards. */
+.sp-location-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+.sp-location-card h3{display:flex;align-items:center;gap:9px;}
+.sp-location-card h3 i{font-size:14px;color:#086ad8;}
+.sp-location-card .sp-team-lines{gap:8px;}
+.sp-location-card .sp-team-lines a{display:block;overflow-wrap:anywhere;}
+.shiva-footer-grid-no-contact{grid-template-columns:minmax(180px,.75fr) minmax(260px,1.25fr)!important;}
+@media(max-width:991px){.sp-location-grid{grid-template-columns:1fr 1fr!important}.shiva-footer-grid-no-contact{grid-template-columns:1fr 1fr!important;}}
+@media(max-width:575px){.sp-location-grid{grid-template-columns:1fr!important}.shiva-footer-grid-no-contact{grid-template-columns:1fr!important;}}
