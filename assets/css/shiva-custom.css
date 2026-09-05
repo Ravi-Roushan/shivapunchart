@@ -4031,3 +4031,133 @@ body.shiva-gallery-page .project-item .right-info .img-gallery-popup a:hover{
   .shiva-nav-right .shiva-bombay-logo{flex-basis:40px!important;width:40px!important;height:40px!important;}
   .shiva-nav-right .shiva-bombay-logo img{width:40px!important;height:40px!important;}
 }
+
+
+/* =========================================================
+   REQUESTED FINAL-ONLY FIXES
+   Do not change the existing design; these rules only correct
+   the requested mobile alignment, unit links/icons, logo sizing,
+   home-card alignment and mobile footer contact.
+   ========================================================= */
+
+/* Mobile navbar: keep the Shiva logo on the left, never centered. */
+@media (max-width: 991px){
+  .shiva-nav-row{display:flex!important;align-items:center!important;}
+  .shiva-logo{flex:0 0 auto!important;margin-left:0!important;margin-right:auto!important;text-align:left!important;justify-content:flex-start!important;}
+  .shiva-logo a{display:flex!important;align-items:center!important;justify-content:flex-start!important;margin:0!important;}
+}
+
+/* Bombay Master Printers logo: slightly larger on desktop and mobile. */
+@media (min-width: 992px){
+  .shiva-bombay-logo{width:62px!important;height:62px!important;flex-basis:62px!important;}
+  .shiva-bombay-logo img{width:62px!important;height:62px!important;}
+}
+@media (max-width: 991px){
+  .shiva-nav-right .shiva-bombay-logo{width:46px!important;height:46px!important;flex-basis:46px!important;}
+  .shiva-nav-right .shiva-bombay-logo img{width:46px!important;height:46px!important;}
+}
+
+/* Home: all six service cards stay aligned to the same card edges/heights. */
+.services-section .row{align-items:stretch!important;}
+.services-section .row > [class*="col-"]{display:flex!important;}
+.services-section .row > [class*="col-"] .info-box-2{width:100%!important;height:100%!important;display:flex!important;flex-direction:column!important;}
+.services-section .row > [class*="col-"] .content-top{width:100%!important;}
+
+/* Our Units: Shiva's own blue + equal, centered unit-card alignment. */
+.sp-location-grid{width:100%!important;max-width:1120px!important;margin-left:auto!important;margin-right:auto!important;align-items:stretch!important;}
+.sp-location-card{height:100%!important;}
+.sp-location-card h3 i{color:#1800AD!important;}
+.sp-location-card .sp-team-lines a{color:#1800AD!important;}
+.sp-location-card .sp-team-lines a:hover{color:#1800AD!important;}
+.sp-location-card h3{align-items:center!important;}
+
+/* Vasai uses the same location pin as Malad. */
+.sp-location-card h3 .fa-industry{font-family:"Font Awesome 5 Free"!important;font-weight:900!important;}
+
+/* Mobile footer: Contact Us is shown as the third footer card. */
+.shiva-footer-mobile-contact{display:none!important;}
+@media (max-width:575px){
+  .shiva-footer-mobile-contact{display:block!important;}
+  .shiva-footer-mobile-contact .shiva-footer-contact-links{display:grid!important;gap:6px!important;}
+  .shiva-footer-mobile-contact .shiva-footer-contact-links a{font-size:10.5px!important;line-height:1.4!important;word-break:break-word!important;}
+}
+
+
+/* =========================================================
+   USER REQUEST — FINAL ALIGNMENT ONLY
+   Only the requested contact/home/footer alignment and link
+   color corrections. Existing design/content remains intact.
+   ========================================================= */
+/* Our Units: match the exact outer width/alignment of the quick-link row. */
+.sp-location-grid{
+  width:100% !important;
+  max-width:none !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:14px !important;
+  align-items:stretch !important;
+}
+.sp-location-card{
+  width:100% !important;
+  min-width:0 !important;
+  height:100% !important;
+  box-sizing:border-box !important;
+}
+/* All blue links in the three small Contact cards use Shiva's own blue. */
+.sp-contact-quick-links a,
+.sp-contact-quick-links a:hover,
+.sp-location-card .sp-team-lines a,
+.sp-location-card .sp-team-lines a:hover{
+  color:#1800AD !important;
+}
+/* Keep the lower quick cards on the same outer edges as the unit cards. */
+.sp-contact-quick-grid{
+  width:100% !important;
+  max-width:none !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+/* Home: both rows of the six cards share exactly the same column geometry. */
+.services-section .container{width:100%;}
+.services-section .row{
+  align-items:stretch !important;
+  margin-left:-15px !important;
+  margin-right:-15px !important;
+}
+.services-section .row > [class*="col-"]{
+  display:flex !important;
+  align-items:stretch !important;
+  box-sizing:border-box !important;
+}
+.services-section .row > [class*="col-"] .info-box-2{
+  width:100% !important;
+  height:100% !important;
+  min-width:0 !important;
+  box-sizing:border-box !important;
+}
+/* Desktop footer: keep the two visible columns compact and centered instead of spreading. */
+@media (min-width:992px){
+  .shiva-footer-grid-no-contact{
+    width:100% !important;
+    max-width:920px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    grid-template-columns:minmax(180px,.72fr) minmax(300px,1.28fr) !important;
+    gap:20px !important;
+  }
+}
+/* Mobile footer: Contact Us appears with the same compact navigation rows. */
+@media (max-width:575px){
+  .sp-location-grid{
+    grid-template-columns:1fr !important;
+    gap:11px !important;
+  }
+  .sp-contact-quick-grid{
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+  }
+  .shiva-mobile-footer-nav > a.shiva-mobile-footer-row{
+    min-height:48px !important;
+  }
+}
