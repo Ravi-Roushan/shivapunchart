@@ -4405,3 +4405,20 @@ body.shiva-gallery-page .project-item .right-info .img-gallery-popup a:hover{
     width:100% !important;
   }
 }
+
+/* FINAL HERO CTA BRAND HOVER — Shiva red/orange */
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more{
+  background:linear-gradient(135deg,#ff2d1a 0%,#ff7a00 100%) !important;
+  border-color:#ff4b20 !important;
+  color:#fff !important;
+  border-radius:999px !important;
+}
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more:hover,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more:focus,
+section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content a.shiva-know-more:active{
+  background:linear-gradient(135deg,#ff7a00 0%,#ff2d1a 100%) !important;
+  border-color:#ff6a00 !important;
+  color:#fff !important;
+  box-shadow:0 9px 22px rgba(255,75,32,.35) !important;
+  transform:translateY(-2px) !important;
+}

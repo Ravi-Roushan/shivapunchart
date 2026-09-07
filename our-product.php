@@ -652,3 +652,11 @@
 .our-products-grid .carousel-control-prev-icon,.our-products-grid .carousel-control-next-icon,.carousel[id^="productCarouselFinal"] .carousel-control-prev-icon,.carousel[id^="productCarouselFinal"] .carousel-control-next-icon{width:12px!important;height:12px!important;}
 @media(max-width:767px){.our-products-grid .carousel-control-prev,.our-products-grid .carousel-control-next,.carousel[id^="productCarouselFinal"] .carousel-control-prev,.carousel[id^="productCarouselFinal"] .carousel-control-next{width:27px!important;height:31px!important;}}
 </style>
+<script id="shiva-disable-context-menu">
+(function(){
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); }, {passive:false});
+  document.addEventListener('dragstart', function(e){
+    if (e.target && (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO' || e.target.tagName === 'A')) e.preventDefault();
+  }, {passive:false});
+})();
+</script>

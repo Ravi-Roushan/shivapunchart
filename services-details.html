@@ -557,7 +557,16 @@
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/script.js"></script>
         <script src="assets/js/mobile-menu.js"></script>
-    </body>
+    
+<script id="shiva-disable-context-menu">
+(function(){
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); }, {passive:false});
+  document.addEventListener('dragstart', function(e){
+    if (e.target && (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO' || e.target.tagName === 'A')) e.preventDefault();
+  }, {passive:false});
+})();
+</script>
+</body>
 
 <!-- Mirrored from preetheme.com/html/codeit/services-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jan 2022 16:16:05 GMT -->
 

@@ -44,3 +44,12 @@
         <!-- End Counter Area -->
 
         <!-- Start Team Area -->
+
+<script id="shiva-disable-context-menu">
+(function(){
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); }, {passive:false});
+  document.addEventListener('dragstart', function(e){
+    if (e.target && (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO' || e.target.tagName === 'A')) e.preventDefault();
+  }, {passive:false});
+})();
+</script>

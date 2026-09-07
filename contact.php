@@ -145,3 +145,12 @@ Estate, Near The Khwaishh Presidency, Kanchpada, Malad West, Mumbai-400064 India
 
         <!-- End Subscriber Area -->
        <?php include "common/footer.php" ?>
+
+<script id="shiva-disable-context-menu">
+(function(){
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); }, {passive:false});
+  document.addEventListener('dragstart', function(e){
+    if (e.target && (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO' || e.target.tagName === 'A')) e.preventDefault();
+  }, {passive:false});
+})();
+</script>
