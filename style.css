@@ -3108,7 +3108,7 @@ border-radius:8px;
 }
 
 .testimonial-area-full {
-  background: #2458a6 !important;
+  background: #1800AD !important;
   border-radius: 18px !important;
   overflow: hidden !important;
   margin-top: -70px !important;
@@ -5411,5 +5411,268 @@ body.shiva-compact-trust-contact summary {
   .portfolio-area .project-details-info ul li > a {
     font-size: 13px;
     line-height: 22px;
+  }
+}
+
+/* Final requested layout: precision video behind heading; reviews stay solid dark blue */
+.shiva-precision-video-bg {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 300px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 30px !important;
+  background: #1800AD;
+}
+.shiva-precision-bg-video {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  z-index: 0 !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+}
+.shiva-precision-video-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.42);
+  z-index: 1;
+  pointer-events: none;
+}
+.shiva-precision-content {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100%;
+  text-align: center;
+}
+.shiva-precision-content h2,
+.shiva-precision-content p {
+  position: relative;
+  z-index: 2;
+}
+.testimonial-area-full {
+  background: #1800AD !important;
+}
+.testimonial-item-full {
+  background: transparent !important;
+}
+.testimonial-item-full::after {
+  background: #1800AD !important;
+  z-index: -1 !important;
+}
+@media (max-width: 767px) {
+  .shiva-precision-video-bg {
+    min-height: 260px;
+    padding: 55px 18px !important;
+  }
+}
+
+
+/* Final: make Engineering Precision video full-width/full-bleed inside its section */
+.web-prodive.shiva-precision-section,
+.web-prodive {
+  position: relative;
+}
+
+.web-prodive .container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.web-prodive .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.web-prodive .row > [class*="col-"] {
+  width: 100%;
+  max-width: 100%;
+  flex: 0 0 100%;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.web-prodive .we-provide-content.shiva-precision-video-bg {
+  width: 100%;
+  max-width: none;
+  min-height: 520px;
+  margin: 0;
+  border-radius: 0;
+  padding: 90px 6vw !important;
+}
+
+.web-prodive .shiva-precision-bg-video {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+@media (max-width: 767px) {
+  .web-prodive .we-provide-content.shiva-precision-video-bg {
+    min-height: 430px;
+    padding: 65px 20px !important;
+  }
+}
+
+/* Final alignment fix: keep Engineering Precision content perfectly centered */
+.web-prodive .shiva-precision-video-bg .shiva-precision-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+.web-prodive .shiva-precision-video-bg .shiva-precision-content h2,
+.web-prodive .shiva-precision-video-bg .shiva-precision-content p {
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+.web-prodive .shiva-precision-video-bg .shiva-precision-content h2 {
+  margin-top: 0 !important;
+}
+
+/* Final requested alignment + responsive fixes */
+/* Keep Engineering Precision video in the same centered grid as the stats box. */
+.web-prodive.shiva-precision-section {
+  width: min(1200px, calc(100% - 30px)) !important;
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+.web-prodive.shiva-precision-section .container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+.web-prodive.shiva-precision-section .row {
+  width: 100% !important;
+  margin: 0 !important;
+}
+.web-prodive.shiva-precision-section .row > [class*="col-"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.web-prodive.shiva-precision-section .we-provide-content.shiva-precision-video-bg {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  border-radius: 0 !important;
+}
+
+/* Remove the white card/frame behind the golden About image. */
+.shiva-about-image-frame {
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.shiva-about-image-frame img {
+  display: block !important;
+  background: transparent !important;
+}
+
+/* Mobile: keep the three stat items in one compact rectangular row. */
+@media (max-width: 767px) {
+  .web-prodive.shiva-precision-section {
+    width: calc(100% - 20px) !important;
+    max-width: none !important;
+  }
+  .web-prodive.shiva-precision-section .we-provide-content.shiva-precision-video-bg {
+    min-height: 360px !important;
+    padding: 55px 16px !important;
+  }
+  .counter-area {
+    width: calc(100% - 20px) !important;
+    max-width: none !important;
+    border-radius: 0 !important;
+    padding-top: 18px !important;
+    padding-bottom: 8px !important;
+  }
+  .counter-area > .container > .row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    margin: 0 !important;
+  }
+  .counter-area > .container > .row > [class*="col-"] {
+    width: 33.333333% !important;
+    max-width: 33.333333% !important;
+    flex: 0 0 33.333333% !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    margin-bottom: 8px !important;
+  }
+  .counter-area .counter-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    overflow: visible !important;
+  }
+  .counter-area .counter-item .icon {
+    float: none !important;
+    padding: 0 !important;
+    font-size: 19px !important;
+    line-height: 1 !important;
+    margin-bottom: 4px !important;
+  }
+  .counter-area .counter-item .content {
+    overflow: visible !important;
+    width: 100% !important;
+  }
+  .counter-area .counter-item .content .title {
+    justify-content: center !important;
+    align-items: baseline !important;
+  }
+  .counter-area .counter-item .content .title .counter {
+    font-size: 21px !important;
+    line-height: 1 !important;
+  }
+  .counter-area .counter-item .content .title h3 {
+    font-size: 17px !important;
+    padding-left: 2px !important;
+    padding-top: 0 !important;
+  }
+  .counter-area .counter-item .content p {
+    font-size: 9px !important;
+    line-height: 1.25 !important;
+    margin: 3px 0 0 !important;
+    white-space: normal !important;
+  }
+  .shiva-about-image {
+    padding: 0 0 12px !important;
+  }
+  .shiva-about-image:before {
+    display: none !important;
+  }
+  .shiva-about-image-frame {
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+  .shiva-about-image-frame img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
 }

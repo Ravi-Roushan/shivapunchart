@@ -33,7 +33,7 @@
             loop: true,
             dots:true,
             autoplay: true,
-            autoplayTimeout: 20000,
+            autoplayTimeout: 5000,
             items: 1,
             nav:false,
             smartSpeed: 1500,
