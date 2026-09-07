@@ -4161,3 +4161,136 @@ body.shiva-gallery-page .project-item .right-info .img-gallery-popup a:hover{
     min-height:48px !important;
   }
 }
+
+/* ===== CLIENT / NAV LOGO UPDATE ===== */
+/* Use the supplied PDF 24/7 artwork and keep its visible size equal to Bombay logo. */
+.shiva-quality-logo{width:62px!important;height:62px!important;flex-basis:62px!important;background:transparent!important;border:0!important;}
+.shiva-quality-logo img{width:62px!important;height:62px!important;object-fit:contain!important;display:block!important;}
+@media(max-width:1199px){.shiva-quality-logo{width:56px!important;height:56px!important;flex-basis:56px!important}.shiva-quality-logo img{width:56px!important;height:56px!important}}
+@media(max-width:991px){.shiva-quality-logo{width:46px!important;height:46px!important;flex-basis:46px!important}.shiva-quality-logo img{width:46px!important;height:46px!important}}
+@media(max-width:575px){.shiva-mobile-quality-logo{width:52px!important;height:52px!important}.shiva-mobile-quality-logo img{width:52px!important;height:52px!important}.shiva-mobile-brand-logos{gap:8px!important}}
+
+/* The three Email / Location / WhatsApp quick boxes were removed from contact.html. */
+
+
+/* ===== FINAL USER REQUEST: NAV 2 PDF LOGOS + CONTACT/CLIENT LOGOS ===== */
+.shiva-quality-logo,.shiva-guarantee-logo{display:flex!important;align-items:center!important;justify-content:center!important;background:#fff!important;border:0!important;text-decoration:none!important;overflow:hidden!important;flex:0 0 62px!important;width:62px!important;height:62px!important;}
+.shiva-quality-logo img,.shiva-guarantee-logo img{width:62px!important;height:62px!important;object-fit:contain!important;display:block!important;}
+.shiva-guarantee-logo{border-radius:4px;}
+.sp-location-grid{max-width:850px!important;margin-left:auto!important;margin-right:auto!important;gap:12px!important;}
+.sp-location-card{width:100%!important;}
+@media(max-width:1199px){.shiva-quality-logo,.shiva-guarantee-logo{width:56px!important;height:56px!important;flex-basis:56px!important}.shiva-quality-logo img,.shiva-guarantee-logo img{width:56px!important;height:56px!important}}
+@media(max-width:991px){.shiva-quality-logo,.shiva-guarantee-logo{width:46px!important;height:46px!important;flex-basis:46px!important}.shiva-quality-logo img,.shiva-guarantee-logo img{width:46px!important;height:46px!important}.sp-location-grid{max-width:760px!important;gap:11px!important}}
+@media(max-width:575px){.shiva-quality-logo,.shiva-guarantee-logo{width:42px!important;height:42px!important;flex-basis:42px!important}.shiva-quality-logo img,.shiva-guarantee-logo img{width:42px!important;height:42px!important}.sp-location-grid{max-width:100%!important;gap:11px!important}}
+.shiva-client-logo-card img[alt="Rama Packaging logo"]{object-fit:contain!important;}
+.shiva-client-logo-card img[alt="Graphic Prints logo"]{object-fit:contain!important;}
+
+
+/* Final requested Our Units sizing/alignment only. */
+.sp-location-grid{width:100%!important;max-width:none!important;margin-left:auto!important;margin-right:auto!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important;}
+.sp-location-card{width:100%!important;min-height:172px!important;padding:22px 24px!important;}
+@media(max-width:991px){.sp-location-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important}.sp-location-card{min-height:165px!important;padding:20px 20px!important;}}
+@media(max-width:575px){.sp-location-grid{max-width:100%!important;grid-template-columns:1fr!important;gap:10px!important}.sp-location-card{min-height:0!important;padding:16px 14px!important;}}
+/* Mobile navbar: show both supplied header logos separately. */
+.shiva-mobile-brand-logos{gap:8px!important;}
+.shiva-mobile-guarantee-logo{display:flex;align-items:center;justify-content:center;width:52px;height:52px;flex:0 0 52px;overflow:hidden;background:transparent;text-decoration:none!important;}
+.shiva-mobile-guarantee-logo img{width:52px;height:52px;object-fit:contain;display:block;}
+@media(max-width:575px){.shiva-mobile-guarantee-logo{width:42px;height:42px;flex-basis:42px}.shiva-mobile-guarantee-logo img{width:42px;height:42px}}
+
+/* =========================================================
+   MOBILE HEADER — FINAL CLEAN LAYOUT
+   Desktop/tablet layout stays unchanged above 991px.
+   On phones the header shows only:
+   Shiva logo + WhatsApp + Mumbai/Printers logo + menu button.
+   The other two trust logos live inside the off-canvas menu.
+   ========================================================= */
+@media (max-width: 991px){
+  .shiva-navbar .container{width:100%;max-width:100%;padding-left:15px;padding-right:15px;}
+  .shiva-nav-row{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    width:100%;
+    min-height:68px !important;
+    gap:10px !important;
+    flex-wrap:nowrap !important;
+  }
+  .shiva-logo{
+    flex:1 1 auto !important;
+    min-width:0 !important;
+    margin:0 !important;
+  }
+  .shiva-logo img{
+    display:block !important;
+    width:165px !important;
+    max-width:100% !important;
+    height:auto !important;
+  }
+  .shiva-nav-center{display:none !important;}
+  .shiva-nav-right{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-end !important;
+    flex:0 0 auto !important;
+    width:auto !important;
+    min-width:0 !important;
+    gap:8px !important;
+    margin:0 !important;
+  }
+  .shiva-nav-right .shiva-quality-logo,
+  .shiva-nav-right .shiva-guarantee-logo{display:none !important;}
+  .shiva-follow-btn{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    flex:0 0 auto !important;
+  }
+  .shiva-bombay-logo{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    flex:0 0 auto !important;
+    margin:0 !important;
+  }
+  .shiva-bombay-logo img{
+    display:block !important;
+    width:42px !important;
+    max-width:42px !important;
+    height:42px !important;
+    object-fit:contain !important;
+  }
+  .canvas_open{
+    display:block !important;
+    flex:0 0 auto !important;
+    margin:0 !important;
+  }
+  .canvas_open a{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:38px !important;
+    height:38px !important;
+  }
+}
+
+@media (max-width: 575px){
+  .shiva-navbar .container{padding-left:12px;padding-right:12px;}
+  .shiva-nav-row{min-height:62px !important;gap:7px !important;}
+  .shiva-logo img{width:145px !important;}
+  .shiva-nav-right{gap:6px !important;}
+  .shiva-follow-btn{width:34px !important;height:34px !important;padding:0 !important;border-radius:50% !important;}
+  .shiva-follow-btn span{display:none !important;}
+  .shiva-follow-btn i{font-size:16px !important;}
+  .shiva-bombay-logo img{width:36px !important;max-width:36px !important;height:36px !important;}
+  .canvas_open a{width:36px !important;height:36px !important;}
+}
+
+@media (max-width: 380px){
+  .shiva-navbar .container{padding-left:10px;padding-right:10px;}
+  .shiva-nav-row{gap:5px !important;}
+  .shiva-logo img{width:132px !important;}
+  .shiva-nav-right{gap:5px !important;}
+  .shiva-bombay-logo img{width:33px !important;max-width:33px !important;height:33px !important;}
+  .shiva-follow-btn{width:32px !important;height:32px !important;}
+  .canvas_open a{width:34px !important;height:34px !important;}
+}
