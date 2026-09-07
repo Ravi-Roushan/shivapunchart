@@ -297,8 +297,8 @@
                     <!-- Thumbnail -->
                     <div class="col-lg-6 align-self-center">
                         <div class="works-about-thumbanil">
-                            <div class="thumbnail">
-                                <img src="assets/img/about-home-premium.png" alt="img" />
+                            <div class="thumbnail shiva-home-video-wrap">
+                                <video class="shiva-home-autoplay-video" src="assets/img/project/video/1.mp4" autoplay muted loop playsinline controls preload="metadata" aria-label="Shiva Punch Art company video"></video>
                             </div>
                             <div class="works-about-vedio">
     <div class="video-btn">
@@ -500,8 +500,8 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="we-provide-content">
-                            <div class="video-btn">
-                                <a href="assets/img/project/video/1.mp4" class="shiva-video-trigger" data-video="assets/img/project/video/1.mp4" aria-label="Play company video"><i class="fas fa-play"></i></a>
+                            <div class="shiva-home-video-wrap shiva-provide-video-wrap">
+                                <video class="shiva-home-autoplay-video" src="assets/img/project/video/1.mp4" autoplay muted loop playsinline controls preload="metadata" aria-label="Shiva Punch Art company video"></video>
                             </div>
                             <h2>Engineering Precision. Delivering Perfection.</h2>
                             <p>Advanced CNC & laser technology combined with expert craftsmanship to produce reliable punch and die solutions for industrial applications.</p>

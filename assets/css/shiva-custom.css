@@ -4294,3 +4294,114 @@ body.shiva-gallery-page .project-item .right-info .img-gallery-popup a:hover{
   .shiva-follow-btn{width:32px !important;height:32px !important;}
   .canvas_open a{width:34px !important;height:34px !important;}
 }
+
+
+/* =========================================================
+   FINAL REQUEST: chatbot artwork, mobile footer 2-2-1,
+   footer logo visibility, and autoplay home videos
+   ========================================================= */
+/* Use the supplied Shiva mark everywhere the chatbot artwork appears. */
+.shiva-chatbot-launcher img,
+.shiva-chat-avatar img{
+  object-fit:contain !important;
+  border-radius:0 !important;
+  display:block !important;
+}
+
+/* Footer logo: make the complete Shiva footer mark white for strong contrast. */
+.shiva-footer-logo img{
+  filter: brightness(0) invert(1) !important;
+  opacity:1 !important;
+}
+
+/* Home inline videos keep the existing sections, but actually autoplay. */
+.shiva-home-video-wrap{
+  position:relative !important;
+  overflow:hidden !important;
+}
+.shiva-home-autoplay-video{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  object-fit:cover !important;
+  background:#000 !important;
+}
+.works-about-thumbanil .shiva-home-video-wrap{
+  width:100% !important;
+  aspect-ratio:848 / 478 !important;
+}
+.works-about-thumbanil .shiva-home-autoplay-video{
+  min-height:100% !important;
+}
+.we-provide-content .shiva-provide-video-wrap{
+  width:min(848px,100%) !important;
+  height:auto !important;
+  aspect-ratio:848 / 478 !important;
+  margin:0 auto 28px !important;
+  border-radius:4px !important;
+}
+.we-provide-content .shiva-provide-video-wrap .shiva-home-autoplay-video{
+  object-fit:cover !important;
+}
+
+@media (max-width: 767px){
+  .works-about-thumbanil .shiva-home-video-wrap{
+    aspect-ratio:16 / 9 !important;
+  }
+  .we-provide-content .shiva-provide-video-wrap{
+    width:100% !important;
+    margin-bottom:22px !important;
+    border-radius:3px !important;
+  }
+  .shiva-home-autoplay-video{
+    object-fit:cover !important;
+  }
+}
+
+/* Mobile footer requested layout: ABOUT | GALLERY / EXHIBITIONS | CONTACT / OUR PRODUCTS. */
+@media (max-width:575px){
+  .shiva-mobile-footer-nav{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:0 12px !important;
+    align-items:stretch !important;
+  }
+  .shiva-mobile-footer-nav > a.shiva-mobile-footer-row,
+  .shiva-mobile-footer-nav > details.shiva-mobile-footer-row{
+    min-height:48px !important;
+    width:100% !important;
+    box-sizing:border-box !important;
+  }
+  .shiva-mobile-footer-nav > a.shiva-mobile-direct{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    padding:0 10px !important;
+  }
+  .shiva-mobile-footer-nav > a.shiva-mobile-direct i{
+    display:none !important;
+  }
+  .shiva-mobile-footer-nav > details.shiva-mobile-expand{
+    grid-column:1 / -1 !important;
+    width:100% !important;
+  }
+  .shiva-mobile-footer-nav > details.shiva-mobile-expand > summary{
+    min-height:48px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    padding:0 10px !important;
+    list-style:none !important;
+  }
+  .shiva-mobile-footer-nav > details.shiva-mobile-expand > summary::-webkit-details-marker{
+    display:none !important;
+  }
+  .shiva-mobile-footer-nav > details.shiva-mobile-expand > summary i{
+    display:inline-flex !important;
+  }
+  .shiva-mobile-footer-content{
+    grid-column:1 / -1 !important;
+    width:100% !important;
+  }
+}
