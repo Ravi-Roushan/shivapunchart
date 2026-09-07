@@ -5676,3 +5676,460 @@ body.shiva-compact-trust-contact summary {
     height: auto !important;
   }
 }
+
+/* =========================================================
+   FINAL POLISH — requested spacing, image frame & buttons
+   ========================================================= */
+/* Remove the pale offset frame/line visible beside the About image. */
+.shiva-about-only .shiva-about-image:before,
+.shiva-about-image:before { display:none !important; content:none !important; }
+.shiva-about-only .shiva-about-image-frame,
+.shiva-about-image-frame {
+  padding:0 !important;
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+.shiva-about-only .shiva-about-image-frame img,
+.shiva-about-image-frame img { border-radius:0 !important; }
+
+/* Tighten the vertical rhythm between Projects, stats, video and reviews. */
+.latest-project-slider { padding-top:35px !important; }
+.latest-project-slider .col-lg-12.mb-50 { margin-bottom:22px !important; }
+.web-prodive.shiva-precision-section { margin-top:0 !important; }
+.web-prodive .we-provide-content.shiva-precision-video-bg {
+  min-height:460px !important;
+  padding-top:55px !important;
+  padding-bottom:55px !important;
+}
+.testimonial-area {
+  padding-top:20px !important;
+  padding-bottom:20px !important;
+}
+.testimonial-area-full {
+  margin-top:0 !important;
+}
+@media (max-width:767px){
+  .latest-project-slider { padding-top:25px !important; }
+  .latest-project-slider .col-lg-12.mb-50 { margin-bottom:16px !important; }
+  .web-prodive.shiva-precision-section { margin-top:0 !important; }
+  .web-prodive .we-provide-content.shiva-precision-video-bg {
+    min-height:320px !important;
+    padding:42px 16px !important;
+  }
+  .testimonial-area { padding-top:12px !important; padding-bottom:14px !important; }
+}
+
+/* One consistent red/orange rounded button treatment across the site. */
+.button-1,
+.button-2,
+.pricing-btn,
+.contact-form button,
+.subscribe-form button,
+.footer-call-btn,
+.shiva-follow-btn,
+.shiva-know-more,
+.btn-aa a,
+button[type="submit"],
+input[type="submit"],
+.latest-projects-slider-full .owl-prev,
+.latest-projects-slider-full .owl-next {
+  border-radius:999px !important;
+}
+.button-1,
+.button-2,
+.pricing-btn,
+.contact-form button,
+.subscribe-form button,
+.shiva-know-more,
+.btn-aa a,
+button[type="submit"],
+input[type="submit"] {
+  background:linear-gradient(135deg,#ff3131 0%,#ff8a00 100%) !important;
+  border:1px solid #ff5a22 !important;
+  color:#fff !important;
+  box-shadow:0 6px 16px rgba(255,75,30,.18) !important;
+  overflow:hidden !important;
+}
+.button-1::after,
+.button-2::after { background:#ff8a00 !important; }
+.button-1:hover,
+.button-2:hover,
+.pricing-btn:hover,
+.contact-form button:hover,
+.subscribe-form button:hover,
+.shiva-know-more:hover,
+.btn-aa a:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background:linear-gradient(135deg,#ff8a00 0%,#ff3131 100%) !important;
+  border-color:#ff6a00 !important;
+  color:#fff !important;
+  border-radius:999px !important;
+  transform:translateY(-1px);
+}
+.footer-call-btn,
+.shiva-follow-btn {
+  background:linear-gradient(135deg,#ff3131,#ff8a00) !important;
+  border-color:#ff6a00 !important;
+  color:#fff !important;
+}
+.footer-call-btn:hover,
+.shiva-follow-btn:hover { border-radius:999px !important; }
+.scroll-area i { border-radius:50% !important; }
+
+/* Keep carousel arrow controls rounded without changing their size. */
+.latest-projects-slider-full .owl-prev,
+.latest-projects-slider-full .owl-next { border-radius:50% !important; }
+
+/* FINAL BRAND BUTTON COLORS — Shiva logo red/orange accent; WhatsApp stays green */
+.button-1,
+.button-2,
+.pricing-btn,
+.contact-form button,
+.subscribe-form button,
+.shiva-know-more,
+.btn-aa a,
+button[type="submit"],
+input[type="submit"],
+.footer-call-btn {
+  background: linear-gradient(135deg, #ff3131 0%, #ff7a00 100%) !important;
+  border-color: #ff5a22 !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+}
+.button-1::after,
+.button-2::after { background: #ff7a00 !important; }
+.button-1:hover,
+.button-2:hover,
+.pricing-btn:hover,
+.contact-form button:hover,
+.subscribe-form button:hover,
+.shiva-know-more:hover,
+.btn-aa a:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+.footer-call-btn:hover {
+  background: linear-gradient(135deg, #ff7a00 0%, #ff3131 100%) !important;
+  border-color: #ff5a22 !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+}
+
+/* WhatsApp / Follow Channel remains WhatsApp green on every page */
+.shiva-follow-btn,
+.shiva-mobile-follow {
+  background: #25D366 !important;
+  background-image: none !important;
+  border-color: #25D366 !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+}
+.shiva-follow-btn:hover,
+.shiva-mobile-follow:hover {
+  background: #20bd5a !important;
+  border-color: #20bd5a !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+}
+
+/* Project/gallery arrows use the same Shiva red-orange accent */
+.latest-projects-slider-full .owl-prev,
+.latest-projects-slider-full .owl-next,
+.sp-gallery-arrow {
+  background: linear-gradient(135deg, #ff3131 0%, #ff7a00 100%) !important;
+  border-color: #ff5a22 !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+}
+.latest-projects-slider-full .owl-prev:hover,
+.latest-projects-slider-full .owl-next:hover,
+.sp-gallery-arrow:hover {
+  background: linear-gradient(135deg, #ff7a00 0%, #ff3131 100%) !important;
+  border-color: #ff5a22 !important;
+  color: #fff !important;
+}
+
+/* Header active navigation follows the same brand accent without affecting WhatsApp */
+.shiva-nav-center .menu nav ul li.active > a,
+.shiva-nav-center .menu nav ul li > a:hover {
+  color: #ff5a22 !important;
+}
+
+/* =========================================================
+   FINAL HOME SPACING FIX — keep sections compact and connected
+   ========================================================= */
+body.shiva-home-compact .works-about-area.section-padding{
+  margin-top: 6px !important;
+  margin-bottom: 8px !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+body.shiva-home-compact .latest-project-slider{
+  padding-top: 10px !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+body.shiva-home-compact .latest-project-slider .col-lg-12.mb-50{
+  margin-bottom: 10px !important;
+}
+body.shiva-home-compact .latest-project-slider .section-headding h5{
+  margin-bottom: 4px !important;
+}
+body.shiva-home-compact .latest-project-slider .section-headding h2{
+  margin-bottom: 8px !important;
+}
+body.shiva-home-compact .latest-project-slider .latest-projects-slider-full{
+  margin-bottom: 0 !important;
+}
+body.shiva-home-compact .counter-area{
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  padding-top: 10px !important;
+  padding-bottom: 4px !important;
+}
+body.shiva-home-compact .counter-area > .container > .row > [class*="col-"]{
+  margin-bottom: 6px !important;
+}
+body.shiva-home-compact .web-prodive.shiva-precision-section{
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+body.shiva-home-compact .web-prodive .we-provide-content.shiva-precision-video-bg{
+  min-height: 380px !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+body.shiva-home-compact .testimonial-area{
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+body.shiva-home-compact .testimonial-area-full{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+@media (max-width:767px){
+  body.shiva-home-compact .works-about-area.section-padding{
+    margin-top: 4px !important;
+    margin-bottom: 6px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  body.shiva-home-compact .latest-project-slider{
+    padding-top: 6px !important;
+  }
+  body.shiva-home-compact .latest-project-slider .col-lg-12.mb-50{
+    margin-bottom: 7px !important;
+  }
+  body.shiva-home-compact .latest-project-slider .section-headding h2{
+    margin-bottom: 6px !important;
+  }
+  body.shiva-home-compact .counter-area{
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    padding-top: 8px !important;
+    padding-bottom: 2px !important;
+  }
+  body.shiva-home-compact .web-prodive.shiva-precision-section{
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+  body.shiva-home-compact .web-prodive .we-provide-content.shiva-precision-video-bg{
+    min-height: 300px !important;
+    padding: 32px 14px !important;
+  }
+  body.shiva-home-compact .testimonial-area{
+    margin-top: 5px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+}
+
+/* FINAL HOME GAP FIX — keep Stats -> Engineering Video -> Reviews tightly connected */
+body.shiva-home-compact .web-prodive.shiva-precision-section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+body.shiva-home-compact .web-prodive.shiva-precision-section .we-provide-content.shiva-precision-video-bg {
+  margin: 0 !important;
+}
+body.shiva-home-compact .testimonial-area {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+body.shiva-home-compact .testimonial-area-full {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 767px) {
+  body.shiva-home-compact .web-prodive.shiva-precision-section {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  body.shiva-home-compact .web-prodive.shiva-precision-section .we-provide-content.shiva-precision-video-bg {
+    margin: 0 !important;
+  }
+  body.shiva-home-compact .testimonial-area {
+    margin-top: 0 !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+}
+
+/* =========================================================
+   FINAL REQUESTED POLISH — Work card spacing + About buttons
+   ========================================================= */
+/* Give the three visible work cards a clearly equal, slightly wider gap. */
+body.shiva-home-compact .latest-projects-slider-full .owl-stage {
+  display:flex !important;
+  align-items:stretch !important;
+}
+body.shiva-home-compact .latest-projects-slider-full .owl-item {
+  padding-left:14px !important;
+  padding-right:14px !important;
+  box-sizing:border-box !important;
+}
+body.shiva-home-compact .latest-projects-slider-full .owl-item .project-item {
+  width:100% !important;
+}
+
+/* Home About tabs: same Shiva red/orange curved button treatment. */
+.about-content-navs-tab .nav-tabs {
+  justify-content:center !important;
+  gap:8px !important;
+}
+.about-content-navs-tab .nav-tabs .nav-item {
+  margin:0 !important;
+}
+.about-content-navs-tab .nav-tabs .nav-item button,
+.about-content-navs-tab .nav-tabs .nav-item button.active,
+.about-content-navs-tab .nav-tabs .nav-item button:hover {
+  border-radius:999px !important;
+  border:1px solid #ff5a22 !important;
+  background:linear-gradient(135deg,#ff3131 0%,#ff7a00 100%) !important;
+  color:#fff !important;
+  box-shadow:0 5px 14px rgba(255,75,30,.16) !important;
+  transition:all .25s ease !important;
+}
+.about-content-navs-tab .nav-tabs .nav-item button:hover,
+.about-content-navs-tab .nav-tabs .nav-item button.active:hover {
+  background:linear-gradient(135deg,#ff7a00 0%,#ff3131 100%) !important;
+  border-color:#ff5a22 !important;
+  color:#fff !important;
+  transform:translateY(-1px);
+}
+
+/* About-page Shiva Punch Art box: underline the brand and use centered bullets. */
+.shiva-about-only .shiva-about-tagline .shiva-tagline-brand {
+  position:relative !important;
+  display:inline-block !important;
+  width:auto !important;
+  padding-bottom:7px !important;
+  text-decoration:none !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-brand::after {
+  content:"" !important;
+  position:absolute !important;
+  left:0 !important;
+  right:0 !important;
+  bottom:1px !important;
+  height:3px !important;
+  border-radius:999px !important;
+  background:linear-gradient(90deg,#ff3131 0%,#ff7a00 100%) !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-points > span {
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:8px !important;
+  text-align:center !important;
+}
+.shiva-about-only .shiva-about-tagline .shiva-tagline-points > span::before {
+  content:"•" !important;
+  color:#ff5a22 !important;
+  font-size:18px !important;
+  line-height:1 !important;
+  flex:0 0 auto !important;
+}
+
+/* Ensure the main Home Know More CTA never falls back to blue. */
+.shiva-know-more,
+.shiva-know-more:visited,
+.shiva-know-more:hover,
+.shiva-know-more:focus {
+  background:linear-gradient(135deg,#ff3131 0%,#ff7a00 100%) !important;
+  color:#fff !important;
+  border-color:#ff5a22 !important;
+  border-radius:999px !important;
+}
+
+@media (max-width:767px){
+  body.shiva-home-compact .latest-projects-slider-full .owl-item {
+    padding-left:7px !important;
+    padding-right:7px !important;
+  }
+  .about-content-navs-tab .nav-tabs {
+    gap:6px !important;
+    flex-wrap:wrap !important;
+  }
+  .about-content-navs-tab .nav-tabs .nav-item button {
+    font-size:13px !important;
+    padding:8px 14px !important;
+  }
+}
+
+/* FINAL USER REQUEST — restore work-card sizing, add balanced heading space, enlarge precision video */
+body.shiva-home-compact .latest-project-slider {
+  padding-top: 34px !important;
+  padding-bottom: 0 !important;
+}
+body.shiva-home-compact .latest-project-slider .col-lg-12.mb-50 {
+  margin-bottom: 28px !important;
+}
+/* Keep project cards exactly like the original carousel — no extra side padding/spacing. */
+body.shiva-home-compact .latest-projects-slider-full .owl-stage {
+  display: flex !important;
+  align-items: stretch !important;
+}
+body.shiva-home-compact .latest-projects-slider-full .owl-item {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  box-sizing: border-box !important;
+}
+body.shiva-home-compact .latest-projects-slider-full .owl-item .project-item {
+  width: 100% !important;
+}
+/* Give the Engineering Precision video more visual height while keeping it centered in its grid. */
+body.shiva-home-compact .web-prodive.shiva-precision-section .we-provide-content.shiva-precision-video-bg {
+  min-height: 500px !important;
+}
+body.shiva-home-compact .web-prodive.shiva-precision-section .shiva-precision-bg-video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+@media (max-width: 767px) {
+  body.shiva-home-compact .latest-project-slider {
+    padding-top: 24px !important;
+  }
+  body.shiva-home-compact .latest-project-slider .col-lg-12.mb-50 {
+    margin-bottom: 20px !important;
+  }
+  body.shiva-home-compact .latest-projects-slider-full .owl-item {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  body.shiva-home-compact .web-prodive.shiva-precision-section .we-provide-content.shiva-precision-video-bg {
+    min-height: 360px !important;
+  }
+}
