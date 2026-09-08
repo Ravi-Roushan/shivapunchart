@@ -4,6 +4,6 @@ return [
     'host' => 'smtp.gmail.com',
     'port' => 587,
     'username' => 'roushanravi032@gmail.com',
-    'password' => 'qqyy njfd oqjn uari',
+    'password' => 'PASTE_YOUR_16_CHARACTER_APP_PASSWORD_HERE',
     'encryption' => 'tls',
 ];
