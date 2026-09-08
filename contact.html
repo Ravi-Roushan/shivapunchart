@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/shiva-custom.css" />
-</head>
+<style>.sp-phone-field{display:flex;align-items:center;width:100%}.sp-phone-prefix{padding:0 12px;font-weight:700;color:#173b91;border-right:1px solid #dce4ef}.sp-phone-field input{border:0!important;flex:1}.shiva-form-loading{display:none;align-items:center;justify-content:center;gap:10px;margin-top:16px;color:#193ba8;font-weight:700}.shiva-form-loading.show{display:flex}.shiva-spinner{width:22px;height:22px;border:3px solid #dfe5ff;border-top-color:#ef3b35;border-right-color:#ff8b19;border-radius:50%;animation:shivaSpin .7s linear infinite}@keyframes shivaSpin{to{transform:rotate(360deg)}}</style></head>
 <body class="shiva-compact-trust-contact">
 <header class="header shiva-header">
 <div class="header-bottom shiva-navbar">
@@ -84,11 +84,12 @@
                             <div><span>01</span><h3>Send us a message</h3></div>
                             <p>We usually respond within one business day.</p>
                         </div>
-                        <form id="contact-form" action="https://preetheme.com/php/codeit/mail.php" method="POST">
+                        <form id="contact-form" action="contact-submit.php" method="POST" novalidate>
+                            <input type="hidden" name="service" value="General Enquiry"><input type="hidden" name="source" value="Contact-page">
                             <div class="sp-contact-fields">
                                 <label class="sp-field"><span>Your Name</span><div><i class="fas fa-user"></i><input type="text" name="name" placeholder="Enter your name" required /></div></label>
                                 <label class="sp-field"><span>Email Address</span><div><i class="far fa-envelope"></i><input type="email" name="email" placeholder="Enter your email" required /></div></label>
-                                <label class="sp-field"><span>Phone Number</span><div><i class="fas fa-mobile-alt"></i><input type="text" name="phone" placeholder="Enter your phone" /></div></label>
+                                <label class="sp-field"><span>Phone Number</span><div><i class="fas fa-mobile-alt"></i><div class="sp-phone-field"><span class="sp-phone-prefix">+91</span><input type="tel" name="phone" placeholder="10-digit mobile number" inputmode="numeric" autocomplete="tel-national" maxlength="10" pattern="[0-9]{10}" required /></div></div></label>
                                 <label class="sp-field"><span>Subject</span><div><i class="fas fa-file-alt"></i><input type="text" name="subject" placeholder="How can we help?" /></div></label>
                                 <label class="sp-field sp-field-full"><span>Your Message</span><div class="sp-textarea-wrap"><i class="fas fa-pen"></i><textarea name="message" placeholder="Tell us about your requirement..." required></textarea></div></label>
                             </div>
@@ -97,7 +98,7 @@
                                 <button type="submit" class="sp-contact-submit">Send Message <i class="fas fa-arrow-right"></i></button>
                             </div>
                         </form>
-                        <p class="ajax-response"></p>
+                        <div class="shiva-form-loading" aria-hidden="true"><span class="shiva-spinner"></span><span>Submitting your enquiry...</span></div><p class="ajax-response"></p>
                     </div>
 
                     <aside class="sp-contact-info-card">
@@ -284,4 +285,5 @@
   }, {passive:false});
 })();
 </script>
+<script src="assets/js/ajax-form.js"></script>
 </body></html>

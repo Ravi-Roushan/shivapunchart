@@ -20,23 +20,24 @@
                     <div class="col-lg-8 align-self-center">
                         <div class="contact-form">
                             <h2>Get In Touch</h2>
-                            <form id="contact-form" action="https://preetheme.com/php/codeit/mail.php" method="POST">
+                            <form id="contact-form" action="contact-submit.php" method="POST" novalidate>
+                            <input type="hidden" name="service" value="General Enquiry"><input type="hidden" name="source" value="Contact-page">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="single-input">
-                                            <input type="text" name="name" placeholder="Your Name" />
+                                            <input type="text" name="name" placeholder="Your Name" required />
                                             <i class="fas fa-user"></i>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="single-input">
-                                            <input type="email" name="email" placeholder="Your Email" />
+                                            <input type="email" name="email" placeholder="Your Email" required />
                                             <i class="far fa-envelope"></i>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="single-input">
-                                            <input type="text" name="phone" placeholder="Your Phone" />
+                                            <div class="sp-phone-field"><span class="sp-phone-prefix">+91</span><input type="tel" name="phone" placeholder="10-digit mobile number" inputmode="numeric" autocomplete="tel-national" maxlength="10" pattern="[0-9]{10}" required /></div>
                                             <i class="fas fa-mobile-alt"></i>
                                         </div>
                                     </div>
@@ -48,7 +49,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="single-input">
-                                            <textarea name="message" placeholder="Write Message"></textarea>
+                                            <textarea name="message" placeholder="Write Message" required></textarea>
                                             <i class="fas fa-pen"></i>
                                         </div>
                                     </div>
@@ -57,7 +58,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <p class="ajax-response"></p>
+                            <div class="shiva-form-loading" aria-hidden="true"><span class="shiva-spinner"></span><span>Submitting your enquiry...</span></div><p class="ajax-response"></p>
                         </div>
                     </div>
                     <div class="col-lg-4 align-self-center">

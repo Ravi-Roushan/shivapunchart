@@ -4422,3 +4422,7 @@ section.hero-banner-area.shiva-auto-hero.shiva-hero-compact .hero-banner-content
   box-shadow:0 9px 22px rgba(255,75,32,.35) !important;
   transform:translateY(-2px) !important;
 }
+
+/* Form validation/loading */
+.spq-phone-row{display:flex;align-items:center;border:1px solid rgba(255,255,255,.18);border-radius:10px;overflow:hidden}.spq-phone-row>span{padding:10px 9px;font-weight:700;color:#fff;background:rgba(255,255,255,.06)}.spq-phone-row input{border:0!important;border-radius:0!important;flex:1}.spq-loading{display:none;align-items:center;justify-content:center;gap:8px;margin-top:8px;color:#fff;font-size:12px}.spq-loading.show{display:flex}.spq-loading span{width:16px;height:16px;border:2px solid rgba(255,255,255,.3);border-top-color:#ff3b32;border-right-color:#ff8c19;border-radius:50%;animation:spqspin .7s linear infinite}@keyframes spqspin{to{transform:rotate(360deg)}}
+.sp-phone-field{display:flex;align-items:center;width:100%}.sp-phone-prefix{padding:0 12px;font-weight:700;color:#173b91;border-right:1px solid #dce4ef}.sp-phone-field input{border:0!important;flex:1}.shiva-form-loading{display:none;align-items:center;justify-content:center;gap:10px;margin-top:16px;color:#193ba8;font-weight:700}.shiva-form-loading.show{display:flex}.shiva-spinner{width:22px;height:22px;border:3px solid #dfe5ff;border-top-color:#ef3b35;border-right-color:#ff8b19;border-radius:50%;animation:shivaSpin .7s linear infinite}@keyframes shivaSpin{to{transform:rotate(360deg)}}

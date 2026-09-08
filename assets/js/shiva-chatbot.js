@@ -44,13 +44,14 @@
   function quote(){
     add('Get a Quote','user');
     const wrap=document.createElement('div'); wrap.className='shiva-quote-box';
-    wrap.innerHTML='<input id="spqName" placeholder="Your name" /><input id="spqPhone" placeholder="Phone number" inputmode="tel" /><input id="spqEmail" placeholder="Email address" type="email" /><textarea id="spqReq" placeholder="Tell us your requirement"></textarea><button type="button" id="spqSend">Send Enquiry</button>';
+    wrap.innerHTML='<input id="spqName" placeholder="Your name" required /><div class="spq-phone-row"><span>+91</span><input id="spqPhone" placeholder="10-digit mobile number" inputmode="numeric" maxlength="10" required /></div><input id="spqEmail" placeholder="Email address" type="email" required /><textarea id="spqReq" placeholder="Tell us your requirement" required></textarea><button type="button" id="spqSend">Send Enquiry</button><div class="spq-loading"><span></span>Submitting…</div>';
     body.appendChild(wrap); body.scrollTop=body.scrollHeight;
     wrap.querySelector('#spqSend').addEventListener('click',function(){
-      const n=wrap.querySelector('#spqName').value.trim(),p=wrap.querySelector('#spqPhone').value.trim(),e=wrap.querySelector('#spqEmail').value.trim(),r=wrap.querySelector('#spqReq').value.trim();
-      if(!n||!p||!r){add('Please enter your name, phone number and requirement.');return;}
-      const subject=encodeURIComponent('Website Quote Enquiry - '+n); const msg=encodeURIComponent('Name: '+n+'\nPhone: '+p+'\nEmail: '+e+'\nRequirement: '+r);
-      add('Your enquiry details are ready. Opening email…'); setTimeout(()=>{window.location.href='mailto:shivapunchart@gmail.com?subject='+subject+'&body='+msg;},250);
+      const n=wrap.querySelector('#spqName').value.trim(),p=wrap.querySelector('#spqPhone').value.trim().replace(/\D/g,''),e=wrap.querySelector('#spqEmail').value.trim(),r=wrap.querySelector('#spqReq').value.trim();
+      if(!n||!/^[0-9]{10}$/.test(p)||!/^\S+@\S+\.\S+$/.test(e)||!r){add('Please enter your name, valid 10-digit phone number, valid email and requirement.');return;}
+      const btn=wrap.querySelector('#spqSend'), loader=wrap.querySelector('.spq-loading'); btn.disabled=true; loader.classList.add('show');
+      const data=new URLSearchParams({name:n,phone:p,email:e,subject:'Quote Enquiry',message:r,service:'Quote Request',source:'Chatbot'});
+      fetch('contact-submit.php',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:data.toString()}).then(async res=>{ if(res.redirected || res.ok){ window.location.href='thank-you.php'; return; } const j=await res.json().catch(()=>({})); throw new Error(j.message||'Unable to send enquiry.'); }).catch(err=>{btn.disabled=false;loader.classList.remove('show');add(err.message||'Unable to send enquiry. Please try again.');});
     });
   }
   function answer(text){

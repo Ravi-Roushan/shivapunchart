@@ -49,7 +49,7 @@
     <form class="shiva-chat-input" id="shivaChatForm"><input id="shivaChatInput" type="text" placeholder="Ask about products, quote..." autocomplete="off" /><button type="submit" aria-label="Send message"><i class="fas fa-paper-plane"></i></button></form>
   </div>
 </div>
-<script src="assets/js/modernizr.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script><script src="assets/js/popper.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/owl.carousel.min.js"></script><script src="assets/js/jquery.waypoints.min.js"></script><script src="assets/js/jquery.counterup.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/mixitup.min.js"></script><script src="assets/js/wow.min.js"></script><script src="assets/js/script.js"></script><script src="assets/js/mobile-menu.js"></script><script src="assets/js/shiva-chatbot.js"></script>
+<script src="assets/js/modernizr.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script><script src="assets/js/popper.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/owl.carousel.min.js"></script><script src="assets/js/jquery.waypoints.min.js"></script><script src="assets/js/jquery.counterup.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/mixitup.min.js"></script><script src="assets/js/wow.min.js"></script><script src="assets/js/script.js"></script><script src="assets/js/mobile-menu.js"></script><script src="assets/js/shiva-chatbot.js"></script><script src="assets/js/ajax-form.js"></script>
 <script>
 (function(){
   var btn = document.querySelector('.canvas_open');
