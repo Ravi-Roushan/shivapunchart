@@ -1,0 +1,14 @@
+SHIVA PUNCH ART - LOCAL GMAIL SMTP SETUP
+
+1. Open smtp-config.php
+2. Put your 16-character Google App Password in the password value. Do not use your normal Gmail password.
+3. Save the file.
+4. Restart Apache in XAMPP.
+5. Open http://localhost/shiva/ and submit the contact form.
+
+SMTP: smtp.gmail.com
+Port: 465
+Encryption: SSL
+Username: roushanravi032@gmail.com
+
+For local XAMPP testing, the SMTP handler disables certificate verification because many XAMPP/PHP installations do not have a configured CA bundle. For production, use proper certificate verification/PHPMailer or your hosting SMTP settings.
